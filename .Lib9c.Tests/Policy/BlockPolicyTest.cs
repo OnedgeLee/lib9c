@@ -265,7 +265,7 @@ namespace Lib9c.Tests
 
             var invalidTx = blockChain.MakeTransaction(
                 stranger,
-                new SetValidator(validatorPublicKey, BigInteger.One)
+                new SetValidator(new Validator(validatorPublicKey, BigInteger.One))
             );
             await Assert.ThrowsAsync<BlockPolicyViolationException>(async () =>
             {
@@ -278,7 +278,7 @@ namespace Lib9c.Tests
 
             blockChain.MakeTransaction(
                 validatorAdminPrivateKey,
-                new SetValidator(validatorPublicKey, BigInteger.One)
+                new SetValidator(new Validator(validatorPublicKey, BigInteger.One))
             );
             await blockChain.MineBlock(minerKey);
 
