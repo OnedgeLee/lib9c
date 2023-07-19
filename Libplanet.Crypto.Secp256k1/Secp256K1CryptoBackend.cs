@@ -1,7 +1,6 @@
-using System.Linq;
 using System.Security.Cryptography;
-using Libplanet;
 using Secp256k1Net;
+using Libplanet.Common;
 using Libplanet.Crypto;
 
 namespace Nekoyume.Blockchain
