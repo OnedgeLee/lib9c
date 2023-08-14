@@ -7,7 +7,6 @@ namespace Lib9c.Tests.Util
     using Libplanet.Crypto;
     using Libplanet.Types.Assets;
     using Nekoyume;
-    using Nekoyume.Action;
     using Nekoyume.Action.Extensions;
     using Nekoyume.Model.State;
     using Nekoyume.TableData;
@@ -18,8 +17,8 @@ namespace Lib9c.Tests.Util
             TableSheets tableSheets,
             Address agentAddr,
             Address avatarAddr,
-            IAccountStateDelta initialStatesWithAvatarStateV1,
-            IAccountStateDelta initialStatesWithAvatarStateV2
+            IAccount initialStatesWithAvatarStateV1,
+            IAccount initialStatesWithAvatarStateV2
             ) InitializeStates(
                 Address? adminAddr = null,
                 Address? agentAddr = null,
@@ -29,7 +28,7 @@ namespace Lib9c.Tests.Util
         {
             adminAddr ??= new PrivateKey().ToAddress();
             var context = new ActionContext();
-            var states = new MockStateDelta().SetState(
+            var states = new MockAccount().SetState(
                 Addresses.Admin,
                 new AdminState(adminAddr.Value, long.MaxValue).Serialize());
 
@@ -85,9 +84,9 @@ namespace Lib9c.Tests.Util
                 initialStatesWithAvatarStateV2);
         }
 
-        private static (IAccountStateDelta states, Dictionary<string, string> sheets)
+        private static (IWorld world, Dictionary<string, string> sheets)
             InitializeTableSheets(
-                IAccountStateDelta states,
+                IWorld world,
                 bool isDevEx = false,
                 Dictionary<string, string> sheetsOverride = null)
         {
@@ -108,12 +107,13 @@ namespace Lib9c.Tests.Util
 
             foreach (var (key, value) in sheets)
             {
-                states = states.SetState(
-                    Addresses.TableSheet.Derive(key),
-                    value.Serialize());
+                world = world.SetAccount(
+                    world.GetAccount(ReservedAddresses.LegacyAccount).SetState(
+                        Addresses.TableSheet.Derive(key),
+                        value.Serialize()));
             }
 
-            return (states, sheets);
+            return (world, sheets);
         }
     }
 }
