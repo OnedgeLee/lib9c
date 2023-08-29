@@ -31,8 +31,7 @@ namespace Lib9c.Tests.Action
         private readonly AvatarState _avatarState;
         private readonly TableSheets _tableSheets;
         private readonly GoldCurrencyState _goldCurrencyState;
-        private IAccount _initialAccount;
-        private IWorld _initialWorld;
+        private IWorld _initialState;
 
         public UpdateSellTest(ITestOutputHelper outputHelper)
         {
@@ -41,12 +40,11 @@ namespace Lib9c.Tests.Action
                 .WriteTo.TestOutput(outputHelper)
                 .CreateLogger();
 
-            _initialAccount = new MockAccount();
+            _initialState = new MockWorld();
             var sheets = TableSheetsImporter.ImportSheets();
             foreach (var (key, value) in sheets)
             {
-                _initialAccount = _initialAccount
-                    .SetState(Addresses.TableSheet.Derive(key), value.Serialize());
+                _initialState = LegacyModule.SetState(_initialState, Addresses.TableSheet.Derive(key), value.Serialize());
             }
 
             _tableSheets = new TableSheets(sheets);
@@ -78,12 +76,10 @@ namespace Lib9c.Tests.Action
             };
             agentState.avatarAddresses[0] = _avatarAddress;
 
-            _initialAccount = _initialAccount
-                .SetState(GoldCurrencyState.Address, _goldCurrencyState.Serialize())
-                .SetState(Addresses.Shop, shopState.Serialize())
-                .SetState(_agentAddress, agentState.Serialize())
-                .SetState(_avatarAddress, _avatarState.Serialize());
-            _initialWorld = new MockWorld(_initialAccount);
+            _initialState = LegacyModule.SetState(_initialState, GoldCurrencyState.Address, _goldCurrencyState.Serialize());
+            _initialState = LegacyModule.SetState(_initialState, Addresses.Shop, shopState.Serialize());
+            _initialState = LegacyModule.SetState(_initialState, _agentAddress, agentState.Serialize());
+            _initialState = LegacyModule.SetState(_initialState, _avatarAddress, _avatarState.Serialize());
         }
 
         [Theory]
@@ -106,7 +102,7 @@ namespace Lib9c.Tests.Action
             bool fromPreviousAction
         )
         {
-            var avatarState = AvatarModule.GetAvatarState(_initialWorld, _avatarAddress);
+            var avatarState = AvatarModule.GetAvatarState(_initialState, _avatarAddress);
             ITradableItem tradableItem;
             var itemId = new Guid(guid);
             var orderId = Guid.NewGuid();
@@ -160,7 +156,7 @@ namespace Lib9c.Tests.Action
             );
 
             var orderDigestList = new OrderDigestListState(OrderDigestListState.DeriveAddress(_avatarAddress));
-            var prevState = _initialAccount;
+            var prevState = _initialState;
 
             if (inventoryCount > 1)
             {
@@ -197,25 +193,23 @@ namespace Lib9c.Tests.Action
 
             if (fromPreviousAction)
             {
-                prevState = prevState.SetState(_avatarAddress, avatarState.Serialize());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress, avatarState.Serialize());
             }
             else
             {
-                prevState = prevState
-                    .SetState(_avatarAddress.Derive(LegacyInventoryKey), avatarState.inventory.Serialize())
-                    .SetState(_avatarAddress.Derive(LegacyWorldInformationKey), avatarState.worldInformation.Serialize())
-                    .SetState(_avatarAddress.Derive(LegacyQuestListKey), avatarState.questList.Serialize())
-                    .SetState(_avatarAddress, avatarState.SerializeV2());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress.Derive(LegacyInventoryKey), avatarState.inventory.Serialize());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress.Derive(LegacyWorldInformationKey), avatarState.worldInformation.Serialize());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress.Derive(LegacyQuestListKey), avatarState.questList.Serialize());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress, avatarState.SerializeV2());
+                prevState = LegacyModule.SetState(prevState, _avatarAddress.Derive(LegacyInventoryKey), avatarState.inventory.Serialize());
             }
 
-            prevState = prevState
-                .SetState(Addresses.GetItemAddress(itemId), sellItem.Serialize())
-                .SetState(Order.DeriveAddress(order.OrderId), order.Serialize())
-                .SetState(orderDigestList.Address, orderDigestList.Serialize())
-                .SetState(shardedShopAddress, shopState.Serialize());
-            var world = _initialWorld.SetAccount(prevState);
+            prevState = LegacyModule.SetState(prevState, Addresses.GetItemAddress(itemId), sellItem.Serialize());
+            prevState = LegacyModule.SetState(prevState, Order.DeriveAddress(order.OrderId), order.Serialize());
+            prevState = LegacyModule.SetState(prevState, orderDigestList.Address, orderDigestList.Serialize());
+            prevState = LegacyModule.SetState(prevState, shardedShopAddress, shopState.Serialize());
 
-            var currencyState = LegacyModule.GetGoldCurrency(world);
+            var currencyState = LegacyModule.GetGoldCurrency(prevState);
             var price = new FungibleAssetValue(currencyState, ProductPrice, 0);
 
             var updateSellInfo = new UpdateSellInfo(
@@ -236,14 +230,14 @@ namespace Lib9c.Tests.Action
             var nextState = action.Execute(new ActionContext
             {
                 BlockIndex = 101,
-                PreviousState = new MockWorld(prevState),
+                PreviousState = prevState,
                 Random = new TestRandom(),
                 Rehearsal = false,
                 Signer = _agentAddress,
-            }).GetAccount(ReservedAddresses.LegacyAccount);
+            });
 
             var updateSellShopAddress = ShardedShopStateV2.DeriveAddress(itemSubType, updateSellOrderId);
-            var nextShopState = new ShardedShopStateV2((Dictionary)nextState.GetState(updateSellShopAddress));
+            var nextShopState = new ShardedShopStateV2((Dictionary)LegacyModule.GetState(nextState, updateSellShopAddress));
             Assert.Equal(1, nextShopState.OrderDigestList.Count);
             Assert.NotEqual(orderId, nextShopState.OrderDigestList.First().OrderId);
             Assert.Equal(updateSellOrderId, nextShopState.OrderDigestList.First().OrderId);
@@ -305,7 +299,7 @@ namespace Lib9c.Tests.Action
                 ),
             };
 
-            _initialAccount = _initialAccount.SetState(_avatarAddress, avatarState.Serialize());
+            var prevState = LegacyModule.SetState(_initialState, _avatarAddress, avatarState.Serialize());
 
             var updateSellInfo = new UpdateSellInfo(
                 default,
@@ -324,7 +318,7 @@ namespace Lib9c.Tests.Action
             Assert.Throws<NotEnoughClearedStageLevelException>(() => action.Execute(new ActionContext
             {
                 BlockIndex = 0,
-                PreviousState = new MockWorld(_initialAccount),
+                PreviousState = prevState,
                 Signer = _agentAddress,
             }));
         }
@@ -342,9 +336,8 @@ namespace Lib9c.Tests.Action
             };
             var digestListAddress = OrderDigestListState.DeriveAddress(_avatarAddress);
             var digestList = new OrderDigestListState(digestListAddress);
-            _initialAccount = _initialAccount
-                .SetState(_avatarAddress, avatarState.Serialize())
-                .SetState(digestListAddress, digestList.Serialize());
+            var prevState = LegacyModule.SetState(_initialState, _avatarAddress, avatarState.Serialize());
+            prevState = LegacyModule.SetState(prevState, digestListAddress, digestList.Serialize());
 
             var updateSellInfo = new UpdateSellInfo(
                 default,
@@ -363,7 +356,7 @@ namespace Lib9c.Tests.Action
             Assert.Throws<InvalidPriceException>(() => action.Execute(new ActionContext
             {
                 BlockIndex = 0,
-                PreviousState = new MockWorld(_initialAccount),
+                PreviousState = prevState,
                 Signer = _agentAddress,
             }));
         }
@@ -397,7 +390,7 @@ namespace Lib9c.Tests.Action
                 Assert.Throws<ArgumentOutOfRangeException>(() => action.Execute(new ActionContext
                 {
                     BlockIndex = 0,
-                    PreviousState = new MockWorld(_initialAccount),
+                    PreviousState = _initialState,
                     Signer = _agentAddress,
                 }));
             }
@@ -406,7 +399,7 @@ namespace Lib9c.Tests.Action
                 Assert.Throws<FailedLoadStateException>(() => action.Execute(new ActionContext
                 {
                     BlockIndex = 0,
-                    PreviousState = new MockWorld(_initialAccount),
+                    PreviousState = _initialState,
                     Signer = _agentAddress,
                 }));
             }

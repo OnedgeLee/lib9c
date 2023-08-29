@@ -28,7 +28,7 @@ namespace Lib9c.DevExtensions.Tests.Action
 
         public CreateOrReplaceAvatarTest()
         {
-            _initialStates = new Lib9c.Tests.Action.MockWorld();
+            _initialStates = new MockWorld();
 
 #pragma warning disable CS0618
             var ncgCurrency = Currency.Legacy("NCG", 2, null);
@@ -360,7 +360,7 @@ namespace Lib9c.DevExtensions.Tests.Action
         {
             var agentAddr = new PrivateKey().ToAddress();
             Execute(
-                new MockWorld(_initialStates),
+                _initialStates,
                 blockIndex,
                 agentAddr,
                 avatarIndex,
@@ -396,7 +396,7 @@ namespace Lib9c.DevExtensions.Tests.Action
         {
             var agentAddr = new PrivateKey().ToAddress();
             Assert.Throws<ArgumentException>(() => Execute(
-                new MockWorld(_initialStates),
+                _initialStates,
                 blockIndex,
                 agentAddr,
                 avatarIndex,

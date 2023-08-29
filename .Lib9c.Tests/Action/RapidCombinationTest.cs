@@ -69,7 +69,7 @@ namespace Lib9c.Tests.Action
                     new GameConfigState(
                         sheets[nameof(GameConfigSheet)]).Serialize());
             _initialWorld = AgentModule.SetAgentState(_initialWorld, _agentAddress, agentState);
-            _initialWorld = AvatarModule.SetAvatarStateV2(
+            _initialWorld = AvatarModule.SetAvatarState(
                 _initialWorld,
                 _avatarAddress,
                 avatarState);

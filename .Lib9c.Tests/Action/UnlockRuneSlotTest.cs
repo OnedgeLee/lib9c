@@ -36,13 +36,13 @@ namespace Lib9c.Tests.Action
                 .StartedBlockIndex;
 
             var goldCurrencyState = new GoldCurrencyState(_goldCurrency);
-            var state = new MockAccount()
-                .SetState(goldCurrencyState.address, goldCurrencyState.Serialize())
-                .SetState(agentAddress, new AgentState(agentAddress).Serialize());
+            IWorld state = new MockWorld();
+            state = LegacyModule.SetState(state, goldCurrencyState.address, goldCurrencyState.Serialize());
+            state = LegacyModule.SetState(state, agentAddress, new AgentState(agentAddress).Serialize());
 
             foreach (var (key, value) in sheets)
             {
-                state = state.SetState(Addresses.TableSheet.Derive(key), value.Serialize());
+                state = LegacyModule.SetState(state, Addresses.TableSheet.Derive(key), value.Serialize());
             }
 
             var gameConfigState = new GameConfigState(sheets[nameof(GameConfigSheet)]);
@@ -54,7 +54,7 @@ namespace Lib9c.Tests.Action
                 gameConfigState,
                 default
             );
-            state = state.SetState(gameConfigState.address, gameConfigState.Serialize());
+            state = LegacyModule.SetState(state, gameConfigState.address, gameConfigState.Serialize());
             return new MockWorld(state);
         }
 

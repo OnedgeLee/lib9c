@@ -19,9 +19,8 @@ namespace Lib9c.Tests.Action
         {
             var adminAddress = new Address("399bddF9F7B6d902ea27037B907B2486C9910730");
             var adminState = new AdminState(adminAddress, 100);
-            var initStates = new MockAccountState(ReservedAddresses.LegacyAccount)
-                .SetState(AdminState.Address, adminState.Serialize());
-            var state = new MockWorld(new MockAccount(initStates));
+            IWorld world = new MockWorld();
+            world = LegacyModule.SetState(world, AdminState.Address, adminState.Serialize());
             var action = new AddRedeemCode
             {
                 redeemCsv = "New Value",
@@ -33,7 +32,7 @@ namespace Lib9c.Tests.Action
                     new ActionContext
                     {
                         BlockIndex = 101,
-                        PreviousState = state,
+                        PreviousState = world,
                         Signer = adminAddress,
                     }
                 );
@@ -46,7 +45,7 @@ namespace Lib9c.Tests.Action
                     new ActionContext
                     {
                         BlockIndex = 5,
-                        PreviousState = state,
+                        PreviousState = world,
                         Signer = new Address("019101FEec7ed4f918D396827E1277DEda1e20D4"),
                     }
                 );

@@ -82,7 +82,10 @@ namespace Lib9c.Tests.Action
                 _initialWorld,
                 _weeklyArenaState.address,
                 _weeklyArenaState.Serialize());
-            _initialWorld = AgentModule.SetAgentState(_initialWorld, _agentAddress, agentState);
+            _initialWorld = AgentModule.SetAgentStateV2(
+                _initialWorld,
+                _agentAddress,
+                agentState);
             _initialWorld = AvatarModule.SetAvatarStateV2(
                 _initialWorld,
                 _avatarAddress,
@@ -200,10 +203,10 @@ namespace Lib9c.Tests.Action
             IWorld state;
             if (backward)
             {
-                state = LegacyModule.SetState(
+                state = AvatarModule.SetAvatarState(
                     _initialWorld,
                     _avatarAddress,
-                    avatarState.Serialize());
+                    avatarState);
             }
             else
             {

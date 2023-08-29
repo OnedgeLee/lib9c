@@ -5,6 +5,7 @@ namespace Lib9c.Tests.Action
     using Nekoyume;
     using Nekoyume.Action;
     using Nekoyume.Model.State;
+    using Nekoyume.Module;
     using Xunit;
 
     public class RenewAdminStateTest
@@ -19,9 +20,8 @@ namespace Lib9c.Tests.Action
             _adminPrivateKey = new PrivateKey();
             _validUntil = 1_500_000L;
             _adminState = new AdminState(_adminPrivateKey.ToAddress(), _validUntil);
-            _stateDelta = new MockWorld(new MockAccount(
-                MockAccountState.Legacy
-                    .SetState(Addresses.Admin, _adminState.Serialize())));
+            _stateDelta = new MockWorld();
+            _stateDelta = LegacyModule.SetState(_stateDelta, Addresses.Admin, _adminState.Serialize());
         }
 
         [Fact]
