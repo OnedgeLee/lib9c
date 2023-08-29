@@ -9,12 +9,14 @@ namespace Lib9c.Tests.Action.Scenario
     using Libplanet.Types.Assets;
     using Nekoyume;
     using Nekoyume.Action;
+    using Nekoyume.Action.Extensions;
     using Nekoyume.Model;
     using Nekoyume.Model.EnumType;
     using Nekoyume.Model.Item;
     using Nekoyume.Model.Skill;
     using Nekoyume.Model.Stat;
     using Nekoyume.Model.State;
+    using Nekoyume.Module;
     using Nekoyume.TableData;
     using Xunit;
     using static SerializeKeys;
@@ -50,7 +52,7 @@ namespace Lib9c.Tests.Action.Scenario
             aura.Skills.Add(skill);
             avatarState.inventory.AddItem(aura);
 
-            IAccountStateDelta initialState = new Tests.Action.MockStateDelta()
+            IAccount initialState = new MockAccount()
                 .SetState(agentAddress, agentState.Serialize())
                 .SetState(avatarAddress, avatarState.SerializeV2())
                 .SetState(
@@ -89,19 +91,21 @@ namespace Lib9c.Tests.Action.Scenario
                 RuneInfos = new List<RuneSlotInfo>(),
             };
 
+            IWorld initialWorld = new MockWorld(initialState);
+
             var nextState = has.Execute(new ActionContext
             {
                 BlockIndex = 2,
-                PreviousState = initialState,
+                PreviousState = initialWorld,
                 Random = new TestRandom(),
                 Signer = agentAddress,
             });
 
-            var nextAvatarState = nextState.GetAvatarStateV2(avatarAddress);
+            var nextAvatarState = AvatarModule.GetAvatarStateV2(nextState, avatarAddress);
             Assert.True(nextAvatarState.worldInformation.IsStageCleared(1));
             var equippedItem = Assert.IsType<Aura>(nextAvatarState.inventory.Equipments.First());
             Assert.True(equippedItem.equipped);
-            var rawItemSlot = Assert.IsType<List>(nextState.GetState(itemSlotStateAddress));
+            var rawItemSlot = Assert.IsType<List>(LegacyModule.GetState(nextState, itemSlotStateAddress));
             var itemSlotState = new ItemSlotState(rawItemSlot);
             var equipmentId = itemSlotState.Equipments.Single();
             Assert.Equal(aura.ItemId, equipmentId);

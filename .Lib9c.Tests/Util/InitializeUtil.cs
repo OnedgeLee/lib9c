@@ -42,8 +42,10 @@ namespace Lib9c.Tests.Util
                 .SetState(goldCurrencyState.address, goldCurrencyState.Serialize())
                 .MintAsset(context, goldCurrencyState.address, goldCurrency * 1_000_000_000);
 
-            var tuple = InitializeTableSheets(states, isDevEx, sheetsOverride);
-            states = tuple.states;
+            var world = new MockWorld(states);
+
+            var tuple = InitializeTableSheets(world, isDevEx, sheetsOverride);
+            states = tuple.world.GetAccount(ReservedAddresses.LegacyAccount);
             var tableSheets = new TableSheets(tuple.sheets);
             var gameConfigState = new GameConfigState(tuple.sheets[nameof(GameConfigSheet)]);
             states = states.SetState(gameConfigState.address, gameConfigState.Serialize());

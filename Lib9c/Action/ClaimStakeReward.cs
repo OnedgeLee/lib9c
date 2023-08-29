@@ -317,11 +317,11 @@ namespace Nekoyume.Action
 
             if (itemV3Step > 0)
             {
-                var regularFixedReward = GetRegularFixedRewardInfos(states, level);
+                var regularFixedReward = GetRegularFixedRewardInfos(world, level);
                 var regularReward = sheets.GetSheet<StakeRegularRewardSheet>()[level].Rewards;
-                states = ProcessReward(
+                world = ProcessReward(
                     context,
-                    states,
+                    world,
                     ref avatarState,
                     itemSheet,
                     stakedAmount,
@@ -365,7 +365,7 @@ namespace Nekoyume.Action
                 : new List<StakeRegularFixedRewardSheet.RewardInfo>();
         }
 
-        private IAccount ProcessReward(
+        private IWorld ProcessReward(
             IActionContext context,
             IWorld world,
             ref AvatarState avatarState,
