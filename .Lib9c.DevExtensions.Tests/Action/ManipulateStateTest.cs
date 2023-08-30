@@ -365,6 +365,24 @@ namespace Lib9c.DevExtensions.Tests.Action
             });
         }
 
+        private IWorld Manipulate(
+            IWorld state,
+            List<(Address addr, AvatarState value)> targetAvatarList
+        )
+        {
+            var action = new ManipulateAvatar
+            {
+                StateList = targetAvatarList,
+            };
+
+            return action.Execute(new ActionContext
+            {
+                PreviousState = state,
+                Signer = _agentAddress,
+                BlockIndex = int.MaxValue / 2
+            });
+        }
+
         private void TestAvatarState(
             IWorld world,
             string? name, int? level, long? exp, int? actionPoint,
@@ -462,9 +480,8 @@ namespace Lib9c.DevExtensions.Tests.Action
                 new MockWorld(_initialStateV2),
                 new List<(Address, IValue)>
                 {
-                    (_avatarAddress, newAvatarState.SerializeV2())
-                },
-                new List<(Address, FungibleAssetValue)>()
+                    (_avatarAddress, newAvatarState)
+                }
             );
 
             TestAvatarState(

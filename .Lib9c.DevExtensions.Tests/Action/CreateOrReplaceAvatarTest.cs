@@ -452,11 +452,11 @@ namespace Lib9c.DevExtensions.Tests.Action
                 Rehearsal = false,
                 BlockIndex = blockIndex,
             });
-            var agent = new AgentState((Dictionary)LegacyModule.GetState(nextWorld, agentAddr)!);
+            var agent = AgentModule.GetAgentState(nextWorld, agentAddr)!;
             Assert.Single(agent.avatarAddresses);
             Assert.True(agent.avatarAddresses.ContainsKey(action.AvatarIndex));
             avatarAddr ??= agent.avatarAddresses[action.AvatarIndex];
-            var avatar = new AvatarState((Dictionary)LegacyModule.GetState(nextWorld, avatarAddr.Value)!);
+            var avatar = AvatarModule.GetAvatarState(nextWorld, avatarAddr.Value);
             Assert.Equal(action.Name, avatar.name);
             Assert.Equal(action.Hair, avatar.hair);
             Assert.Equal(action.Lens, avatar.lens);
