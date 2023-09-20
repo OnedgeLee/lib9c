@@ -7,6 +7,8 @@ using Lib9c.Renderers;
 using Libplanet.Crypto;
 using Libplanet.Action.State;
 using MessagePack;
+using Libplanet.Extensions.RemoteBlockChainStates;
+using Nekoyume.Blockchain;
 
 namespace Nekoyume.Action
 {
@@ -77,6 +79,21 @@ namespace Nekoyume.Action
                 OutputState = OutputState,
                 Exception = Exception,
                 PreviousState = PreviousState,
+                RandomSeed = RandomSeed,
+                Extra = Extra
+            };
+        }
+
+        public ActionEvaluation<ActionBase> ToActionEvaluationForUnity(Uri explorerEndpoint)
+        {
+            return new ActionEvaluation<ActionBase>
+            {
+                Action = Action is null ? new RewardGold() : Action,
+                Signer = Signer,
+                BlockIndex = BlockIndex,
+                OutputState = new RemoteAccountState(explorerEndpoint, BlockIndex, OutputState).ToRemoteAccount(),
+                Exception = Exception,
+                PreviousState = new RemoteAccountState(explorerEndpoint, BlockIndex, PreviousState).ToRemoteAccount(),
                 RandomSeed = RandomSeed,
                 Extra = Extra
             };
