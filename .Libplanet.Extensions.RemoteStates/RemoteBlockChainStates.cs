@@ -39,6 +39,11 @@ namespace Libplanet.Extensions.RemoteStates
             throw new NotImplementedException();
         }
 
+        public IWorldState GetWorldState(BlockHash? hash)
+        {
+            throw new NotImplementedException();
+        }
+
         public IAccountState GetAccountState(HashDigest<SHA256>? hash)
         {
             throw new NotImplementedException();
@@ -59,6 +64,9 @@ namespace Libplanet.Extensions.RemoteStates
         public IReadOnlyList<IValue?> GetStates(IReadOnlyList<Address> addresses, Address accountAddress, BlockHash? offset)
             => new RemoteWorldState(_explorerEndpoint, offset).GetAccount(
                 accountAddress).GetStates(addresses);
+
+        public IReadOnlyList<IValue?> GetStates(IReadOnlyList<Address> addresses, HashDigest<SHA256>? stateRootHash)
+            => throw new NotImplementedException();
 
         public FungibleAssetValue GetBalance(Address address, Currency currency, BlockHash? offset)
             => new RemoteWorldState(_explorerEndpoint, offset).GetAccount(
