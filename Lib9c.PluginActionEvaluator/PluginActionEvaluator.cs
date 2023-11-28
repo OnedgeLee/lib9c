@@ -1,5 +1,6 @@
 using System.Security.Cryptography;
 using Libplanet.Action;
+using Libplanet.Action.Loader;
 using Libplanet.Common;
 using Libplanet.Store;
 using Lib9c.PluginBase;
