@@ -8,10 +8,10 @@ namespace Nekoyume.Delegation
     public class Delegation
     {
         public Delegation(
-            Bond bond,
-            UnbondLockIn unbondLockIn,
-            RebondGrace rebondGrace,
-            UnbondingSet unbondingSet)
+            Bond bond = null,
+            UnbondLockIn unbondLockIn = null,
+            RebondGrace rebondGrace = null,
+            UnbondingSet unbondingSet = null)
         {
             Bond = bond;
             UnbondLockIn = unbondLockIn;

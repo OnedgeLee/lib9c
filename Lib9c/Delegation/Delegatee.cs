@@ -12,9 +12,9 @@ namespace Nekoyume.Delegation
 {
     public abstract class Delegatee<T> : IDelegatee<T> where T : IDelegator
     {
-        protected readonly byte[] DelegationId = new byte[] { 0x44 };   // `D`
-        protected readonly byte[] UndelegationId = new byte[] { 0x55 }; // `U`
-        protected readonly byte[] RedelegationId = new byte[] { 0x52 }; // `R`
+        protected readonly byte[] BondId = new byte[] { 0x44 };   // `D`
+        protected readonly byte[] UnbondLockInId = new byte[] { 0x55 }; // `U`
+        protected readonly byte[] RebondGraceId = new byte[] { 0x52 }; // `R`
         protected readonly byte[] RewardPoolId = new byte[] { 0x72 };   // `r`
 
         public Delegatee(Address address)
@@ -128,14 +128,14 @@ namespace Nekoyume.Delegation
             // TODO: Implement this
         }
 
-        public Address DelegationAddress(Address delegatorAddress)
-            => DeriveAddress(DelegationId, delegatorAddress);
+        public Address BondAddress(Address delegatorAddress)
+            => DeriveAddress(BondId, delegatorAddress);
 
-        public Address UndelegationAddress(Address delegatorAddress)
-            => DeriveAddress(UndelegationId, delegatorAddress);
+        public Address UnbondLockInAddress(Address delegatorAddress)
+            => DeriveAddress(UnbondLockInId, delegatorAddress);
 
-        public Address RedelegationAddress(Address delegatorAddress)
-            => DeriveAddress(RedelegationId, delegatorAddress);
+        public Address RebondGraceAddress(Address delegatorAddress)
+            => DeriveAddress(RebondGraceId, delegatorAddress);
 
         private Address DeriveAddress(byte[] typeId, Address address)
             => DeriveAddress(typeId, address.ByteArray);

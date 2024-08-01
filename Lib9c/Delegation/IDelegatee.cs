@@ -31,10 +31,10 @@ namespace Nekoyume.Delegation
 
         void Distribute();
 
-        Address DelegationAddress(Address delegatorAddress);
+        Address BondAddress(Address delegatorAddress);
 
-        Address UndelegationAddress(Address delegatorAddress);
+        Address UnbondLockInAddress(Address delegatorAddress);
 
-        Address RedelegationAddress(Address delegatorAddress);
+        Address RebondGraceAddress(Address delegatorAddress);
     }
 }
