@@ -9,6 +9,14 @@ namespace Nekoyume.Delegation
     {
         IWorld World { get; }
 
+        IDelegatee GetDelegatee(Address address, Address accountAddress);
+
+        IDelegator GetDelegator(Address address, Address accountAddress);
+
+        DelegateeMetadata GetDelegateeMetadata(Address address, Address accountAddress);
+
+        DelegatorMetadata GetDelegatorMetadata(Address address, Address accountAddress);
+
         Bond GetBond(IDelegatee delegatee, Address delegatorAddress);
 
         UnbondLockIn GetUnbondLockIn(IDelegatee delegatee, Address delegatorAddress);

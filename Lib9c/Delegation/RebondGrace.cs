@@ -8,6 +8,7 @@ using Bencodex;
 using Bencodex.Types;
 using Libplanet.Crypto;
 using Libplanet.Types.Assets;
+using static Nekoyume.Delegation.UnbondLockIn;
 
 namespace Nekoyume.Delegation
 {
@@ -135,16 +136,35 @@ namespace Nekoyume.Delegation
 
         IUnbonding IUnbonding.Release(long height) => Release(height);
 
-        public RebondGrace Slash(BigInteger slashFactor, long infractionHeight)
-            => UpdateEntries(Entries.TakeWhile(e => e.Key >= infractionHeight)
-                .Select(kv => KeyValuePair.Create(
-                    kv.Key,
-                    kv.Value.Select(v => v.Slash(slashFactor, infractionHeight)).ToImmutableList()))
-                .Concat(Entries.SkipWhile(e => e.Key >= infractionHeight))
-                .ToImmutableSortedDictionary());
+        public RebondGrace Slash(
+            BigInteger slashFactor, long infractionHeight, out Dictionary<Address, FungibleAssetValue> slashed)
+        {
+            slashedFAV = null;
+            var updatedEntries = Entries;
+            var entriesToSlash = Entries.TakeWhile(e => e.Key >= infractionHeight);
+            foreach (var (expireHeight, entries) in entriesToSlash)
+            {
+                ImmutableList<RebondGraceEntry> slashedEntries = ImmutableList<RebondGraceEntry>.Empty;
+                foreach (var entry in entries)
+                {
+                    var slashedEntry = entry.Slash(slashFactor, infractionHeight, out var slashed);
+                    int index = slashedEntries.BinarySearch(slashedEntry, _entryComparer);
+                    slashedEntries = slashedEntries.Insert(index < 0 ? ~index : index, slashedEntry);
+                    slashedFAV = slashedFAV.HasValue
+                        ? slashedFAV.Value + slashed
+                        : slashed;
 
-        IUnbonding IUnbonding.Slash(BigInteger slashFactor, long infractionHeight)
-            => Slash(slashFactor, infractionHeight);
+
+                }
+
+                updatedEntries = Entries.SetItem(expireHeight, slashedEntries);
+            }
+
+            return UpdateEntries(updatedEntries);
+        }
+
+        IUnbonding IUnbonding.Slash(BigInteger slashFactor, long infractionHeight, out FungibleAssetValue? slashedFAV)
+            => Slash(slashFactor, infractionHeight, out slashedFAV);
 
         public override bool Equals(object? obj)
             => obj is RebondGrace other && Equals(other);
@@ -341,7 +361,8 @@ namespace Nekoyume.Delegation
                 return hash;
             }
 
-            public RebondGraceEntry Slash(BigInteger slashFactor, long infractionHeight)
+            public RebondGraceEntry Slash(
+                BigInteger slashFactor, long infractionHeight, out FungibleAssetValue slashedFAV)
             {
                 if (CreationHeight > infractionHeight ||
                     ExpireHeight < infractionHeight)
@@ -352,9 +373,15 @@ namespace Nekoyume.Delegation
                         "The infraction height must be between in creation height and expire height of entry.");
                 }
 
+                var favToSlash = InitialGraceFAV.DivRem(slashFactor).Quotient;
+                slashedFAV = favToSlash < GraceFAV
+                    ? favToSlash
+                    : GraceFAV;
+
                 return new RebondGraceEntry(
                     RebondeeAddress,
-                    GraceFAV - GraceFAV.DivRem(slashFactor).Quotient,
+                    InitialGraceFAV,
+                    GraceFAV - slashedFAV,
                     CreationHeight,
                     ExpireHeight);
             }

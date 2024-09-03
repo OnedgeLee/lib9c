@@ -21,14 +21,14 @@ namespace Nekoyume.Delegation
         public UnbondLockIn(
             Address address,
             int maxEntries,
-            Address sender,
-            Address recipient,
+            Address delegatee,
+            Address delegator,
             IDelegationRepository? repository)
             : this(
                   address,
                   maxEntries,
-                  sender,
-                  recipient,
+                  delegatee,
+                  delegator,
                   ImmutableSortedDictionary<long, ImmutableList<UnbondLockInEntry>>.Empty,
                   repository)
         {
@@ -63,11 +63,11 @@ namespace Nekoyume.Delegation
         public UnbondLockIn(
             Address address,
             int maxEntries,
-            Address sender,
-            Address recipient,
+            Address delegatee,
+            Address delegator,
             IEnumerable<UnbondLockInEntry> entries,
             IDelegationRepository? repository = null)
-            : this(address, maxEntries, sender, recipient, repository)
+            : this(address, maxEntries, delegatee, delegator, repository)
         {
             foreach (var entry in entries)
             {
@@ -78,8 +78,8 @@ namespace Nekoyume.Delegation
         private UnbondLockIn(
             Address address,
             int maxEntries,
-            Address sender,
-            Address recipient,
+            Address delegatee,
+            Address delegator,
             ImmutableSortedDictionary<long, ImmutableList<UnbondLockInEntry>> entries,
             IDelegationRepository? repository)
         {
@@ -94,8 +94,8 @@ namespace Nekoyume.Delegation
             Address = address;
             MaxEntries = maxEntries;
             Entries = entries;
-            Sender = sender;
-            Recipient = recipient;
+            Sender = delegatee;
+            Recipient = delegator;
             _repository = repository;
         }
 
@@ -173,16 +173,33 @@ namespace Nekoyume.Delegation
 
         IUnbonding IUnbonding.Release(long height) => Release(height);
 
-        public UnbondLockIn Slash(BigInteger slashFactor, long infractionHeight)
-            => UpdateEntries(Entries.TakeWhile(e => e.Key >= infractionHeight)
-                .Select(kv => KeyValuePair.Create(
-                    kv.Key,
-                    kv.Value.Select(v => v.Slash(slashFactor, infractionHeight)).ToImmutableList()))
-                .Concat(Entries.SkipWhile(e => e.Key >= infractionHeight))
-                .ToImmutableSortedDictionary());
+        public UnbondLockIn Slash(
+            BigInteger slashFactor, long infractionHeight, out FungibleAssetValue? slashedFAV)
+        {
+            slashedFAV = null;
+            var updatedEntries = Entries;
+            var entriesToSlash = Entries.TakeWhile(e => e.Key >= infractionHeight);
+            foreach (var (expireHeight, entries) in entriesToSlash)
+            {
+                ImmutableList<UnbondLockInEntry> slashedEntries = ImmutableList<UnbondLockInEntry>.Empty;
+                foreach (var entry in entries)
+                {
+                    var slashedEntry = entry.Slash(slashFactor, infractionHeight, out var slashed);
+                    int index = slashedEntries.BinarySearch(slashedEntry, _entryComparer);
+                    slashedEntries = slashedEntries.Insert(index < 0 ? ~index : index, slashedEntry);
+                    slashedFAV = slashedFAV.HasValue
+                        ? slashedFAV.Value + slashed
+                        : slashed;
+                }
 
-        IUnbonding IUnbonding.Slash(BigInteger slashFactor, long infractionHeight)
-            => Slash(slashFactor, infractionHeight);
+                updatedEntries = Entries.SetItem(expireHeight, slashedEntries);
+            }
+
+            return UpdateEntries(updatedEntries);
+        }
+
+        IUnbonding IUnbonding.Slash(BigInteger slashFactor, long infractionHeight, out FungibleAssetValue? slashedFAV)
+            => Slash(slashFactor, infractionHeight, out slashedFAV);
 
         public override bool Equals(object? obj)
             => obj is UnbondLockIn other && Equals(other);
@@ -437,7 +454,8 @@ namespace Nekoyume.Delegation
                 return hash;
             }
 
-            public UnbondLockInEntry Slash(BigInteger slashFactor, long infractionHeight)
+            public UnbondLockInEntry Slash(
+                BigInteger slashFactor, long infractionHeight, out FungibleAssetValue slashedFAV)
             {
                 if (CreationHeight > infractionHeight ||
                     ExpireHeight < infractionHeight)
@@ -448,9 +466,14 @@ namespace Nekoyume.Delegation
                         "The infraction height must be between in creation height and expire height of entry.");
                 }
 
+                var favToSlash = InitialLockInFAV.DivRem(slashFactor).Quotient;
+                slashedFAV = favToSlash < LockInFAV
+                    ? favToSlash
+                    : LockInFAV;
+
                 return new UnbondLockInEntry(
                     InitialLockInFAV,
-                    LockInFAV - LockInFAV.DivRem(slashFactor).Quotient,
+                    LockInFAV - slashedFAV,
                     CreationHeight,
                     ExpireHeight);
             }

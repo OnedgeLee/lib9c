@@ -105,28 +105,40 @@ namespace Nekoyume
             = new Address("0000000000000000000000000000000000000300");
 
         /// <summary>
+        /// An address of an account having <see cref="Delegation.Delegatee"/>.
+        /// </summary>
+        public static readonly Address Delegatee
+            = new Address("0000000000000000000000000000000000000301");
+
+        /// <summary>
+        /// An address of an account having <see cref="Delegation.Delegator"/>.
+        /// </summary>
+        public static readonly Address Delegator
+            = new Address("0000000000000000000000000000000000000302");
+
+        /// <summary>
         /// An address of an account having <see cref="Delegation.Bond"/>.
         /// </summary>
         public static readonly Address Bond
-            = new Address("0000000000000000000000000000000000000301");
+            = new Address("0000000000000000000000000000000000000303");
 
         /// <summary>
         /// An address of an account having <see cref="Delegation.UnbondLockIn"/>.
         /// </summary>
         public static readonly Address UnbondLockIn
-            = new Address("0000000000000000000000000000000000000302");
+            = new Address("0000000000000000000000000000000000000304");
 
         /// <summary>
         /// An address of an account having <see cref="Delegation.RebondGrace"/>.
         /// </summary>
         public static readonly Address RebondGrace
-            = new Address("0000000000000000000000000000000000000303");
+            = new Address("0000000000000000000000000000000000000305");
 
         /// <summary>
         /// An address of an account having <see cref="Delegation.LumpSumRewardsRecord"/>.
         /// </summary>
         public static readonly Address LumpSumRewardsRecord
-            = new Address("0000000000000000000000000000000000000304");
+            = new Address("0000000000000000000000000000000000000306");
 
         #endregion
 

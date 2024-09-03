@@ -30,6 +30,11 @@ namespace Nekoyume.Delegation
             BigInteger share,
             long height);
 
+        void CancelUndelegate(
+            IDelegatee delegatee,
+            FungibleAssetValue fav,
+            long height);
+
         void ClaimReward(
             IDelegatee delegatee,
             long height);

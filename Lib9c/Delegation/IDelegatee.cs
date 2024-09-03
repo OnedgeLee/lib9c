@@ -12,6 +12,8 @@ namespace Nekoyume.Delegation
     {
         Address Address { get; }
 
+        Address AccountAddress { get; }
+
         Currency DelegationCurrency { get; }
 
         Currency RewardCurrency { get; }
@@ -24,8 +26,6 @@ namespace Nekoyume.Delegation
 
         int MaxRebondGraceEntries { get; }
 
-        BigInteger SlashFactor { get; }
-
         Address RewardCollectorAddress { get; }
 
         Address RewardDistributorAddress { get; }
@@ -36,6 +36,12 @@ namespace Nekoyume.Delegation
 
         BigInteger TotalShares { get; }
 
+        bool Jailed { get; }
+
+        long JailedUntil { get; }
+
+        bool Tombstoned { get; }
+
         BigInteger Bond(IDelegator delegator, FungibleAssetValue fav, long height);
 
         FungibleAssetValue Unbond(IDelegator delegator, BigInteger share, long height);
@@ -44,7 +50,13 @@ namespace Nekoyume.Delegation
 
         void CollectRewards(long height);
 
-        void Slash(long infractionHeight);
+        void Slash(BigInteger slashFactor, long infractionHeight);
+
+        void JailUntil(long height);
+
+        void Unjail(long height);
+
+        void Tombstone();
 
         Address BondAddress(Address delegatorAddress);
 
