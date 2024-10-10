@@ -73,7 +73,7 @@ namespace Nekoyume.Module.Guild
         }
 
         public static void AcceptGuildApplication(
-            this GuildRepository repository, IActionContext context, AgentAddress signer, AgentAddress target)
+            this GuildRepository repository, AgentAddress signer, AgentAddress target, long height)
         {
             if (!repository.TryGetGuildApplication(target, out var guildApplication))
             {
@@ -92,7 +92,7 @@ namespace Nekoyume.Module.Guild
             }
 
             repository.RemoveGuildApplication(target);
-            repository.JoinGuild(guildApplication.GuildAddress, target);
+            repository.JoinGuildWithDelegate(target, guildApplication.GuildAddress, height);
         }
 
 #pragma warning disable S4144

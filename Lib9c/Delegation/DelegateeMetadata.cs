@@ -43,7 +43,8 @@ namespace Nekoyume.Delegation
                   false,
                   -1L,
                   false,
-                  ImmutableSortedSet<UnbondingRef>.Empty)
+                  ImmutableSortedSet<UnbondingRef>.Empty,
+                  0L)
         {   
         }
 
@@ -76,7 +77,8 @@ namespace Nekoyume.Delegation
                   (Bencodex.Types.Boolean)bencoded[11],
                   (Integer)bencoded[12],
                   (Bencodex.Types.Boolean)bencoded[13],
-                  ((List)bencoded[14]).Select(item => new UnbondingRef(item)))
+                  ((List)bencoded[14]).Select(item => new UnbondingRef(item)),
+                  (Integer)bencoded[15])
         {
         }
 
@@ -97,7 +99,8 @@ namespace Nekoyume.Delegation
             bool jailed,
             long jailedUntil,
             bool tombstoned,
-            IEnumerable<UnbondingRef> unbondingRefs)
+            IEnumerable<UnbondingRef> unbondingRefs,
+            long unbondingEntryCounter)
         {
             if (!totalDelegated.Currency.Equals(delegationCurrency))
             {
@@ -137,6 +140,7 @@ namespace Nekoyume.Delegation
             JailedUntil = jailedUntil;
             Tombstoned = tombstoned;
             UnbondingRefs = unbondingRefs.ToImmutableSortedSet();
+            UnbondingEntryCounter = unbondingEntryCounter;
         }
 
         public Address DelegateeAddress { get; }
@@ -181,6 +185,8 @@ namespace Nekoyume.Delegation
 
         public ImmutableSortedSet<UnbondingRef> UnbondingRefs { get; private set; }
 
+        public long UnbondingEntryCounter { get; internal set; }
+
         public List Bencoded => List.Empty
             .Add(DelegationCurrency.Serialize())
             .Add(RewardCurrency.Serialize())
@@ -196,7 +202,8 @@ namespace Nekoyume.Delegation
             .Add(Jailed)
             .Add(JailedUntil)
             .Add(Tombstoned)
-            .Add(new List(UnbondingRefs.Select(unbondingRef => unbondingRef.Bencoded)));
+            .Add(new List(UnbondingRefs.Select(unbondingRef => unbondingRef.Bencoded)))
+            .Add(UnbondingEntryCounter);
 
         IValue IBencodable.Bencoded => Bencoded;
 
@@ -250,6 +257,8 @@ namespace Nekoyume.Delegation
             UnbondingRefs = UnbondingRefs.Remove(unbondingRef);
         }
 
+        public long CountUnbondingEntry() => UnbondingEntryCounter++;
+
         public Address BondAddress(Address delegatorAddress)
             => DelegationAddress.BondAddress(Address, delegatorAddress);
 
@@ -285,7 +294,8 @@ namespace Nekoyume.Delegation
             && TotalDelegatedFAV.Equals(delegatee.TotalDelegatedFAV)
             && TotalShares.Equals(delegatee.TotalShares)
             && Jailed == delegatee.Jailed
-            && UnbondingRefs.SequenceEqual(delegatee.UnbondingRefs));
+            && UnbondingRefs.SequenceEqual(delegatee.UnbondingRefs)
+            && UnbondingEntryCounter == delegatee.UnbondingEntryCounter);
 
         public override int GetHashCode()
             => DelegateeAddress.GetHashCode();

@@ -17,8 +17,9 @@ namespace Nekoyume.Delegation
             Address unbondeeAddress,
             FungibleAssetValue unbondingFAV,
             long creationHeight,
-            long expireHeight)
-            : this(unbondeeAddress, unbondingFAV, unbondingFAV, creationHeight, expireHeight)
+            long expireHeight,
+            long id)
+            : this(unbondeeAddress, unbondingFAV, unbondingFAV, creationHeight, expireHeight, id)
         {
         }
 
@@ -33,7 +34,8 @@ namespace Nekoyume.Delegation
                   new FungibleAssetValue(bencoded[1]),
                   new FungibleAssetValue(bencoded[2]),
                   (Integer)bencoded[3],
-                  (Integer)bencoded[4])
+                  (Integer)bencoded[4],
+                  (Integer)bencoded[5])
         {
         }
 
@@ -42,7 +44,8 @@ namespace Nekoyume.Delegation
                 FungibleAssetValue initialUnbondingFAV,
                 FungibleAssetValue unbondingFAV,
                 long creationHeight,
-                long expireHeight)
+                long expireHeight,
+                long id)
         {
             if (initialUnbondingFAV.Sign <= 0)
             {
@@ -100,6 +103,8 @@ namespace Nekoyume.Delegation
         public long CreationHeight { get; }
 
         public long ExpireHeight { get; }
+
+        public long Id { get; }
 
         public List Bencoded => List.Empty
             .Add(UnbondeeAddress.Bencoded)
@@ -167,7 +172,8 @@ namespace Nekoyume.Delegation
                 InitialUnbondingFAV,
                 UnbondingFAV - slashedFAV,
                 CreationHeight,
-                ExpireHeight);
+                ExpireHeight,
+                Id);
         }
 
         internal UnbondingEntry Cancel(FungibleAssetValue cancellingFAV)
@@ -190,7 +196,8 @@ namespace Nekoyume.Delegation
                 InitialUnbondingFAV - cancellingFAV,
                 UnbondingFAV - cancellingFAV,
                 CreationHeight,
-                ExpireHeight);
+                ExpireHeight,
+                Id);
         }
 
         public class Comparer : IComparer<UnbondingEntry>

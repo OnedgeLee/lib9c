@@ -108,6 +108,8 @@ namespace Nekoyume.Delegation
         public FungibleAssetValue FAVFromShare(BigInteger share)
             => Metadata.FAVFromShare(share);
 
+        public long CountUnbondingEntry() => Metadata.CountUnbondingEntry();
+
         public BigInteger Bond(IDelegator delegator, FungibleAssetValue fav, long height)
             => Bond((T)delegator, fav, height);
 

@@ -136,7 +136,7 @@ namespace Nekoyume.Delegation
 
         IValue IBencodable.Bencoded => Bencoded;
 
-        public UnbondLockIn Release(long height)
+        public UnbondLockIn Release(long height, out ImmutableList<long> releasedEntryIds)
         {
             CannotMutateRelationsWithoutRepository();
             if (height <= 0)
@@ -149,6 +149,7 @@ namespace Nekoyume.Delegation
 
             var updatedEntries = Entries;
             FungibleAssetValue? releasingFAV = null;
+            releasedEntryIds = ImmutableList<long>.Empty;
             foreach (var (expireHeight, entries) in updatedEntries)
             {
                 if (expireHeight <= height)
@@ -159,8 +160,8 @@ namespace Nekoyume.Delegation
                     releasingFAV = releasingFAV.HasValue
                         ? releasingFAV.Value + entriesFAV
                         : entriesFAV;
+                    releasedEntryIds = releasedEntryIds.AddRange(entries.Select(e => e.Id));
                     updatedEntries = updatedEntries.Remove(expireHeight);
-                    
                 }
                 else
                 {
@@ -181,7 +182,8 @@ namespace Nekoyume.Delegation
             return UpdateEntries(updatedEntries);
         }
 
-        IUnbonding IUnbonding.Release(long height) => Release(height);
+        IUnbonding IUnbonding.Release(long height, out ImmutableList<long> releasedEntryIds)
+            => Release(height, out releasedEntryIds);
 
         public UnbondLockIn Slash(
             BigInteger slashFactor,
@@ -234,14 +236,14 @@ namespace Nekoyume.Delegation
             => Address.GetHashCode();
 
         internal UnbondLockIn LockIn(
-            FungibleAssetValue lockInFAV, long creationHeight, long expireHeight)
+            FungibleAssetValue lockInFAV, long creationHeight, long expireHeight, long id)
         {
             if (expireHeight < creationHeight)
             {
                 throw new ArgumentException("The expire height must be greater than the creation height.");
             }
 
-            return AddEntry(new UnbondingEntry(DelegateeAddress, lockInFAV, creationHeight, expireHeight));
+            return AddEntry(new UnbondingEntry(DelegateeAddress, lockInFAV, creationHeight, expireHeight, id));
         }
 
         internal UnbondLockIn Cancel(FungibleAssetValue cancellingFAV, long height)

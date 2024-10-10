@@ -111,7 +111,7 @@ namespace Nekoyume.Delegation
 
         IValue IBencodable.Bencoded => Bencoded;
 
-        public RebondGrace Release(long height)
+        public RebondGrace Release(long height, out ImmutableList<long> releasedEntryIds)
         {
             if (height <= 0)
             {
@@ -122,10 +122,12 @@ namespace Nekoyume.Delegation
             }
 
             var updatedEntries = Entries;
+            releasedEntryIds = ImmutableList<long>.Empty;
             foreach (var (expireHeight, entries) in updatedEntries)
             {
                 if (expireHeight <= height)
                 {
+                    releasedEntryIds = releasedEntryIds.AddRange(entries.Select(e => e.Id));
                     updatedEntries = updatedEntries.Remove(expireHeight);
                 }
                 else
@@ -137,7 +139,8 @@ namespace Nekoyume.Delegation
             return UpdateEntries(updatedEntries);
         }
 
-        IUnbonding IUnbonding.Release(long height) => Release(height);
+        IUnbonding IUnbonding.Release(long height, out ImmutableList<long> releasedEntryIds)
+            => Release(height, out releasedEntryIds);
 
         public RebondGrace Slash(
             BigInteger slashFactor,
@@ -208,7 +211,8 @@ namespace Nekoyume.Delegation
             Address rebondeeAddress,
             FungibleAssetValue initialGraceFAV,
             long creationHeight,
-            long expireHeight)
+            long expireHeight,
+            long id)
         {
             if (expireHeight < creationHeight)
             {
@@ -218,7 +222,7 @@ namespace Nekoyume.Delegation
 
             return AddEntry(
                 new UnbondingEntry(
-                    rebondeeAddress, initialGraceFAV, creationHeight, expireHeight));
+                    rebondeeAddress, initialGraceFAV, creationHeight, expireHeight, id));
         }
 
         private RebondGrace AddEntry(UnbondingEntry entry)

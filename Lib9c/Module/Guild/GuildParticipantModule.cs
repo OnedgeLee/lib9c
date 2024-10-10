@@ -27,36 +27,76 @@ namespace Nekoyume.Module.Guild
 
         public static GuildRepository JoinGuildWithDelegate(
             this GuildRepository repository,
-            IActionContext context,
-            GuildAddress guildAddress)
+            AgentAddress guildParticipantAddress,
+            GuildAddress guildAddress,
+            long height)
             => repository
-                .JoinGuild(guildAddress, new AgentAddress(context.Signer))
-                .Delegate(context, guildAddress, repository.World.GetBalance(context.Signer, Currencies.GuildGold));
+                .JoinGuild(guildAddress, guildParticipantAddress)
+                .Delegate(
+                    guildParticipantAddress,
+                    guildAddress,
+                    repository.World.GetBalance(guildParticipantAddress, Currencies.GuildGold),
+                    height);
+
+        public static GuildRepository RequestToLeave(
+            this GuildRepository repository,
+            AgentAddress guildParticipantAddress,
+            long height)
+        {
+            if (repository.GetJoinedGuild(guildParticipantAddress) is not { } guildAddress)
+            {
+                throw new InvalidOperationException("The signer does not join any guild.");
+            }
+
+            if (!repository.TryGetGuild(guildAddress, out var guild))
+            {
+                throw new InvalidOperationException(
+                    "There is no such guild.");
+            }
+
+            if (guild.GuildMasterAddress == guildParticipantAddress)
+            {
+                throw new InvalidOperationException(
+                    "The signer is a guild master. Guild master cannot quit the guild.");
+            }
+
+            return repository
+        }
 
         public static GuildRepository LeaveGuildWithUndelegate(
             this GuildRepository repository,
-            IActionContext context)
+            AgentAddress guildParticipantAddress,
+            long height)
         {
-            var guild = repository.GetJoinedGuild(new AgentAddress(context.Signer)) is GuildAddress guildAddr
+            var guild = repository.GetJoinedGuild(guildParticipantAddress) is GuildAddress guildAddr
                 ? repository.GetGuild(guildAddr)
                 : throw new InvalidOperationException("The signer does not join any guild.");
 
             return repository
-                .Undelegate(context, guildAddr, repository.GetBond(guild, context.Signer).Share)
-                .LeaveGuild(new AgentAddress(context.Signer));
+                .Undelegate(
+                    guildParticipantAddress,
+                    guildAddr,
+                    repository.GetBond(guild, guildParticipantAddress).Share,
+                    height)
+                .LeaveGuild(guildParticipantAddress);
         }
 
         public static GuildRepository MoveGuildWithRedelegate(
             this GuildRepository repository,
-            IActionContext context,
+            AgentAddress guildParticipantAddress,
             GuildAddress srcGuildAddress,
-            GuildAddress dstGuildAddress)
+            GuildAddress dstGuildAddress,
+            long height)
         {
-            var agentAddress = new AgentAddress(context.Signer);
             var srcGuild = repository.GetGuild(srcGuildAddress);
-            repository.Redelegate(context, srcGuildAddress, dstGuildAddress, repository.GetBond(srcGuild, agentAddress).Share);
-            repository.LeaveGuild(agentAddress);
-            repository.JoinGuild(dstGuildAddress, agentAddress);
+            repository.Redelegate(
+                guildParticipantAddress,
+                srcGuildAddress,
+                dstGuildAddress,
+                repository.GetBond(srcGuild, guildParticipantAddress).Share,
+                height);
+            repository.LeaveGuild(guildParticipantAddress);
+            repository.JoinGuild(dstGuildAddress, guildParticipantAddress);
 
             return repository;
         }
@@ -129,57 +169,57 @@ namespace Nekoyume.Module.Guild
 
         private static GuildRepository Delegate(
             this GuildRepository repository,
-            IActionContext context,
+            AgentAddress guildParticipantAddress,
             GuildAddress guildAddress,
-            FungibleAssetValue fav)
+            FungibleAssetValue fav,
+            long height)
         {
-            var agentAddress = new AgentAddress(context.Signer);
-            var guildParticipant = repository.GetGuildParticipant(agentAddress);
+            var guildParticipant = repository.GetGuildParticipant(guildParticipantAddress);
             var guild = repository.GetGuild(guildAddress);
-            guildParticipant.Delegate(guild, fav, context.BlockIndex);
+            guildParticipant.Delegate(guild, fav, height);
 
             return repository;
         }
 
         private static GuildRepository Undelegate(
             this GuildRepository repository,
-            IActionContext context,
+            AgentAddress guildParticipantAddress,
             GuildAddress guildAddress,
-            BigInteger share)
+            BigInteger share,
+            long height)
         {
-            var agentAddress = new AgentAddress(context.Signer);
-            var guildParticipant = repository.GetGuildParticipant(agentAddress);
+            var guildParticipant = repository.GetGuildParticipant(guildParticipantAddress);
             var guild = repository.GetGuild(guildAddress);
-            guildParticipant.Undelegate(guild, share, context.BlockIndex);
+            guildParticipant.Undelegate(guild, share, height);
 
             return repository;
         }
 
         public static GuildRepository Redelegate(
             this GuildRepository repository,
-            IActionContext context,
+            AgentAddress guildParticipantAddress,
             GuildAddress srcGuildAddress,
             GuildAddress dstGuildAddress,
-            BigInteger share)
+            BigInteger share,
+            long height)
         {
-            var agentAddress = new AgentAddress(context.Signer);
-            var guildParticipant = repository.GetGuildParticipant(agentAddress);
+            var guildParticipant = repository.GetGuildParticipant(guildParticipantAddress);
             var srcGuild = repository.GetGuild(srcGuildAddress);
             var dstGuild = repository.GetGuild(dstGuildAddress);
-            guildParticipant.Redelegate(srcGuild, dstGuild, share, context.BlockIndex);
+            guildParticipant.Redelegate(srcGuild, dstGuild, share, height);
 
             return repository;
         }
 
         private static GuildRepository ClaimReward(
             this GuildRepository repository,
-            IActionContext context,
-            GuildAddress guildAddress)
+            AgentAddress guildParticipantAddress,
+            GuildAddress guildAddress,
+            long height)
         {
-            var agentAddress = new AgentAddress(context.Signer);
-            var guildParticipant = repository.GetGuildParticipant(agentAddress);
+            var guildParticipant = repository.GetGuildParticipant(guildParticipantAddress);
             var guild = repository.GetGuild(guildAddress);
-            guildParticipant.ClaimReward(guild, context.BlockIndex);
+            guildParticipant.ClaimReward(guild, height);
 
             return repository;
         }

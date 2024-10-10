@@ -103,7 +103,7 @@ namespace Nekoyume.Delegation
 
             FungibleAssetValue fav = delegatee.Unbond(this, share, height);
             unbondLockIn = unbondLockIn.LockIn(
-                fav, height, height + delegatee.UnbondingPeriod);
+                fav, height, height + delegatee.UnbondingPeriod, delegatee.CountUnbondingEntry());
 
             if (!delegatee.Delegators.Contains(Address))
             {
@@ -151,7 +151,8 @@ namespace Nekoyume.Delegation
                 dstDelegatee.Address,
                 fav,
                 height,
-                height + srcDelegatee.UnbondingPeriod);
+                height + srcDelegatee.UnbondingPeriod,
+                srcDelegatee.CountUnbondingEntry());
 
             if (!srcDelegatee.Delegators.Contains(Address))
             {

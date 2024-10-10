@@ -33,7 +33,18 @@ namespace Nekoyume.Action.ValidatorDelegation
             var unbondingSet = repository.GetUnbondingSet();
             var unbondings = unbondingSet.UnbondingsToRelease(context.BlockIndex);
 
-            unbondings = unbondings.Select(unbonding => unbonding.Release(context.BlockIndex)).ToImmutableArray();
+            unbondings = unbondings.Select(unbonding => {
+                var released = unbonding.Release(context.BlockIndex, out var ids);
+
+                if (unbonding is UnbondLockIn unbondLockIn)
+                {
+                    var guild = repository.GetDelegator(unbondLockIn.DelegatorAddress);
+                    guild.GetReleasingGuildParticipant(ids).Select(
+                        p => repository.TransferAsset(guild.Address, p));
+                }
+
+                return released;
+            }).ToImmutableArray();
 
             foreach (var unbonding in unbondings)
             {

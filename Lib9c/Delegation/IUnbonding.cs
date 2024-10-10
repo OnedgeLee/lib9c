@@ -1,3 +1,4 @@
+using System.Collections.Immutable;
 using System.Numerics;
 using Libplanet.Crypto;
 using Libplanet.Types.Assets;
@@ -14,7 +15,9 @@ namespace Nekoyume.Delegation
 
         bool IsEmpty { get; }
 
-        IUnbonding Release(long height);
+        IUnbonding GetEntriesToRelease(long height);
+
+        IUnbonding Release(long height, out ImmutableList<long> releasedEntryIds);
 
         IUnbonding Slash(
             BigInteger slashFactor,
