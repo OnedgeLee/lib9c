@@ -24,6 +24,8 @@ public class ValidatorDelegationTestBase
 {
     protected static readonly Currency GG = Currencies.GuildGold;
     protected static readonly Currency Dollar = Currency.Uncapped("dollar", 2, null);
+    private static readonly int _maximumIntegerLength = 5;
+    private static readonly int _maximumDecimalLength = GG.DecimalPlaces;
 
     public ValidatorDelegationTestBase()
     {
@@ -550,30 +552,25 @@ public class ValidatorDelegationTestBase
         return communityFund;
     }
 
-    protected static FungibleAssetValue GetRandomGG() => GetRandomGG(Random.Shared, 1, 100000);
+    protected static FungibleAssetValue GetRandomGG() => GetRandomGG(Random.Shared);
 
     protected static FungibleAssetValue GetRandomGG(Random random)
-        => GetRandomGG(random, 0.01m, 1000.0m);
-
-    protected static FungibleAssetValue GetRandomGG(Random random, decimal min, decimal max)
     {
-        var minLong = (int)(min * 100);
-        var maxLong = (int)(max * 100);
-        var value = Math.Round(random.Next(minLong, maxLong) / 100.0, 2);
-        return FungibleAssetValue.Parse(GG, $"{value:R}");
+        var decimalLength = random.Next(_maximumDecimalLength);
+        var integerLength = random.Next(1, _maximumIntegerLength);
+        var decimalPart = Enumerable.Range(0, decimalLength)
+            .Aggregate(string.Empty, (s, i) => s + random.Next(10));
+        var integerPart = Enumerable.Range(0, integerLength)
+            .Aggregate(string.Empty, (s, i) => s + (integerLength > 1 ? random.Next(10) : random.Next(1, 10)));
+        var isDecimalZero = decimalLength == 0 || decimalPart.All(c => c == '0');
+        var text = isDecimalZero is false ? $"{integerPart}.{decimalPart}" : integerPart;
+        return FungibleAssetValue.Parse(GG, text);
     }
 
     protected static FungibleAssetValue GetRandomCash(Random random, FungibleAssetValue fav)
     {
-        if (fav.RawValue >= long.MaxValue)
-        {
-            throw new ArgumentOutOfRangeException(
-                nameof(fav), "Fungible asset value is too large.");
-        }
-
-        var num = random.NextInt64(1, (long)fav.RawValue);
-        var cash = FungibleAssetValue.FromRawValue(fav.Currency, num);
-
+        var denominator = random.Next(100) + 1;
+        var cash = fav.DivRem(denominator, out var remainder);
         if (cash.Sign < 0 || cash > fav)
         {
             throw new InvalidOperationException("Invalid cash value.");

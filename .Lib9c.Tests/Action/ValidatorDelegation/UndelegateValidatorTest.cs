@@ -421,7 +421,15 @@ public class UndelegateValidatorTest : ValidatorDelegationTestBase
         for (var i = 0; i < delegatorKeys.Length; i++)
         {
             var actualBond = actualRepository.GetBond(actualValidator, delegatorKeys[i].Address);
-            Assert.Contains(delegatorKeys[i].Address, actualValidator.Delegators);
+            if (actualBond.Share == 0)
+            {
+                Assert.DoesNotContain(delegatorKeys[i].Address, actualValidator.Delegators);
+            }
+            else
+            {
+                Assert.Contains(delegatorKeys[i].Address, actualValidator.Delegators);
+            }
+
             Assert.Equal(expectedShares[i], actualBond.Share);
             Assert.Equal(expectedDelegatorBalances[i], actualDelegatorBalances[i]);
         }
@@ -442,10 +450,7 @@ public class UndelegateValidatorTest : ValidatorDelegationTestBase
             Balance = GetRandomGG(random);
             Cash = GetRandomCash(random, Balance);
             SubtractShare = GetRandomCash(random, Cash).RawValue;
-            if (SubtractShare == 0)
-            {
-                Console.WriteLine("123");
-            }
+            Assert.True(SubtractShare > 0);
         }
 
         public PrivateKey Key { get; set; } = new PrivateKey();
