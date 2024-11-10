@@ -25158,6 +25158,12 @@ references:
   commentId: F:Nekoyume.Addresses.MortgagePool
   fullName: Nekoyume.Addresses.MortgagePool
   nameWithType: Addresses.MortgagePool
+- uid: Nekoyume.Addresses.NonValidatorDelegatee
+  name: NonValidatorDelegatee
+  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_NonValidatorDelegatee
+  commentId: F:Nekoyume.Addresses.NonValidatorDelegatee
+  fullName: Nekoyume.Addresses.NonValidatorDelegatee
+  nameWithType: Addresses.NonValidatorDelegatee
 - uid: Nekoyume.Addresses.PendingActivation
   name: PendingActivation
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_PendingActivation
