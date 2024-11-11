@@ -307,10 +307,10 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
       <a class="xref" href="Nekoyume.Module.Guild.GuildParticipantModule.html#Nekoyume_Module_Guild_GuildParticipantModule_TryGetGuildParticipant_Nekoyume_Model_Guild_GuildRepository_Nekoyume_TypedAddress_AgentAddress_Nekoyume_Model_Guild_GuildParticipant__">GuildParticipantModule.TryGetGuildParticipant(GuildRepository, AgentAddress, out GuildParticipant?)</a>
   </div>
   <div>
-      <a class="xref" href="Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_CreateValidatorDelegateeForGuild_Nekoyume_Model_Guild_GuildRepository_">ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuild(GuildRepository)</a>
+      <a class="xref" href="Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_CreateValidatorDelegateeForGuildParticipant_Nekoyume_Model_Guild_GuildRepository_">ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant(GuildRepository)</a>
   </div>
   <div>
-      <a class="xref" href="Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_TryGetValidatorDelegateeForGuild_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_ValidatorDelegateeForGuild__">ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(GuildRepository, Address, out ValidatorDelegateeForGuild?)</a>
+      <a class="xref" href="Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_TryGetValidatorDelegateeForGuild_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant__">ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(GuildRepository, Address, out ValidatorDelegateeForGuildParticipant?)</a>
   </div>
   </dd></dl>
 
@@ -326,7 +326,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository__ctor_Libplanet_Action_State_IWorld_Libplanet_Action_IActionContext_" data-uid="Nekoyume.Model.Guild.GuildRepository.#ctor(Libplanet.Action.State.IWorld,Libplanet.Action.IActionContext)">
   GuildRepository(IWorld, IActionContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L18"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -355,6 +355,37 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <a id="Nekoyume_Model_Guild_GuildRepository__ctor_" data-uid="Nekoyume.Model.Guild.GuildRepository.#ctor*"></a>
+
+  <h3 id="Nekoyume_Model_Guild_GuildRepository__ctor_Nekoyume_Delegation_IDelegationRepository_" data-uid="Nekoyume.Model.Guild.GuildRepository.#ctor(Nekoyume.Delegation.IDelegationRepository)">
+  GuildRepository(IDelegationRepository)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GuildRepository(IDelegationRepository repository)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>repository</code> <a class="xref" href="Nekoyume.Delegation.IDelegationRepository.html">IDelegationRepository</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -363,7 +394,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_GetDelegatee_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetDelegatee(Libplanet.Crypto.Address)">
   GetDelegatee(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -399,7 +430,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_GetDelegator_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetDelegator(Libplanet.Crypto.Address)">
   GetDelegator(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L52"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -435,7 +466,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_GetGuild_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetGuild(Libplanet.Crypto.Address)">
   GetGuild(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L77"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -471,7 +502,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_GetGuildParticipant_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetGuildParticipant(Libplanet.Crypto.Address)">
   GetGuildParticipant(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -503,18 +534,18 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuild_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuild*"></a>
+  <a id="Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuildParticipant_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant*"></a>
 
-  <h3 id="Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuild_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuild(Libplanet.Crypto.Address)">
-  GetValidatorDelegateeForGuild(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuildParticipant_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address)">
+  GetValidatorDelegateeForGuildParticipant(Address)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValidatorDelegateeForGuild GetValidatorDelegateeForGuild(Address address)</code></pre>
+    <pre><code class="lang-csharp hljs">public ValidatorDelegateeForGuildParticipant GetValidatorDelegateeForGuildParticipant(Address address)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -525,7 +556,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Nekoyume.Model.Guild.ValidatorDelegateeForGuild.html">ValidatorDelegateeForGuild</a></dt>
+    <dt><a class="xref" href="Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html">ValidatorDelegateeForGuildParticipant</a></dt>
     <dd></dd>
   </dl>
 
@@ -543,7 +574,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_RemoveGuildParticipant_Libplanet_Crypto_Address_" data-uid="Nekoyume.Model.Guild.GuildRepository.RemoveGuildParticipant(Libplanet.Crypto.Address)">
   RemoveGuildParticipant(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -574,7 +605,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_SetDelegatee_Nekoyume_Delegation_IDelegatee_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetDelegatee(Nekoyume.Delegation.IDelegatee)">
   SetDelegatee(IDelegatee)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -605,7 +636,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_SetDelegator_Nekoyume_Delegation_IDelegator_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetDelegator(Nekoyume.Delegation.IDelegator)">
   SetDelegator(IDelegator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -636,7 +667,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_SetGuild_Nekoyume_Model_Guild_Guild_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetGuild(Nekoyume.Model.Guild.Guild)">
   SetGuild(Guild)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -667,7 +698,7 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="Nekoyume_Model_Guild_GuildRepository_SetGuildParticipant_Nekoyume_Model_Guild_GuildParticipant_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetGuildParticipant(Nekoyume.Model.Guild.GuildParticipant)">
   SetGuildParticipant(GuildParticipant)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -694,23 +725,23 @@ Class GuildRepository  <a class="header-action link-secondary" title="View sourc
 
 
 
-  <a id="Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuild_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuild*"></a>
+  <a id="Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuildParticipant_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant*"></a>
 
-  <h3 id="Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuild_Nekoyume_Model_Guild_ValidatorDelegateeForGuild_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuild(Nekoyume.Model.Guild.ValidatorDelegateeForGuild)">
-  SetValidatorDelegateeForGuild(ValidatorDelegateeForGuild)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuildParticipant_Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_" data-uid="Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)">
+  SetValidatorDelegateeForGuildParticipant(ValidatorDelegateeForGuildParticipant)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildRepository.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetValidatorDelegateeForGuild(ValidatorDelegateeForGuild validatorDelegateeForGuild)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetValidatorDelegateeForGuildParticipant(ValidatorDelegateeForGuildParticipant validatorDelegateeForGuild)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>validatorDelegateeForGuild</code> <a class="xref" href="Nekoyume.Model.Guild.ValidatorDelegateeForGuild.html">ValidatorDelegateeForGuild</a></dt>
+    <dt><code>validatorDelegateeForGuild</code> <a class="xref" href="Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html">ValidatorDelegateeForGuildParticipant</a></dt>
     <dd></dd>
   </dl>
 

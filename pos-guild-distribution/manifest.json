@@ -5832,10 +5832,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuild.yml",
+      "source_relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuild.html"
+          "relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html"
         }
       },
       "version": ""
