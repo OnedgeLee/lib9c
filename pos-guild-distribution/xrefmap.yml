@@ -22932,15 +22932,15 @@ references:
   fullName.vb: Nekoyume.Action.ValidatorDelegation.DelegateValidator.New()
   nameWithType: DelegateValidator.DelegateValidator()
   nameWithType.vb: DelegateValidator.New()
-- uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator.#ctor(Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  name: DelegateValidator(Address, FungibleAssetValue)
-  href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html#Nekoyume_Action_ValidatorDelegation_DelegateValidator__ctor_Libplanet_Crypto_Address_Libplanet_Types_Assets_FungibleAssetValue_
-  commentId: M:Nekoyume.Action.ValidatorDelegation.DelegateValidator.#ctor(Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  name.vb: New(Address, FungibleAssetValue)
-  fullName: Nekoyume.Action.ValidatorDelegation.DelegateValidator.DelegateValidator(Libplanet.Crypto.Address, Libplanet.Types.Assets.FungibleAssetValue)
-  fullName.vb: Nekoyume.Action.ValidatorDelegation.DelegateValidator.New(Libplanet.Crypto.Address, Libplanet.Types.Assets.FungibleAssetValue)
-  nameWithType: DelegateValidator.DelegateValidator(Address, FungibleAssetValue)
-  nameWithType.vb: DelegateValidator.New(Address, FungibleAssetValue)
+- uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator.#ctor(Libplanet.Types.Assets.FungibleAssetValue)
+  name: DelegateValidator(FungibleAssetValue)
+  href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html#Nekoyume_Action_ValidatorDelegation_DelegateValidator__ctor_Libplanet_Types_Assets_FungibleAssetValue_
+  commentId: M:Nekoyume.Action.ValidatorDelegation.DelegateValidator.#ctor(Libplanet.Types.Assets.FungibleAssetValue)
+  name.vb: New(FungibleAssetValue)
+  fullName: Nekoyume.Action.ValidatorDelegation.DelegateValidator.DelegateValidator(Libplanet.Types.Assets.FungibleAssetValue)
+  fullName.vb: Nekoyume.Action.ValidatorDelegation.DelegateValidator.New(Libplanet.Types.Assets.FungibleAssetValue)
+  nameWithType: DelegateValidator.DelegateValidator(FungibleAssetValue)
+  nameWithType.vb: DelegateValidator.New(FungibleAssetValue)
 - uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator.#ctor*
   name: DelegateValidator
   href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html#Nekoyume_Action_ValidatorDelegation_DelegateValidator__ctor_
@@ -23009,19 +23009,6 @@ references:
   commentId: F:Nekoyume.Action.ValidatorDelegation.DelegateValidator.TypeIdentifier
   fullName: Nekoyume.Action.ValidatorDelegation.DelegateValidator.TypeIdentifier
   nameWithType: DelegateValidator.TypeIdentifier
-- uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html#Nekoyume_Action_ValidatorDelegation_DelegateValidator_ValidatorDelegatee
-  commentId: P:Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee
-  fullName: Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee
-  nameWithType: DelegateValidator.ValidatorDelegatee
-- uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee*
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html#Nekoyume_Action_ValidatorDelegation_DelegateValidator_ValidatorDelegatee_
-  commentId: Overload:Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee
-  isSpec: "True"
-  fullName: Nekoyume.Action.ValidatorDelegation.DelegateValidator.ValidatorDelegatee
-  nameWithType: DelegateValidator.ValidatorDelegatee
 - uid: Nekoyume.Action.ValidatorDelegation.Mortgage
   name: Mortgage
   href: api/Nekoyume.Action.ValidatorDelegation.Mortgage.html
@@ -23714,15 +23701,15 @@ references:
   fullName.vb: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.New()
   nameWithType: UndelegateValidator.UndelegateValidator()
   nameWithType.vb: UndelegateValidator.New()
-- uid: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: UndelegateValidator(Address, BigInteger)
-  href: api/Nekoyume.Action.ValidatorDelegation.UndelegateValidator.html#Nekoyume_Action_ValidatorDelegation_UndelegateValidator__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Action.ValidatorDelegation.UndelegateValidator.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name.vb: New(Address, BigInteger)
-  fullName: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.UndelegateValidator(Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  fullName.vb: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.New(Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: UndelegateValidator.UndelegateValidator(Address, BigInteger)
-  nameWithType.vb: UndelegateValidator.New(Address, BigInteger)
+- uid: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.#ctor(System.Numerics.BigInteger)
+  name: UndelegateValidator(BigInteger)
+  href: api/Nekoyume.Action.ValidatorDelegation.UndelegateValidator.html#Nekoyume_Action_ValidatorDelegation_UndelegateValidator__ctor_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Action.ValidatorDelegation.UndelegateValidator.#ctor(System.Numerics.BigInteger)
+  name.vb: New(BigInteger)
+  fullName: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.UndelegateValidator(System.Numerics.BigInteger)
+  fullName.vb: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.New(System.Numerics.BigInteger)
+  nameWithType: UndelegateValidator.UndelegateValidator(BigInteger)
+  nameWithType.vb: UndelegateValidator.New(BigInteger)
 - uid: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.#ctor*
   name: UndelegateValidator
   href: api/Nekoyume.Action.ValidatorDelegation.UndelegateValidator.html#Nekoyume_Action_ValidatorDelegation_UndelegateValidator__ctor_
@@ -23791,19 +23778,6 @@ references:
   commentId: F:Nekoyume.Action.ValidatorDelegation.UndelegateValidator.TypeIdentifier
   fullName: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.TypeIdentifier
   nameWithType: UndelegateValidator.TypeIdentifier
-- uid: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.UndelegateValidator.html#Nekoyume_Action_ValidatorDelegation_UndelegateValidator_ValidatorDelegatee
-  commentId: P:Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee
-  fullName: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee
-  nameWithType: UndelegateValidator.ValidatorDelegatee
-- uid: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee*
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.UndelegateValidator.html#Nekoyume_Action_ValidatorDelegation_UndelegateValidator_ValidatorDelegatee_
-  commentId: Overload:Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee
-  isSpec: "True"
-  fullName: Nekoyume.Action.ValidatorDelegation.UndelegateValidator.ValidatorDelegatee
-  nameWithType: UndelegateValidator.ValidatorDelegatee
 - uid: Nekoyume.Action.ValidatorDelegation.UnjailValidator
   name: UnjailValidator
   href: api/Nekoyume.Action.ValidatorDelegation.UnjailValidator.html
@@ -25073,6 +25047,18 @@ references:
   commentId: F:Nekoyume.Addresses.GuildBond
   fullName: Nekoyume.Addresses.GuildBond
   nameWithType: Addresses.GuildBond
+- uid: Nekoyume.Addresses.GuildDelegateeMetadata
+  name: GuildDelegateeMetadata
+  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_GuildDelegateeMetadata
+  commentId: F:Nekoyume.Addresses.GuildDelegateeMetadata
+  fullName: Nekoyume.Addresses.GuildDelegateeMetadata
+  nameWithType: Addresses.GuildDelegateeMetadata
+- uid: Nekoyume.Addresses.GuildDelegatorMetadata
+  name: GuildDelegatorMetadata
+  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_GuildDelegatorMetadata
+  commentId: F:Nekoyume.Addresses.GuildDelegatorMetadata
+  fullName: Nekoyume.Addresses.GuildDelegatorMetadata
+  nameWithType: Addresses.GuildDelegatorMetadata
 - uid: Nekoyume.Addresses.GuildLumpSumRewardsRecord
   name: GuildLumpSumRewardsRecord
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_GuildLumpSumRewardsRecord
@@ -25091,12 +25077,6 @@ references:
   commentId: F:Nekoyume.Addresses.GuildParticipant
   fullName: Nekoyume.Addresses.GuildParticipant
   nameWithType: Addresses.GuildParticipant
-- uid: Nekoyume.Addresses.GuildParticipantMetadata
-  name: GuildParticipantMetadata
-  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_GuildParticipantMetadata
-  commentId: F:Nekoyume.Addresses.GuildParticipantMetadata
-  fullName: Nekoyume.Addresses.GuildParticipantMetadata
-  nameWithType: Addresses.GuildParticipantMetadata
 - uid: Nekoyume.Addresses.GuildRebondGrace
   name: GuildRebondGrace
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_GuildRebondGrace
@@ -25266,12 +25246,6 @@ references:
   commentId: F:Nekoyume.Addresses.ValidatorDelegatee
   fullName: Nekoyume.Addresses.ValidatorDelegatee
   nameWithType: Addresses.ValidatorDelegatee
-- uid: Nekoyume.Addresses.ValidatorDelegateeForGuildParticipantMetadata
-  name: ValidatorDelegateeForGuildParticipantMetadata
-  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_ValidatorDelegateeForGuildParticipantMetadata
-  commentId: F:Nekoyume.Addresses.ValidatorDelegateeForGuildParticipantMetadata
-  fullName: Nekoyume.Addresses.ValidatorDelegateeForGuildParticipantMetadata
-  nameWithType: Addresses.ValidatorDelegateeForGuildParticipantMetadata
 - uid: Nekoyume.Addresses.ValidatorDelegateeMetadata
   name: ValidatorDelegateeMetadata
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_ValidatorDelegateeMetadata
@@ -32909,6 +32883,12 @@ references:
   commentId: M:Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(Libplanet.Types.Assets.FungibleAssetValue)
   fullName: Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(Libplanet.Types.Assets.FungibleAssetValue)
   nameWithType: LumpSumRewardsRecord.AddLumpSumRewards(FungibleAssetValue)
+- uid: Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(Nekoyume.Delegation.LumpSumRewardsRecord,Libplanet.Types.Assets.FungibleAssetValue)
+  name: AddLumpSumRewards(LumpSumRewardsRecord, FungibleAssetValue)
+  href: api/Nekoyume.Delegation.LumpSumRewardsRecord.html#Nekoyume_Delegation_LumpSumRewardsRecord_AddLumpSumRewards_Nekoyume_Delegation_LumpSumRewardsRecord_Libplanet_Types_Assets_FungibleAssetValue_
+  commentId: M:Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(Nekoyume.Delegation.LumpSumRewardsRecord,Libplanet.Types.Assets.FungibleAssetValue)
+  fullName: Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(Nekoyume.Delegation.LumpSumRewardsRecord, Libplanet.Types.Assets.FungibleAssetValue)
+  nameWithType: LumpSumRewardsRecord.AddLumpSumRewards(LumpSumRewardsRecord, FungibleAssetValue)
 - uid: Nekoyume.Delegation.LumpSumRewardsRecord.AddLumpSumRewards(System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue})
   name: AddLumpSumRewards(IEnumerable<FungibleAssetValue>)
   href: api/Nekoyume.Delegation.LumpSumRewardsRecord.html#Nekoyume_Delegation_LumpSumRewardsRecord_AddLumpSumRewards_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__
@@ -46538,6 +46518,22 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.Guild.Bencoded
   nameWithType: Guild.Bencoded
+- uid: Nekoyume.Model.Guild.Guild.ClaimReward(Libplanet.Crypto.Address,System.Int64)
+  name: ClaimReward(Address, long)
+  href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_ClaimReward_Libplanet_Crypto_Address_System_Int64_
+  commentId: M:Nekoyume.Model.Guild.Guild.ClaimReward(Libplanet.Crypto.Address,System.Int64)
+  name.vb: ClaimReward(Address, Long)
+  fullName: Nekoyume.Model.Guild.Guild.ClaimReward(Libplanet.Crypto.Address, long)
+  fullName.vb: Nekoyume.Model.Guild.Guild.ClaimReward(Libplanet.Crypto.Address, Long)
+  nameWithType: Guild.ClaimReward(Address, long)
+  nameWithType.vb: Guild.ClaimReward(Address, Long)
+- uid: Nekoyume.Model.Guild.Guild.ClaimReward*
+  name: ClaimReward
+  href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_ClaimReward_
+  commentId: Overload:Nekoyume.Model.Guild.Guild.ClaimReward
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.Guild.ClaimReward
+  nameWithType: Guild.ClaimReward
 - uid: Nekoyume.Model.Guild.Guild.Equals(Nekoyume.Model.Guild.Guild)
   name: Equals(Guild?)
   href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_Equals_Nekoyume_Model_Guild_Guild_
@@ -46582,12 +46578,151 @@ references:
   commentId: F:Nekoyume.Model.Guild.Guild.GuildMasterAddress
   fullName: Nekoyume.Model.Guild.Guild.GuildMasterAddress
   nameWithType: Guild.GuildMasterAddress
+- uid: Nekoyume.Model.Guild.Guild.Repository
+  name: Repository
+  href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_Repository
+  commentId: P:Nekoyume.Model.Guild.Guild.Repository
+  fullName: Nekoyume.Model.Guild.Guild.Repository
+  nameWithType: Guild.Repository
+- uid: Nekoyume.Model.Guild.Guild.Repository*
+  name: Repository
+  href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_Repository_
+  commentId: Overload:Nekoyume.Model.Guild.Guild.Repository
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.Guild.Repository
+  nameWithType: Guild.Repository
 - uid: Nekoyume.Model.Guild.Guild.ValidatorAddress
   name: ValidatorAddress
   href: api/Nekoyume.Model.Guild.Guild.html#Nekoyume_Model_Guild_Guild_ValidatorAddress
   commentId: F:Nekoyume.Model.Guild.Guild.ValidatorAddress
   fullName: Nekoyume.Model.Guild.Guild.ValidatorAddress
   nameWithType: Guild.ValidatorAddress
+- uid: Nekoyume.Model.Guild.GuildDelegatee
+  name: GuildDelegatee
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html
+  commentId: T:Nekoyume.Model.Guild.GuildDelegatee
+  fullName: Nekoyume.Model.Guild.GuildDelegatee
+  nameWithType: GuildDelegatee
+- uid: Nekoyume.Model.Guild.GuildDelegatee.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name: GuildDelegatee(Address, GuildRepository)
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee__ctor_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildRepository_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegatee.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name.vb: New(Address, GuildRepository)
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildDelegatee(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegatee.New(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  nameWithType: GuildDelegatee.GuildDelegatee(Address, GuildRepository)
+  nameWithType.vb: GuildDelegatee.New(Address, GuildRepository)
+- uid: Nekoyume.Model.Guild.GuildDelegatee.#ctor(Libplanet.Crypto.Address,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},Nekoyume.Model.Guild.GuildRepository)
+  name: GuildDelegatee(Address, IEnumerable<Currency>, GuildRepository)
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee__ctor_Libplanet_Crypto_Address_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__Nekoyume_Model_Guild_GuildRepository_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegatee.#ctor(Libplanet.Crypto.Address,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},Nekoyume.Model.Guild.GuildRepository)
+  name.vb: New(Address, IEnumerable(Of Currency), GuildRepository)
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildDelegatee(Libplanet.Crypto.Address, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>, Nekoyume.Model.Guild.GuildRepository)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegatee.New(Libplanet.Crypto.Address, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency), Nekoyume.Model.Guild.GuildRepository)
+  nameWithType: GuildDelegatee.GuildDelegatee(Address, IEnumerable<Currency>, GuildRepository)
+  nameWithType.vb: GuildDelegatee.New(Address, IEnumerable(Of Currency), GuildRepository)
+- uid: Nekoyume.Model.Guild.GuildDelegatee.#ctor*
+  name: GuildDelegatee
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee__ctor_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildDelegatee
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegatee.New
+  nameWithType: GuildDelegatee.GuildDelegatee
+  nameWithType.vb: GuildDelegatee.New
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Activate
+  name: Activate()
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Activate
+  commentId: M:Nekoyume.Model.Guild.GuildDelegatee.Activate
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Activate()
+  nameWithType: GuildDelegatee.Activate()
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Activate*
+  name: Activate
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Activate_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.Activate
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Activate
+  nameWithType: GuildDelegatee.Activate
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Deactivate
+  name: Deactivate()
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Deactivate
+  commentId: M:Nekoyume.Model.Guild.GuildDelegatee.Deactivate
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Deactivate()
+  nameWithType: GuildDelegatee.Deactivate()
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Deactivate*
+  name: Deactivate
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Deactivate_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.Deactivate
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Deactivate
+  nameWithType: GuildDelegatee.Deactivate
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Equals(Nekoyume.Model.Guild.GuildDelegatee)
+  name: Equals(GuildDelegatee?)
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Equals_Nekoyume_Model_Guild_GuildDelegatee_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegatee.Equals(Nekoyume.Model.Guild.GuildDelegatee)
+  name.vb: Equals(GuildDelegatee)
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Equals(Nekoyume.Model.Guild.GuildDelegatee?)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegatee.Equals(Nekoyume.Model.Guild.GuildDelegatee)
+  nameWithType: GuildDelegatee.Equals(GuildDelegatee?)
+  nameWithType.vb: GuildDelegatee.Equals(GuildDelegatee)
+- uid: Nekoyume.Model.Guild.GuildDelegatee.Equals*
+  name: Equals
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Equals_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.Equals
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.Equals
+  nameWithType: GuildDelegatee.Equals
+- uid: Nekoyume.Model.Guild.GuildDelegator
+  name: GuildDelegator
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html
+  commentId: T:Nekoyume.Model.Guild.GuildDelegator
+  fullName: Nekoyume.Model.Guild.GuildDelegator
+  nameWithType: GuildDelegator
+- uid: Nekoyume.Model.Guild.GuildDelegator.#ctor(Libplanet.Crypto.Address,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name: GuildDelegator(Address, Address, GuildRepository)
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator__ctor_Libplanet_Crypto_Address_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildRepository_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegator.#ctor(Libplanet.Crypto.Address,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name.vb: New(Address, Address, GuildRepository)
+  fullName: Nekoyume.Model.Guild.GuildDelegator.GuildDelegator(Libplanet.Crypto.Address, Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.New(Libplanet.Crypto.Address, Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  nameWithType: GuildDelegator.GuildDelegator(Address, Address, GuildRepository)
+  nameWithType.vb: GuildDelegator.New(Address, Address, GuildRepository)
+- uid: Nekoyume.Model.Guild.GuildDelegator.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name: GuildDelegator(Address, GuildRepository)
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator__ctor_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildRepository_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegator.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
+  name.vb: New(Address, GuildRepository)
+  fullName: Nekoyume.Model.Guild.GuildDelegator.GuildDelegator(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.New(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
+  nameWithType: GuildDelegator.GuildDelegator(Address, GuildRepository)
+  nameWithType.vb: GuildDelegator.New(Address, GuildRepository)
+- uid: Nekoyume.Model.Guild.GuildDelegator.#ctor*
+  name: GuildDelegator
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator__ctor_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Model.Guild.GuildDelegator.GuildDelegator
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.New
+  nameWithType: GuildDelegator.GuildDelegator
+  nameWithType.vb: GuildDelegator.New
+- uid: Nekoyume.Model.Guild.GuildDelegator.Equals(Nekoyume.Model.Guild.GuildDelegator)
+  name: Equals(GuildDelegator?)
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_Equals_Nekoyume_Model_Guild_GuildDelegator_
+  commentId: M:Nekoyume.Model.Guild.GuildDelegator.Equals(Nekoyume.Model.Guild.GuildDelegator)
+  name.vb: Equals(GuildDelegator)
+  fullName: Nekoyume.Model.Guild.GuildDelegator.Equals(Nekoyume.Model.Guild.GuildDelegator?)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.Equals(Nekoyume.Model.Guild.GuildDelegator)
+  nameWithType: GuildDelegator.Equals(GuildDelegator?)
+  nameWithType.vb: GuildDelegator.Equals(GuildDelegator)
+- uid: Nekoyume.Model.Guild.GuildDelegator.Equals*
+  name: Equals
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_Equals_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegator.Equals
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegator.Equals
+  nameWithType: GuildDelegator.Equals
 - uid: Nekoyume.Model.Guild.GuildParticipant
   name: GuildParticipant
   href: api/Nekoyume.Model.Guild.GuildParticipant.html
@@ -46648,6 +46783,22 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildParticipant.Bencoded
   nameWithType: GuildParticipant.Bencoded
+- uid: Nekoyume.Model.Guild.GuildParticipant.ClaimReward(Nekoyume.Model.Guild.Guild,System.Int64)
+  name: ClaimReward(Guild, long)
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_ClaimReward_Nekoyume_Model_Guild_Guild_System_Int64_
+  commentId: M:Nekoyume.Model.Guild.GuildParticipant.ClaimReward(Nekoyume.Model.Guild.Guild,System.Int64)
+  name.vb: ClaimReward(Guild, Long)
+  fullName: Nekoyume.Model.Guild.GuildParticipant.ClaimReward(Nekoyume.Model.Guild.Guild, long)
+  fullName.vb: Nekoyume.Model.Guild.GuildParticipant.ClaimReward(Nekoyume.Model.Guild.Guild, Long)
+  nameWithType: GuildParticipant.ClaimReward(Guild, long)
+  nameWithType.vb: GuildParticipant.ClaimReward(Guild, Long)
+- uid: Nekoyume.Model.Guild.GuildParticipant.ClaimReward*
+  name: ClaimReward
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_ClaimReward_
+  commentId: Overload:Nekoyume.Model.Guild.GuildParticipant.ClaimReward
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildParticipant.ClaimReward
+  nameWithType: GuildParticipant.ClaimReward
 - uid: Nekoyume.Model.Guild.GuildParticipant.Delegate(Nekoyume.Model.Guild.Guild,Libplanet.Types.Assets.FungibleAssetValue,System.Int64)
   name: Delegate(Guild, FungibleAssetValue, long)
   href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_Delegate_Nekoyume_Model_Guild_Guild_Libplanet_Types_Assets_FungibleAssetValue_System_Int64_
@@ -46664,6 +46815,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildParticipant.Delegate
   nameWithType: GuildParticipant.Delegate
+- uid: Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress
+  name: DelegationPoolAddress
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_DelegationPoolAddress
+  commentId: P:Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress
+  fullName: Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress
+  nameWithType: GuildParticipant.DelegationPoolAddress
+- uid: Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress*
+  name: DelegationPoolAddress
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_DelegationPoolAddress_
+  commentId: Overload:Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress
+  nameWithType: GuildParticipant.DelegationPoolAddress
 - uid: Nekoyume.Model.Guild.GuildParticipant.Equals(Nekoyume.Model.Guild.GuildParticipant)
   name: Equals(GuildParticipant?)
   href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_Equals_Nekoyume_Model_Guild_GuildParticipant_
@@ -46724,6 +46888,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildParticipant.Redelegate
   nameWithType: GuildParticipant.Redelegate
+- uid: Nekoyume.Model.Guild.GuildParticipant.Repository
+  name: Repository
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_Repository
+  commentId: P:Nekoyume.Model.Guild.GuildParticipant.Repository
+  fullName: Nekoyume.Model.Guild.GuildParticipant.Repository
+  nameWithType: GuildParticipant.Repository
+- uid: Nekoyume.Model.Guild.GuildParticipant.Repository*
+  name: Repository
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_Repository_
+  commentId: Overload:Nekoyume.Model.Guild.GuildParticipant.Repository
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildParticipant.Repository
+  nameWithType: GuildParticipant.Repository
+- uid: Nekoyume.Model.Guild.GuildParticipant.RewardAddress
+  name: RewardAddress
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_RewardAddress
+  commentId: P:Nekoyume.Model.Guild.GuildParticipant.RewardAddress
+  fullName: Nekoyume.Model.Guild.GuildParticipant.RewardAddress
+  nameWithType: GuildParticipant.RewardAddress
+- uid: Nekoyume.Model.Guild.GuildParticipant.RewardAddress*
+  name: RewardAddress
+  href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_RewardAddress_
+  commentId: Overload:Nekoyume.Model.Guild.GuildParticipant.RewardAddress
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildParticipant.RewardAddress
+  nameWithType: GuildParticipant.RewardAddress
 - uid: Nekoyume.Model.Guild.GuildParticipant.Undelegate(Nekoyume.Model.Guild.Guild,System.Numerics.BigInteger,System.Int64)
   name: Undelegate(Guild, BigInteger, long)
   href: api/Nekoyume.Model.Guild.GuildParticipant.html#Nekoyume_Model_Guild_GuildParticipant_Undelegate_Nekoyume_Model_Guild_Guild_System_Numerics_BigInteger_System_Int64_
@@ -46927,6 +47117,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildRepository.GetGuild
   nameWithType: GuildRepository.GetGuild
+- uid: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee(Libplanet.Crypto.Address)
+  name: GetGuildDelegatee(Address)
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetGuildDelegatee_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee(Libplanet.Crypto.Address)
+  fullName: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee(Libplanet.Crypto.Address)
+  nameWithType: GuildRepository.GetGuildDelegatee(Address)
+- uid: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee*
+  name: GetGuildDelegatee
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetGuildDelegatee_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegatee
+  nameWithType: GuildRepository.GetGuildDelegatee
+- uid: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator(Libplanet.Crypto.Address)
+  name: GetGuildDelegator(Address)
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetGuildDelegator_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator(Libplanet.Crypto.Address)
+  fullName: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator(Libplanet.Crypto.Address)
+  nameWithType: GuildRepository.GetGuildDelegator(Address)
+- uid: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator*
+  name: GetGuildDelegator
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetGuildDelegator_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildRepository.GetGuildDelegator
+  nameWithType: GuildRepository.GetGuildDelegator
 - uid: Nekoyume.Model.Guild.GuildRepository.GetGuildParticipant(Libplanet.Crypto.Address)
   name: GetGuildParticipant(Address)
   href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetGuildParticipant_Libplanet_Crypto_Address_
@@ -46940,19 +47156,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildRepository.GetGuildParticipant
   nameWithType: GuildRepository.GetGuildParticipant
-- uid: Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address)
-  name: GetValidatorDelegateeForGuildParticipant(Address)
-  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuildParticipant_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address)
-  fullName: Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address)
-  nameWithType: GuildRepository.GetValidatorDelegateeForGuildParticipant(Address)
-- uid: Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant*
-  name: GetValidatorDelegateeForGuildParticipant
-  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_GetValidatorDelegateeForGuildParticipant_
-  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant
-  isSpec: "True"
-  fullName: Nekoyume.Model.Guild.GuildRepository.GetValidatorDelegateeForGuildParticipant
-  nameWithType: GuildRepository.GetValidatorDelegateeForGuildParticipant
 - uid: Nekoyume.Model.Guild.GuildRepository.RemoveGuildParticipant(Libplanet.Crypto.Address)
   name: RemoveGuildParticipant(Address)
   href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_RemoveGuildParticipant_Libplanet_Crypto_Address_
@@ -47005,6 +47208,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildRepository.SetGuild
   nameWithType: GuildRepository.SetGuild
+- uid: Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator(Nekoyume.Model.Guild.GuildDelegator)
+  name: SetGuildDelegator(GuildDelegator)
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetGuildDelegator_Nekoyume_Model_Guild_GuildDelegator_
+  commentId: M:Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator(Nekoyume.Model.Guild.GuildDelegator)
+  fullName: Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator(Nekoyume.Model.Guild.GuildDelegator)
+  nameWithType: GuildRepository.SetGuildDelegator(GuildDelegator)
+- uid: Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator*
+  name: SetGuildDelegator
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetGuildDelegator_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildRepository.SetGuildDelegator
+  nameWithType: GuildRepository.SetGuildDelegator
+- uid: Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee(Nekoyume.Model.Guild.GuildDelegatee)
+  name: SetGuildDelgatee(GuildDelegatee)
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetGuildDelgatee_Nekoyume_Model_Guild_GuildDelegatee_
+  commentId: M:Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee(Nekoyume.Model.Guild.GuildDelegatee)
+  fullName: Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee(Nekoyume.Model.Guild.GuildDelegatee)
+  nameWithType: GuildRepository.SetGuildDelgatee(GuildDelegatee)
+- uid: Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee*
+  name: SetGuildDelgatee
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetGuildDelgatee_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildRepository.SetGuildDelgatee
+  nameWithType: GuildRepository.SetGuildDelgatee
 - uid: Nekoyume.Model.Guild.GuildRepository.SetGuildParticipant(Nekoyume.Model.Guild.GuildParticipant)
   name: SetGuildParticipant(GuildParticipant)
   href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetGuildParticipant_Nekoyume_Model_Guild_GuildParticipant_
@@ -47018,95 +47247,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildRepository.SetGuildParticipant
   nameWithType: GuildRepository.SetGuildParticipant
-- uid: Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  name: SetValidatorDelegateeForGuildParticipant(ValidatorDelegateeForGuildParticipant)
-  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuildParticipant_Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_
-  commentId: M:Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  fullName: Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  nameWithType: GuildRepository.SetValidatorDelegateeForGuildParticipant(ValidatorDelegateeForGuildParticipant)
-- uid: Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant*
-  name: SetValidatorDelegateeForGuildParticipant
-  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_SetValidatorDelegateeForGuildParticipant_
-  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant
+- uid: Nekoyume.Model.Guild.GuildRepository.UpdateWorld(Libplanet.Action.State.IWorld)
+  name: UpdateWorld(IWorld)
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_UpdateWorld_Libplanet_Action_State_IWorld_
+  commentId: M:Nekoyume.Model.Guild.GuildRepository.UpdateWorld(Libplanet.Action.State.IWorld)
+  fullName: Nekoyume.Model.Guild.GuildRepository.UpdateWorld(Libplanet.Action.State.IWorld)
+  nameWithType: GuildRepository.UpdateWorld(IWorld)
+- uid: Nekoyume.Model.Guild.GuildRepository.UpdateWorld*
+  name: UpdateWorld
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_UpdateWorld_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.UpdateWorld
   isSpec: "True"
-  fullName: Nekoyume.Model.Guild.GuildRepository.SetValidatorDelegateeForGuildParticipant
-  nameWithType: GuildRepository.SetValidatorDelegateeForGuildParticipant
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant
-  name: ValidatorDelegateeForGuildParticipant
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html
-  commentId: T:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant
-  nameWithType: ValidatorDelegateeForGuildParticipant
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
-  name: ValidatorDelegateeForGuildParticipant(Address, GuildRepository)
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant__ctor_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildRepository_
-  commentId: M:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor(Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildRepository)
-  name.vb: New(Address, GuildRepository)
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
-  fullName.vb: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.New(Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildRepository)
-  nameWithType: ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant(Address, GuildRepository)
-  nameWithType.vb: ValidatorDelegateeForGuildParticipant.New(Address, GuildRepository)
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor(Libplanet.Crypto.Address,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},Nekoyume.Model.Guild.GuildRepository)
-  name: ValidatorDelegateeForGuildParticipant(Address, IEnumerable<Currency>, GuildRepository)
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant__ctor_Libplanet_Crypto_Address_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__Nekoyume_Model_Guild_GuildRepository_
-  commentId: M:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor(Libplanet.Crypto.Address,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},Nekoyume.Model.Guild.GuildRepository)
-  name.vb: New(Address, IEnumerable(Of Currency), GuildRepository)
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant(Libplanet.Crypto.Address, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>, Nekoyume.Model.Guild.GuildRepository)
-  fullName.vb: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.New(Libplanet.Crypto.Address, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency), Nekoyume.Model.Guild.GuildRepository)
-  nameWithType: ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant(Address, IEnumerable<Currency>, GuildRepository)
-  nameWithType.vb: ValidatorDelegateeForGuildParticipant.New(Address, IEnumerable(Of Currency), GuildRepository)
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor*
-  name: ValidatorDelegateeForGuildParticipant
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant__ctor_
-  commentId: Overload:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.#ctor
+  fullName: Nekoyume.Model.Guild.GuildRepository.UpdateWorld
+  nameWithType: GuildRepository.UpdateWorld
+- uid: Nekoyume.Model.Guild.GuildRepository.World
+  name: World
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_World
+  commentId: P:Nekoyume.Model.Guild.GuildRepository.World
+  fullName: Nekoyume.Model.Guild.GuildRepository.World
+  nameWithType: GuildRepository.World
+- uid: Nekoyume.Model.Guild.GuildRepository.World*
+  name: World
+  href: api/Nekoyume.Model.Guild.GuildRepository.html#Nekoyume_Model_Guild_GuildRepository_World_
+  commentId: Overload:Nekoyume.Model.Guild.GuildRepository.World
   isSpec: "True"
-  name.vb: New
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant
-  fullName.vb: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.New
-  nameWithType: ValidatorDelegateeForGuildParticipant.ValidatorDelegateeForGuildParticipant
-  nameWithType.vb: ValidatorDelegateeForGuildParticipant.New
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate
-  name: Activate()
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Activate
-  commentId: M:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate()
-  nameWithType: ValidatorDelegateeForGuildParticipant.Activate()
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate*
-  name: Activate
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Activate_
-  commentId: Overload:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate
-  isSpec: "True"
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Activate
-  nameWithType: ValidatorDelegateeForGuildParticipant.Activate
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate
-  name: Deactivate()
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Deactivate
-  commentId: M:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate()
-  nameWithType: ValidatorDelegateeForGuildParticipant.Deactivate()
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate*
-  name: Deactivate
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Deactivate_
-  commentId: Overload:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate
-  isSpec: "True"
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Deactivate
-  nameWithType: ValidatorDelegateeForGuildParticipant.Deactivate
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  name: Equals(ValidatorDelegateeForGuildParticipant?)
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Equals_Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_
-  commentId: M:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  name.vb: Equals(ValidatorDelegateeForGuildParticipant)
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant?)
-  fullName.vb: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals(Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  nameWithType: ValidatorDelegateeForGuildParticipant.Equals(ValidatorDelegateeForGuildParticipant?)
-  nameWithType.vb: ValidatorDelegateeForGuildParticipant.Equals(ValidatorDelegateeForGuildParticipant)
-- uid: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals*
-  name: Equals
-  href: api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html#Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant_Equals_
-  commentId: Overload:Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals
-  isSpec: "True"
-  fullName: Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.Equals
-  nameWithType: ValidatorDelegateeForGuildParticipant.Equals
+  fullName: Nekoyume.Model.Guild.GuildRepository.World
+  nameWithType: GuildRepository.World
 - uid: Nekoyume.Model.IArena
   name: IArena
   href: api/Nekoyume.Model.IArena.html
@@ -74281,6 +74447,41 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Module.Guild.GuildBanModule.Unban
   nameWithType: GuildBanModule.Unban
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule
+  name: GuildDelegateeModule
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html
+  commentId: T:Nekoyume.Module.Guild.GuildDelegateeModule
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule
+  nameWithType: GuildDelegateeModule
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  name: CreateGuildDelegatee(GuildRepository, Address)
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateGuildDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address)
+  nameWithType: GuildDelegateeModule.CreateGuildDelegatee(GuildRepository, Address)
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee*
+  name: CreateGuildDelegatee
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateGuildDelegatee_
+  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee
+  nameWithType: GuildDelegateeModule.CreateGuildDelegatee
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
+  name: TryGetGuildDelegatee(GuildRepository, Address, out GuildDelegatee?)
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetGuildDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildDelegatee__
+  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
+  name.vb: TryGetGuildDelegatee(GuildRepository, Address, GuildDelegatee)
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, out Nekoyume.Model.Guild.GuildDelegatee?)
+  fullName.vb: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildDelegatee)
+  nameWithType: GuildDelegateeModule.TryGetGuildDelegatee(GuildRepository, Address, out GuildDelegatee?)
+  nameWithType.vb: GuildDelegateeModule.TryGetGuildDelegatee(GuildRepository, Address, GuildDelegatee)
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee*
+  name: TryGetGuildDelegatee
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetGuildDelegatee_
+  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee
+  nameWithType: GuildDelegateeModule.TryGetGuildDelegatee
 - uid: Nekoyume.Module.Guild.GuildMemberCounterModule
   name: GuildMemberCounterModule
   href: api/Nekoyume.Module.Guild.GuildMemberCounterModule.html
@@ -74487,41 +74688,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Module.Guild.GuildParticipantModule.TryGetGuildParticipant
   nameWithType: GuildParticipantModule.TryGetGuildParticipant
-- uid: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule
-  name: ValidatorDelegateeForGuildModule
-  href: api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html
-  commentId: T:Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule
-  fullName: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule
-  nameWithType: ValidatorDelegateeForGuildModule
-- uid: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.GuildRepository)
-  name: CreateValidatorDelegateeForGuildParticipant(GuildRepository)
-  href: api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_CreateValidatorDelegateeForGuildParticipant_Nekoyume_Model_Guild_GuildRepository_
-  commentId: M:Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.GuildRepository)
-  fullName: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant(Nekoyume.Model.Guild.GuildRepository)
-  nameWithType: ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant(GuildRepository)
-- uid: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant*
-  name: CreateValidatorDelegateeForGuildParticipant
-  href: api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_CreateValidatorDelegateeForGuildParticipant_
-  commentId: Overload:Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant
-  isSpec: "True"
-  fullName: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant
-  nameWithType: ValidatorDelegateeForGuildModule.CreateValidatorDelegateeForGuildParticipant
-- uid: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant@)
-  name: TryGetValidatorDelegateeForGuild(GuildRepository, Address, out ValidatorDelegateeForGuildParticipant?)
-  href: api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_TryGetValidatorDelegateeForGuild_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_ValidatorDelegateeForGuildParticipant__
-  commentId: M:Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant@)
-  name.vb: TryGetValidatorDelegateeForGuild(GuildRepository, Address, ValidatorDelegateeForGuildParticipant)
-  fullName: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, out Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant?)
-  fullName.vb: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant)
-  nameWithType: ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(GuildRepository, Address, out ValidatorDelegateeForGuildParticipant?)
-  nameWithType.vb: ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild(GuildRepository, Address, ValidatorDelegateeForGuildParticipant)
-- uid: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild*
-  name: TryGetValidatorDelegateeForGuild
-  href: api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html#Nekoyume_Module_Guild_ValidatorDelegateeForGuildModule_TryGetValidatorDelegateeForGuild_
-  commentId: Overload:Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild
-  isSpec: "True"
-  fullName: Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild
-  nameWithType: ValidatorDelegateeForGuildModule.TryGetValidatorDelegateeForGuild
 - uid: Nekoyume.Module.LegacyModule
   name: LegacyModule
   href: api/Nekoyume.Module.LegacyModule.html
@@ -75481,63 +75647,6 @@ references:
   commentId: T:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule
   fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule
   nameWithType: ValidatorDelegatorModule
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address)
-  name: ClaimRewardValidator(ValidatorRepository, Address)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_ClaimRewardValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address)
-  nameWithType: ValidatorDelegatorModule.ClaimRewardValidator(ValidatorRepository, Address)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address)
-  name: ClaimRewardValidator(ValidatorRepository, Address, Address)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_ClaimRewardValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Crypto.Address)
-  nameWithType: ValidatorDelegatorModule.ClaimRewardValidator(ValidatorRepository, Address, Address)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator*
-  name: ClaimRewardValidator
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_ClaimRewardValidator_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator
-  isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.ClaimRewardValidator
-  nameWithType: ValidatorDelegatorModule.ClaimRewardValidator
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  name: DelegateValidator(ValidatorRepository, Address, Address, FungibleAssetValue)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_DelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Crypto_Address_Libplanet_Types_Assets_FungibleAssetValue_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Crypto.Address, Libplanet.Types.Assets.FungibleAssetValue)
-  nameWithType: ValidatorDelegatorModule.DelegateValidator(ValidatorRepository, Address, Address, FungibleAssetValue)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  name: DelegateValidator(ValidatorRepository, Address, FungibleAssetValue)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_DelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Types_Assets_FungibleAssetValue_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Types.Assets.FungibleAssetValue)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Types.Assets.FungibleAssetValue)
-  nameWithType: ValidatorDelegatorModule.DelegateValidator(ValidatorRepository, Address, FungibleAssetValue)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator*
-  name: DelegateValidator
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_DelegateValidator_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator
-  isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.DelegateValidator
-  nameWithType: ValidatorDelegatorModule.DelegateValidator
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: RedelegateValidator(ValidatorRepository, Address, Address, Address, BigInteger)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_RedelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Crypto_Address_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Crypto.Address, Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: ValidatorDelegatorModule.RedelegateValidator(ValidatorRepository, Address, Address, Address, BigInteger)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: RedelegateValidator(ValidatorRepository, Address, Address, BigInteger)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_RedelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: ValidatorDelegatorModule.RedelegateValidator(ValidatorRepository, Address, Address, BigInteger)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator*
-  name: RedelegateValidator
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_RedelegateValidator_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator
-  isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.RedelegateValidator
-  nameWithType: ValidatorDelegatorModule.RedelegateValidator
 - uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegator@)
   name: TryGetValidatorDelegator(ValidatorRepository, Address, out ValidatorDelegator?)
   href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_TryGetValidatorDelegator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Nekoyume_ValidatorDelegation_ValidatorDelegator__
@@ -75554,25 +75663,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator
   nameWithType: ValidatorDelegatorModule.TryGetValidatorDelegator
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: UndelegateValidator(ValidatorRepository, Address, Address, BigInteger)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_UndelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: ValidatorDelegatorModule.UndelegateValidator(ValidatorRepository, Address, Address, BigInteger)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: UndelegateValidator(ValidatorRepository, Address, BigInteger)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_UndelegateValidator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: ValidatorDelegatorModule.UndelegateValidator(ValidatorRepository, Address, BigInteger)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator*
-  name: UndelegateValidator
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_UndelegateValidator_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator
-  isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.UndelegateValidator
-  nameWithType: ValidatorDelegatorModule.UndelegateValidator
 - uid: Nekoyume.Module.ValidatorDelegation.ValidatorListModule
   name: ValidatorListModule
   href: api/Nekoyume.Module.ValidatorDelegation.ValidatorListModule.html

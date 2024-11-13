@@ -5802,6 +5802,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nekoyume.Model.Guild.GuildDelegatee.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nekoyume.Model.Guild.GuildDelegatee.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nekoyume.Model.Guild.GuildDelegator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nekoyume.Model.Guild.GuildDelegator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Model.Guild.GuildParticipant.yml",
       "output": {
         ".html": {
@@ -5826,16 +5846,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Nekoyume.Model.Guild.GuildRepository.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html"
         }
       },
       "version": ""
@@ -8142,6 +8152,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nekoyume.Module.Guild.GuildDelegateeModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nekoyume.Module.Guild.GuildDelegateeModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Module.Guild.GuildMemberCounterModule.yml",
       "output": {
         ".html": {
@@ -8166,16 +8186,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Nekoyume.Module.Guild.GuildParticipantModule.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Module.Guild.ValidatorDelegateeForGuildModule.html"
         }
       },
       "version": ""

@@ -89,7 +89,7 @@
 
 
   <h1 id="Nekoyume_Model_Guild_GuildParticipant" data-uid="Nekoyume.Model.Guild.GuildParticipant" class="text-break">
-Class GuildParticipant  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L17"><i class="bi bi-code-slash"></i></a>
+Class GuildParticipant  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class GuildParticipant : Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;, IDelegator, IBencodable, IEquatable&lt;GuildParticipant&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class GuildParticipant : IBencodable, IEquatable&lt;GuildParticipant&gt;</code></pre>
   </div>
 
 
@@ -111,7 +111,6 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Nekoyume.Delegation.Delegator-2.html">Delegator</a>&lt;<a class="xref" href="Nekoyume.Model.Guild.ValidatorDelegateeForGuildParticipant.html">ValidatorDelegateeForGuildParticipant</a>, <a class="xref" href="Nekoyume.Model.Guild.GuildParticipant.html">GuildParticipant</a>&gt;</div>
       <div><span class="xref">GuildParticipant</span></div>
     </dd>
   </dl>
@@ -119,7 +118,6 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="Nekoyume.Delegation.IDelegator.html">IDelegator</a></div>
       <div><span class="xref">IBencodable</span></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Nekoyume.Model.Guild.GuildParticipant.html">GuildParticipant</a>&gt;</div>
     </dd>
@@ -129,48 +127,6 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Metadata">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Metadata</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Repository">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Repository</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Address">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Address</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_AccountAddress">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.AccountAddress</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_MetadataAddress">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.MetadataAddress</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_DelegationPoolAddress">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.DelegationPoolAddress</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_RewardAddress">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.RewardAddress</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Delegatees">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Delegatees</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_MetadataBencoded">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.MetadataBencoded</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Delegate__0_Libplanet_Types_Assets_FungibleAssetValue_System_Int64_">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Delegate(ValidatorDelegateeForGuildParticipant, FungibleAssetValue, long)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Undelegate__0_System_Numerics_BigInteger_System_Int64_">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Undelegate(ValidatorDelegateeForGuildParticipant, BigInteger, long)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_Redelegate__0__0_System_Numerics_BigInteger_System_Int64_">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.Redelegate(ValidatorDelegateeForGuildParticipant, ValidatorDelegateeForGuildParticipant, BigInteger, long)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_CancelUndelegate__0_Libplanet_Types_Assets_FungibleAssetValue_System_Int64_">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.CancelUndelegate(ValidatorDelegateeForGuildParticipant, FungibleAssetValue, long)</a>
-    </div>
-    <div>
-      <a class="xref" href="Nekoyume.Delegation.Delegator-2.html#Nekoyume_Delegation_Delegator_2_ClaimReward__0_System_Int64_">Delegator&lt;ValidatorDelegateeForGuildParticipant, GuildParticipant&gt;.ClaimReward(ValidatorDelegateeForGuildParticipant, long)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
     </div>
@@ -201,7 +157,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant__ctor_Nekoyume_TypedAddress_AgentAddress_Bencodex_Types_IValue_Nekoyume_Model_Guild_GuildRepository_" data-uid="Nekoyume.Model.Guild.GuildParticipant.#ctor(Nekoyume.TypedAddress.AgentAddress,Bencodex.Types.IValue,Nekoyume.Model.Guild.GuildRepository)">
   GuildParticipant(AgentAddress, IValue, GuildRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L33"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -236,7 +192,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant__ctor_Nekoyume_TypedAddress_AgentAddress_Nekoyume_TypedAddress_GuildAddress_Nekoyume_Model_Guild_GuildRepository_" data-uid="Nekoyume.Model.Guild.GuildParticipant.#ctor(Nekoyume.TypedAddress.AgentAddress,Nekoyume.TypedAddress.GuildAddress,Nekoyume.Model.Guild.GuildRepository)">
   GuildParticipant(AgentAddress, GuildAddress, GuildRepository)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -274,7 +230,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_GuildAddress" data-uid="Nekoyume.Model.Guild.GuildParticipant.GuildAddress">
   GuildAddress
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -340,7 +296,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Bencoded" data-uid="Nekoyume.Model.Guild.GuildParticipant.Bencoded">
   Bencoded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -367,15 +323,141 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
 
 
+  <a id="Nekoyume_Model_Guild_GuildParticipant_DelegationPoolAddress_" data-uid="Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress*"></a>
+
+  <h3 id="Nekoyume_Model_Guild_GuildParticipant_DelegationPoolAddress" data-uid="Nekoyume.Model.Guild.GuildParticipant.DelegationPoolAddress">
+  DelegationPoolAddress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Address DelegationPoolAddress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Address</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nekoyume_Model_Guild_GuildParticipant_Repository_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Repository*"></a>
+
+  <h3 id="Nekoyume_Model_Guild_GuildParticipant_Repository" data-uid="Nekoyume.Model.Guild.GuildParticipant.Repository">
+  Repository
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GuildRepository Repository { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nekoyume.Model.Guild.GuildRepository.html">GuildRepository</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nekoyume_Model_Guild_GuildParticipant_RewardAddress_" data-uid="Nekoyume.Model.Guild.GuildParticipant.RewardAddress*"></a>
+
+  <h3 id="Nekoyume_Model_Guild_GuildParticipant_RewardAddress" data-uid="Nekoyume.Model.Guild.GuildParticipant.RewardAddress">
+  RewardAddress
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Address RewardAddress { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Address</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
+
+
+  <a id="Nekoyume_Model_Guild_GuildParticipant_ClaimReward_" data-uid="Nekoyume.Model.Guild.GuildParticipant.ClaimReward*"></a>
+
+  <h3 id="Nekoyume_Model_Guild_GuildParticipant_ClaimReward_Nekoyume_Model_Guild_Guild_System_Int64_" data-uid="Nekoyume.Model.Guild.GuildParticipant.ClaimReward(Nekoyume.Model.Guild.Guild,System.Int64)">
+  ClaimReward(Guild, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClaimReward(Guild guild, long height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>guild</code> <a class="xref" href="Nekoyume.Model.Guild.Guild.html">Guild</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 
   <a id="Nekoyume_Model_Guild_GuildParticipant_Delegate_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Delegate*"></a>
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Delegate_Nekoyume_Model_Guild_Guild_Libplanet_Types_Assets_FungibleAssetValue_System_Int64_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Delegate(Nekoyume.Model.Guild.Guild,Libplanet.Types.Assets.FungibleAssetValue,System.Int64)">
   Delegate(Guild, FungibleAssetValue, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -410,7 +492,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Equals_Nekoyume_Model_Guild_GuildParticipant_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Equals(Nekoyume.Model.Guild.GuildParticipant)">
   Equals(GuildParticipant?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -449,7 +531,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Equals_System_Object_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -488,7 +570,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_GetHashCode" data-uid="Nekoyume.Model.Guild.GuildParticipant.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L180"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
@@ -521,7 +603,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Redelegate_Nekoyume_Model_Guild_Guild_Nekoyume_Model_Guild_Guild_System_Numerics_BigInteger_System_Int64_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Redelegate(Nekoyume.Model.Guild.Guild,Nekoyume.Model.Guild.Guild,System.Numerics.BigInteger,System.Int64)">
   Redelegate(Guild, Guild, BigInteger, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -558,7 +640,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Nekoyume_Model_Guild_GuildParticipant_Undelegate_Nekoyume_Model_Guild_Guild_System_Numerics_BigInteger_System_Int64_" data-uid="Nekoyume.Model.Guild.GuildParticipant.Undelegate(Nekoyume.Model.Guild.Guild,System.Numerics.BigInteger,System.Int64)">
   Undelegate(Guild, BigInteger, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L100"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -593,7 +675,7 @@ Class GuildParticipant  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L17" class="edit-link">Edit this page</a>
+          <a href="https://github.com/OnedgeLee/lib9c/blob/pos-guild-distribution/Lib9c/Model/Guild/GuildParticipant.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 
