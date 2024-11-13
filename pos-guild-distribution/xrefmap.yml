@@ -10995,12 +10995,18 @@ references:
   commentId: T:Nekoyume.Action.Guild.Migration.GuildMigrationConfig
   fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig
   nameWithType: GuildMigrationConfig
-- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.MigrateDelegationHeight
-  name: MigrateDelegationHeight
-  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html#Nekoyume_Action_Guild_Migration_GuildMigrationConfig_MigrateDelegationHeight
-  commentId: F:Nekoyume.Action.Guild.Migration.GuildMigrationConfig.MigrateDelegationHeight
-  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.MigrateDelegationHeight
-  nameWithType: GuildMigrationConfig.MigrateDelegationHeight
+- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
+  name: HeimdallDelegationMigrationHeight
+  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html#Nekoyume_Action_Guild_Migration_GuildMigrationConfig_HeimdallDelegationMigrationHeight
+  commentId: F:Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
+  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
+  nameWithType: GuildMigrationConfig.HeimdallDelegationMigrationHeight
+- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
+  name: OdinDelegationMigrationHeight
+  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html#Nekoyume_Action_Guild_Migration_GuildMigrationConfig_OdinDelegationMigrationHeight
+  commentId: F:Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
+  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
+  nameWithType: GuildMigrationConfig.OdinDelegationMigrationHeight
 - uid: Nekoyume.Action.Guild.Migration.GuildMigrationFailedException
   name: GuildMigrationFailedException
   href: api/Nekoyume.Action.Guild.Migration.GuildMigrationFailedException.html
@@ -11208,6 +11214,41 @@ references:
   commentId: F:Nekoyume.Action.Guild.Migration.LegacyModels.LegacyGuildParticipant.GuildAddress
   fullName: Nekoyume.Action.Guild.Migration.LegacyModels.LegacyGuildParticipant.GuildAddress
   nameWithType: LegacyGuildParticipant.GuildAddress
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule
+  name: MigrationModule
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html
+  commentId: T:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule
+  nameWithType: MigrationModule
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight(Libplanet.Action.State.IWorldState)
+  name: GetDelegationMigrationHeight(IWorldState)
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_GetDelegationMigrationHeight_Libplanet_Action_State_IWorldState_
+  commentId: M:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight(Libplanet.Action.State.IWorldState)
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight(Libplanet.Action.State.IWorldState)
+  nameWithType: MigrationModule.GetDelegationMigrationHeight(IWorldState)
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight*
+  name: GetDelegationMigrationHeight
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_GetDelegationMigrationHeight_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight
+  nameWithType: MigrationModule.GetDelegationMigrationHeight
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight(Libplanet.Action.State.IWorld,System.Int64)
+  name: SetDelegationMigrationHeight(IWorld, long)
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_SetDelegationMigrationHeight_Libplanet_Action_State_IWorld_System_Int64_
+  commentId: M:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight(Libplanet.Action.State.IWorld,System.Int64)
+  name.vb: SetDelegationMigrationHeight(IWorld, Long)
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight(Libplanet.Action.State.IWorld, long)
+  fullName.vb: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight(Libplanet.Action.State.IWorld, Long)
+  nameWithType: MigrationModule.SetDelegationMigrationHeight(IWorld, long)
+  nameWithType.vb: MigrationModule.SetDelegationMigrationHeight(IWorld, Long)
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight*
+  name: SetDelegationMigrationHeight
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_SetDelegationMigrationHeight_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.SetDelegationMigrationHeight
+  nameWithType: MigrationModule.SetDelegationMigrationHeight
 - uid: Nekoyume.Action.Guild.Migration.MigrateDelegation
   name: MigrateDelegation
   href: api/Nekoyume.Action.Guild.Migration.MigrateDelegation.html
@@ -11300,6 +11341,98 @@ references:
   commentId: F:Nekoyume.Action.Guild.Migration.MigrateDelegation.TypeIdentifier
   fullName: Nekoyume.Action.Guild.Migration.MigrateDelegation.TypeIdentifier
   nameWithType: MigrateDelegation.TypeIdentifier
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight
+  name: MigrateDelegationHeight
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html
+  commentId: T:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight
+  nameWithType: MigrateDelegationHeight
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor
+  name: MigrateDelegationHeight()
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight__ctor
+  commentId: M:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor
+  name.vb: New()
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.MigrateDelegationHeight()
+  fullName.vb: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.New()
+  nameWithType: MigrateDelegationHeight.MigrateDelegationHeight()
+  nameWithType.vb: MigrateDelegationHeight.New()
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor(System.Int64)
+  name: MigrateDelegationHeight(long)
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight__ctor_System_Int64_
+  commentId: M:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor(System.Int64)
+  name.vb: New(Long)
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.MigrateDelegationHeight(long)
+  fullName.vb: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.New(Long)
+  nameWithType: MigrateDelegationHeight.MigrateDelegationHeight(long)
+  nameWithType.vb: MigrateDelegationHeight.New(Long)
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor*
+  name: MigrateDelegationHeight
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight__ctor_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.MigrateDelegationHeight
+  fullName.vb: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.New
+  nameWithType: MigrateDelegationHeight.MigrateDelegationHeight
+  nameWithType.vb: MigrateDelegationHeight.New
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute(Libplanet.Action.IActionContext)
+  name: Execute(IActionContext)
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_Execute_Libplanet_Action_IActionContext_
+  commentId: M:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute(Libplanet.Action.IActionContext)
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute(Libplanet.Action.IActionContext)
+  nameWithType: MigrateDelegationHeight.Execute(IActionContext)
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute*
+  name: Execute
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_Execute_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Execute
+  nameWithType: MigrateDelegationHeight.Execute
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height
+  name: Height
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_Height
+  commentId: P:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height
+  nameWithType: MigrateDelegationHeight.Height
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height*
+  name: Height
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_Height_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.Height
+  nameWithType: MigrateDelegationHeight.Height
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue(Bencodex.Types.IValue)
+  name: LoadPlainValue(IValue)
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_LoadPlainValue_Bencodex_Types_IValue_
+  commentId: M:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue(Bencodex.Types.IValue)
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue(Bencodex.Types.IValue)
+  nameWithType: MigrateDelegationHeight.LoadPlainValue(IValue)
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue*
+  name: LoadPlainValue
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_LoadPlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.LoadPlainValue
+  nameWithType: MigrateDelegationHeight.LoadPlainValue
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_PlainValue
+  commentId: P:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue
+  nameWithType: MigrateDelegationHeight.PlainValue
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue*
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_PlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.PlainValue
+  nameWithType: MigrateDelegationHeight.PlainValue
+- uid: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.TypeIdentifier
+  name: TypeIdentifier
+  href: api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html#Nekoyume_Action_Guild_Migration_MigrateDelegationHeight_TypeIdentifier
+  commentId: F:Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.TypeIdentifier
+  fullName: Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.TypeIdentifier
+  nameWithType: MigrateDelegationHeight.TypeIdentifier
 - uid: Nekoyume.Action.Guild.Migration.MigratePlanetariumGuild
   name: MigratePlanetariumGuild
   href: api/Nekoyume.Action.Guild.Migration.MigratePlanetariumGuild.html
@@ -24706,6 +24839,12 @@ references:
   commentId: F:Nekoyume.Addresses.DailyReward
   fullName: Nekoyume.Addresses.DailyReward
   nameWithType: Addresses.DailyReward
+- uid: Nekoyume.Addresses.DelegationMigrationHeight
+  name: DelegationMigrationHeight
+  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_DelegationMigrationHeight
+  commentId: F:Nekoyume.Addresses.DelegationMigrationHeight
+  fullName: Nekoyume.Addresses.DelegationMigrationHeight
+  nameWithType: Addresses.DelegationMigrationHeight
 - uid: Nekoyume.Addresses.EmptyAccountAddress
   name: EmptyAccountAddress
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_EmptyAccountAddress
@@ -25132,6 +25271,12 @@ references:
   commentId: F:Nekoyume.Addresses.MaterialCost
   fullName: Nekoyume.Addresses.MaterialCost
   nameWithType: Addresses.MaterialCost
+- uid: Nekoyume.Addresses.Migration
+  name: Migration
+  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_Migration
+  commentId: F:Nekoyume.Addresses.Migration
+  fullName: Nekoyume.Addresses.Migration
+  nameWithType: Addresses.Migration
 - uid: Nekoyume.Addresses.MortgagePool
   name: MortgagePool
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_MortgagePool

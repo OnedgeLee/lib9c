@@ -1482,6 +1482,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Action.Guild.Migration.LegacyModels.yml",
       "output": {
         ".html": {
@@ -1496,6 +1506,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Nekoyume.Action.Guild.Migration.MigrateDelegation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nekoyume.Action.Guild.Migration.MigrateDelegationHeight.html"
         }
       },
       "version": ""
