@@ -10989,24 +10989,6 @@ references:
   commentId: N:Nekoyume.Action.Guild.Migration
   fullName: Nekoyume.Action.Guild.Migration
   nameWithType: Nekoyume.Action.Guild.Migration
-- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig
-  name: GuildMigrationConfig
-  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html
-  commentId: T:Nekoyume.Action.Guild.Migration.GuildMigrationConfig
-  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig
-  nameWithType: GuildMigrationConfig
-- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
-  name: HeimdallDelegationMigrationHeight
-  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html#Nekoyume_Action_Guild_Migration_GuildMigrationConfig_HeimdallDelegationMigrationHeight
-  commentId: F:Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
-  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.HeimdallDelegationMigrationHeight
-  nameWithType: GuildMigrationConfig.HeimdallDelegationMigrationHeight
-- uid: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
-  name: OdinDelegationMigrationHeight
-  href: api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html#Nekoyume_Action_Guild_Migration_GuildMigrationConfig_OdinDelegationMigrationHeight
-  commentId: F:Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
-  fullName: Nekoyume.Action.Guild.Migration.GuildMigrationConfig.OdinDelegationMigrationHeight
-  nameWithType: GuildMigrationConfig.OdinDelegationMigrationHeight
 - uid: Nekoyume.Action.Guild.Migration.GuildMigrationFailedException
   name: GuildMigrationFailedException
   href: api/Nekoyume.Action.Guild.Migration.GuildMigrationFailedException.html
@@ -11220,6 +11202,12 @@ references:
   commentId: T:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule
   fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule
   nameWithType: MigrationModule
+- uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.DelegationMigrationHeight
+  name: DelegationMigrationHeight
+  href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_DelegationMigrationHeight
+  commentId: F:Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.DelegationMigrationHeight
+  fullName: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.DelegationMigrationHeight
+  nameWithType: MigrationModule.DelegationMigrationHeight
 - uid: Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.GetDelegationMigrationHeight(Libplanet.Action.State.IWorldState)
   name: GetDelegationMigrationHeight(IWorldState)
   href: api/Nekoyume.Action.Guild.Migration.LegacyModels.MigrationModule.html#Nekoyume_Action_Guild_Migration_LegacyModels_MigrationModule_GetDelegationMigrationHeight_Libplanet_Action_State_IWorldState_
@@ -24839,12 +24827,6 @@ references:
   commentId: F:Nekoyume.Addresses.DailyReward
   fullName: Nekoyume.Addresses.DailyReward
   nameWithType: Addresses.DailyReward
-- uid: Nekoyume.Addresses.DelegationMigrationHeight
-  name: DelegationMigrationHeight
-  href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_DelegationMigrationHeight
-  commentId: F:Nekoyume.Addresses.DelegationMigrationHeight
-  fullName: Nekoyume.Addresses.DelegationMigrationHeight
-  nameWithType: Addresses.DelegationMigrationHeight
 - uid: Nekoyume.Addresses.EmptyAccountAddress
   name: EmptyAccountAddress
   href: api/Nekoyume.Addresses.html#Nekoyume_Addresses_EmptyAccountAddress

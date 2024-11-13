@@ -1442,16 +1442,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Action.Guild.Migration.GuildMigrationConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Action.Guild.Migration.GuildMigrationFailedException.yml",
       "output": {
         ".html": {
