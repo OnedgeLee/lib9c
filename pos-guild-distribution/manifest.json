@@ -1522,16 +1522,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Action.Guild.Migration.MigratePlanetariumGuildUnbond.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Action.Guild.Migration.MigratePlanetariumGuildUnbond.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Action.Guild.Migration.yml",
       "output": {
         ".html": {
