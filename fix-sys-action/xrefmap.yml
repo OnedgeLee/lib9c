@@ -11004,15 +11004,15 @@ references:
   fullName.vb: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.New()
   nameWithType: FixToRefundFromNonValidator.FixToRefundFromNonValidator()
   nameWithType.vb: FixToRefundFromNonValidator.New()
-- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.#ctor(Libplanet.Crypto.Address)
-  name: FixToRefundFromNonValidator(Address)
-  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator__ctor_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.#ctor(Libplanet.Crypto.Address)
-  name.vb: New(Address)
-  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.FixToRefundFromNonValidator(Libplanet.Crypto.Address)
-  fullName.vb: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.New(Libplanet.Crypto.Address)
-  nameWithType: FixToRefundFromNonValidator.FixToRefundFromNonValidator(Address)
-  nameWithType.vb: FixToRefundFromNonValidator.New(Address)
+- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.#ctor(System.Collections.Generic.IEnumerable{Libplanet.Crypto.Address})
+  name: FixToRefundFromNonValidator(IEnumerable<Address>)
+  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator__ctor_System_Collections_Generic_IEnumerable_Libplanet_Crypto_Address__
+  commentId: M:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.#ctor(System.Collections.Generic.IEnumerable{Libplanet.Crypto.Address})
+  name.vb: New(IEnumerable(Of Address))
+  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.FixToRefundFromNonValidator(System.Collections.Generic.IEnumerable<Libplanet.Crypto.Address>)
+  fullName.vb: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.New(System.Collections.Generic.IEnumerable(Of Libplanet.Crypto.Address))
+  nameWithType: FixToRefundFromNonValidator.FixToRefundFromNonValidator(IEnumerable<Address>)
+  nameWithType.vb: FixToRefundFromNonValidator.New(IEnumerable(Of Address))
 - uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.#ctor*
   name: FixToRefundFromNonValidator
   href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator__ctor_
@@ -11062,19 +11062,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.PlainValue
   nameWithType: FixToRefundFromNonValidator.PlainValue
-- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target
-  name: Target
-  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator_Target
-  commentId: P:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target
-  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target
-  nameWithType: FixToRefundFromNonValidator.Target
-- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target*
-  name: Target
-  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator_Target_
-  commentId: Overload:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target
+- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets
+  name: Targets
+  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator_Targets
+  commentId: P:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets
+  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets
+  nameWithType: FixToRefundFromNonValidator.Targets
+- uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets*
+  name: Targets
+  href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator_Targets_
+  commentId: Overload:Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets
   isSpec: "True"
-  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Target
-  nameWithType: FixToRefundFromNonValidator.Target
+  fullName: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.Targets
+  nameWithType: FixToRefundFromNonValidator.Targets
 - uid: Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.TypeIdentifier
   name: TypeIdentifier
   href: api/Nekoyume.Action.Guild.Migration.FixToRefundFromNonValidator.html#Nekoyume_Action_Guild_Migration_FixToRefundFromNonValidator_TypeIdentifier
