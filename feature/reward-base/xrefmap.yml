@@ -34022,6 +34022,12 @@ references:
   commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(Nekoyume.Delegation.RewardBase,System.Numerics.BigInteger)
   fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(Nekoyume.Delegation.RewardBase, System.Numerics.BigInteger)
   nameWithType: RewardBase.UpdateTotalShares(RewardBase, BigInteger)
+- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  name: UpdateTotalShares(BigInteger)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  nameWithType: RewardBase.UpdateTotalShares(BigInteger)
 - uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares*
   name: UpdateTotalShares
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_
