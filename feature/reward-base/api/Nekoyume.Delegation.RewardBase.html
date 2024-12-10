@@ -224,45 +224,8 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <a id="Nekoyume_Delegation_RewardBase__ctor_" data-uid="Nekoyume.Delegation.RewardBase.#ctor*"></a>
 
-  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency})">
-  RewardBase(Address, long, BigInteger, IEnumerable&lt;Currency&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RewardBase(Address address, long startHeight, BigInteger totalShares, IEnumerable&lt;Currency&gt; currencies)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>address</code> <span class="xref">Address</span></dt>
-    <dd></dd>
-    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
-    <dt><code>totalShares</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a></dt>
-    <dd></dd>
-    <dt><code>currencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Currency</span>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Nekoyume_Delegation_RewardBase__ctor_" data-uid="Nekoyume.Delegation.RewardBase.#ctor*"></a>
-
-  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Int32_" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32)">
-  RewardBase(Address, long, BigInteger, IEnumerable&lt;Currency&gt;, int)
+  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Int32_System_Nullable_System_Int64__" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32,System.Nullable{System.Int64})">
+  RewardBase(Address, BigInteger, IEnumerable&lt;Currency&gt;, int, long?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -270,20 +233,20 @@ Also, it holds the significant figure to calculate the reward.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RewardBase(Address address, long startHeight, BigInteger totalShares, IEnumerable&lt;Currency&gt; currencies, int sigFig)</code></pre>
+    <pre><code class="lang-csharp hljs">public RewardBase(Address address, BigInteger totalShares, IEnumerable&lt;Currency&gt; currencies, int sigFig, long? startHeight = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>address</code> <span class="xref">Address</span></dt>
     <dd></dd>
-    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
     <dt><code>totalShares</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a></dt>
     <dd></dd>
     <dt><code>currencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Currency</span>&gt;</dt>
     <dd></dd>
     <dt><code>sigFig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -300,8 +263,45 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <a id="Nekoyume_Delegation_RewardBase__ctor_" data-uid="Nekoyume.Delegation.RewardBase.#ctor*"></a>
 
-  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__System_Int32_" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32)">
-  RewardBase(Address, long, BigInteger, IEnumerable&lt;FungibleAssetValue&gt;, int)
+  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Nullable_System_Int64__" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Nullable{System.Int64})">
+  RewardBase(Address, BigInteger, IEnumerable&lt;Currency&gt;, long?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RewardBase(Address address, BigInteger totalShares, IEnumerable&lt;Currency&gt; currencies, long? startHeight = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <span class="xref">Address</span></dt>
+    <dd></dd>
+    <dt><code>totalShares</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a></dt>
+    <dd></dd>
+    <dt><code>currencies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Currency</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nekoyume_Delegation_RewardBase__ctor_" data-uid="Nekoyume.Delegation.RewardBase.#ctor*"></a>
+
+  <h3 id="Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__System_Int32_System_Nullable_System_Int64__" data-uid="Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32,System.Nullable{System.Int64})">
+  RewardBase(Address, BigInteger, IEnumerable&lt;FungibleAssetValue&gt;, int, long?)
   <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
@@ -309,20 +309,20 @@ Also, it holds the significant figure to calculate the reward.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RewardBase(Address address, long startHeight, BigInteger totalShares, IEnumerable&lt;FungibleAssetValue&gt; rewardPortion, int sigfig)</code></pre>
+    <pre><code class="lang-csharp hljs">public RewardBase(Address address, BigInteger totalShares, IEnumerable&lt;FungibleAssetValue&gt; rewardPortion, int sigfig, long? startHeight = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>address</code> <span class="xref">Address</span></dt>
     <dd></dd>
-    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
-    <dd></dd>
     <dt><code>totalShares</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a></dt>
     <dd></dd>
     <dt><code>rewardPortion</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">FungibleAssetValue</span>&gt;</dt>
     <dd></dd>
     <dt><code>sigfig</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -345,7 +345,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Address" data-uid="Nekoyume.Delegation.RewardBase.Address">
   Address
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L135"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -376,7 +376,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Bencoded" data-uid="Nekoyume.Delegation.RewardBase.Bencoded">
   Bencoded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -407,7 +407,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Margin" data-uid="Nekoyume.Delegation.RewardBase.Margin">
   Margin
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -438,7 +438,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_RewardPortion" data-uid="Nekoyume.Delegation.RewardBase.RewardPortion">
   RewardPortion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -469,7 +469,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_SigFig" data-uid="Nekoyume.Delegation.RewardBase.SigFig">
   SigFig
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L141"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -500,14 +500,14 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_StartHeight" data-uid="Nekoyume.Delegation.RewardBase.StartHeight">
   StartHeight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public long StartHeight { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public long? StartHeight { get; }</code></pre>
   </div>
 
 
@@ -516,7 +516,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</dt>
     <dd></dd>
   </dl>
 
@@ -531,7 +531,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_TotalShares" data-uid="Nekoyume.Delegation.RewardBase.TotalShares">
   TotalShares
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -566,7 +566,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_AddReward_Libplanet_Types_Assets_FungibleAssetValue_" data-uid="Nekoyume.Delegation.RewardBase.AddReward(Libplanet.Types.Assets.FungibleAssetValue)">
   AddReward(FungibleAssetValue)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L171"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -602,7 +602,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_AddRewards_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__" data-uid="Nekoyume.Delegation.RewardBase.AddRewards(System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue})">
   AddRewards(IEnumerable&lt;FungibleAssetValue&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -634,11 +634,49 @@ Also, it holds the significant figure to calculate the reward.</p>
 
 
 
+  <a id="Nekoyume_Delegation_RewardBase_AttachHeight_" data-uid="Nekoyume.Delegation.RewardBase.AttachHeight*"></a>
+
+  <h3 id="Nekoyume_Delegation_RewardBase_AttachHeight_Libplanet_Crypto_Address_System_Int64_" data-uid="Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address,System.Int64)">
+  AttachHeight(Address, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RewardBase AttachHeight(Address address, long startHeight)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>address</code> <span class="xref">Address</span></dt>
+    <dd></dd>
+    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="Nekoyume_Delegation_RewardBase_CumulativeRewardDuringPeriod_" data-uid="Nekoyume.Delegation.RewardBase.CumulativeRewardDuringPeriod*"></a>
 
   <h3 id="Nekoyume_Delegation_RewardBase_CumulativeRewardDuringPeriod_System_Numerics_BigInteger_" data-uid="Nekoyume.Delegation.RewardBase.CumulativeRewardDuringPeriod(System.Numerics.BigInteger)">
   CumulativeRewardDuringPeriod(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L220"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -674,7 +712,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_CumulativeRewardDuringPeriod_System_Numerics_BigInteger_Libplanet_Types_Assets_Currency_" data-uid="Nekoyume.Delegation.RewardBase.CumulativeRewardDuringPeriod(System.Numerics.BigInteger,Libplanet.Types.Assets.Currency)">
   CumulativeRewardDuringPeriod(BigInteger, Currency)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -712,7 +750,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Equals_Nekoyume_Delegation_RewardBase_" data-uid="Nekoyume.Delegation.RewardBase.Equals(Nekoyume.Delegation.RewardBase)">
   Equals(RewardBase?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L232"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -751,7 +789,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Equals_System_Object_" data-uid="Nekoyume.Delegation.RewardBase.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -790,7 +828,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_GetHashCode" data-uid="Nekoyume.Delegation.RewardBase.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
@@ -819,47 +857,11 @@ Also, it holds the significant figure to calculate the reward.</p>
 
 
 
-  <a id="Nekoyume_Delegation_RewardBase_MoveAddress_" data-uid="Nekoyume.Delegation.RewardBase.MoveAddress*"></a>
-
-  <h3 id="Nekoyume_Delegation_RewardBase_MoveAddress_Libplanet_Crypto_Address_" data-uid="Nekoyume.Delegation.RewardBase.MoveAddress(Libplanet.Crypto.Address)">
-  MoveAddress(Address)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L161"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RewardBase MoveAddress(Address address)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>address</code> <span class="xref">Address</span></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
   <a id="Nekoyume_Delegation_RewardBase_Multiplier_" data-uid="Nekoyume.Delegation.RewardBase.Multiplier*"></a>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Multiplier_System_Int32_" data-uid="Nekoyume.Delegation.RewardBase.Multiplier(System.Int32)">
   Multiplier(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L217"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -895,7 +897,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_RecommendedSigFig_System_Numerics_BigInteger_" data-uid="Nekoyume.Delegation.RewardBase.RecommendedSigFig(System.Numerics.BigInteger)">
   RecommendedSigFig(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -929,23 +931,21 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <a id="Nekoyume_Delegation_RewardBase_UpdateTotalShares_" data-uid="Nekoyume.Delegation.RewardBase.UpdateTotalShares*"></a>
 
-  <h3 id="Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_System_Int64_" data-uid="Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger,System.Int64)">
-  UpdateTotalShares(BigInteger, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_" data-uid="Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)">
+  UpdateTotalShares(BigInteger)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L174"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RewardBase UpdateTotalShares(BigInteger totalShares, long startHeight)</code></pre>
+    <pre><code class="lang-csharp hljs">public RewardBase UpdateTotalShares(BigInteger totalShares)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>totalShares</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a></dt>
-    <dd></dd>
-    <dt><code>startHeight</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
     <dd></dd>
   </dl>
 

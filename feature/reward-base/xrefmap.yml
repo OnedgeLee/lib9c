@@ -29753,6 +29753,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegateeMetadata.DelegationPoolAddress
   nameWithType: DelegateeMetadata.DelegationPoolAddress
+- uid: Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress
+  name: DistributionPoolAddress()
+  href: api/Nekoyume.Delegation.DelegateeMetadata.html#Nekoyume_Delegation_DelegateeMetadata_DistributionPoolAddress
+  commentId: M:Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress
+  fullName: Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress()
+  nameWithType: DelegateeMetadata.DistributionPoolAddress()
+- uid: Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress*
+  name: DistributionPoolAddress
+  href: api/Nekoyume.Delegation.DelegateeMetadata.html#Nekoyume_Delegation_DelegateeMetadata_DistributionPoolAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegateeMetadata.DistributionPoolAddress
+  nameWithType: DelegateeMetadata.DistributionPoolAddress
 - uid: Nekoyume.Delegation.DelegateeMetadata.Equals(Nekoyume.Delegation.IDelegateeMetadata)
   name: Equals(IDelegateeMetadata?)
   href: api/Nekoyume.Delegation.DelegateeMetadata.html#Nekoyume_Delegation_DelegateeMetadata_Equals_Nekoyume_Delegation_IDelegateeMetadata_
@@ -30370,6 +30383,23 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).DistributeReward
   nameWithType: Delegatee<T, TSelf>.DistributeReward
   nameWithType.vb: Delegatee(Of T, TSelf).DistributeReward
+- uid: Nekoyume.Delegation.Delegatee`2.DistributionPoolAddress
+  name: DistributionPoolAddress()
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_DistributionPoolAddress
+  commentId: M:Nekoyume.Delegation.Delegatee`2.DistributionPoolAddress
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.DistributionPoolAddress()
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).DistributionPoolAddress()
+  nameWithType: Delegatee<T, TSelf>.DistributionPoolAddress()
+  nameWithType.vb: Delegatee(Of T, TSelf).DistributionPoolAddress()
+- uid: Nekoyume.Delegation.Delegatee`2.DistributionPoolAddress*
+  name: DistributionPoolAddress
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_DistributionPoolAddress_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`2.DistributionPoolAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.DistributionPoolAddress
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).DistributionPoolAddress
+  nameWithType: Delegatee<T, TSelf>.DistributionPoolAddress
+  nameWithType.vb: Delegatee(Of T, TSelf).DistributionPoolAddress
 - uid: Nekoyume.Delegation.Delegatee`2.Enjailed
   name: Enjailed
   href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_Enjailed
@@ -30984,6 +31014,25 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationAddress.DelegatorMetadataAddress
   nameWithType: DelegationAddress.DelegatorMetadataAddress
+- uid: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address)
+  name: DistributionPoolAddress(Address)
+  href: api/Nekoyume.Delegation.DelegationAddress.html#Nekoyume_Delegation_DelegationAddress_DistributionPoolAddress_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address)
+  fullName: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address)
+  nameWithType: DelegationAddress.DistributionPoolAddress(Address)
+- uid: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address,Libplanet.Crypto.Address)
+  name: DistributionPoolAddress(Address, Address)
+  href: api/Nekoyume.Delegation.DelegationAddress.html#Nekoyume_Delegation_DelegationAddress_DistributionPoolAddress_Libplanet_Crypto_Address_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress(Libplanet.Crypto.Address, Libplanet.Crypto.Address)
+  nameWithType: DelegationAddress.DistributionPoolAddress(Address, Address)
+- uid: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress*
+  name: DistributionPoolAddress
+  href: api/Nekoyume.Delegation.DelegationAddress.html#Nekoyume_Delegation_DelegationAddress_DistributionPoolAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationAddress.DistributionPoolAddress
+  nameWithType: DelegationAddress.DistributionPoolAddress
 - uid: Nekoyume.Delegation.DelegationAddress.RebondGraceAddress(Libplanet.Crypto.Address,Libplanet.Crypto.Address)
   name: RebondGraceAddress(Address, Address)
   href: api/Nekoyume.Delegation.DelegationAddress.html#Nekoyume_Delegation_DelegationAddress_RebondGraceAddress_Libplanet_Crypto_Address_Libplanet_Crypto_Address_
@@ -34044,33 +34093,33 @@ references:
   fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, Bencodex.Types.List)
   nameWithType: RewardBase.RewardBase(Address, List)
   nameWithType.vb: RewardBase.New(Address, List)
-- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency})
-  name: RewardBase(Address, long, BigInteger, IEnumerable<Currency>)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__
-  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency})
-  name.vb: New(Address, Long, BigInteger, IEnumerable(Of Currency))
-  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>)
-  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, Long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency))
-  nameWithType: RewardBase.RewardBase(Address, long, BigInteger, IEnumerable<Currency>)
-  nameWithType.vb: RewardBase.New(Address, Long, BigInteger, IEnumerable(Of Currency))
-- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32)
-  name: RewardBase(Address, long, BigInteger, IEnumerable<Currency>, int)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Int32_
-  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32)
-  name.vb: New(Address, Long, BigInteger, IEnumerable(Of Currency), Integer)
-  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>, int)
-  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, Long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency), Integer)
-  nameWithType: RewardBase.RewardBase(Address, long, BigInteger, IEnumerable<Currency>, int)
-  nameWithType.vb: RewardBase.New(Address, Long, BigInteger, IEnumerable(Of Currency), Integer)
-- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32)
-  name: RewardBase(Address, long, BigInteger, IEnumerable<FungibleAssetValue>, int)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Int64_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__System_Int32_
-  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Int64,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32)
-  name.vb: New(Address, Long, BigInteger, IEnumerable(Of FungibleAssetValue), Integer)
-  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.FungibleAssetValue>, int)
-  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, Long, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.FungibleAssetValue), Integer)
-  nameWithType: RewardBase.RewardBase(Address, long, BigInteger, IEnumerable<FungibleAssetValue>, int)
-  nameWithType.vb: RewardBase.New(Address, Long, BigInteger, IEnumerable(Of FungibleAssetValue), Integer)
+- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32,System.Nullable{System.Int64})
+  name: RewardBase(Address, BigInteger, IEnumerable<Currency>, int, long?)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Int32_System_Nullable_System_Int64__
+  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Int32,System.Nullable{System.Int64})
+  name.vb: New(Address, BigInteger, IEnumerable(Of Currency), Integer, Long?)
+  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>, int, long?)
+  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency), Integer, Long?)
+  nameWithType: RewardBase.RewardBase(Address, BigInteger, IEnumerable<Currency>, int, long?)
+  nameWithType.vb: RewardBase.New(Address, BigInteger, IEnumerable(Of Currency), Integer, Long?)
+- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Nullable{System.Int64})
+  name: RewardBase(Address, BigInteger, IEnumerable<Currency>, long?)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_Currency__System_Nullable_System_Int64__
+  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.Currency},System.Nullable{System.Int64})
+  name.vb: New(Address, BigInteger, IEnumerable(Of Currency), Long?)
+  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.Currency>, long?)
+  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.Currency), Long?)
+  nameWithType: RewardBase.RewardBase(Address, BigInteger, IEnumerable<Currency>, long?)
+  nameWithType.vb: RewardBase.New(Address, BigInteger, IEnumerable(Of Currency), Long?)
+- uid: Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32,System.Nullable{System.Int64})
+  name: RewardBase(Address, BigInteger, IEnumerable<FungibleAssetValue>, int, long?)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__System_Int32_System_Nullable_System_Int64__
+  commentId: M:Nekoyume.Delegation.RewardBase.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue},System.Int32,System.Nullable{System.Int64})
+  name.vb: New(Address, BigInteger, IEnumerable(Of FungibleAssetValue), Integer, Long?)
+  fullName: Nekoyume.Delegation.RewardBase.RewardBase(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Libplanet.Types.Assets.FungibleAssetValue>, int, long?)
+  fullName.vb: Nekoyume.Delegation.RewardBase.New(Libplanet.Crypto.Address, System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Libplanet.Types.Assets.FungibleAssetValue), Integer, Long?)
+  nameWithType: RewardBase.RewardBase(Address, BigInteger, IEnumerable<FungibleAssetValue>, int, long?)
+  nameWithType.vb: RewardBase.New(Address, BigInteger, IEnumerable(Of FungibleAssetValue), Integer, Long?)
 - uid: Nekoyume.Delegation.RewardBase.#ctor*
   name: RewardBase
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase__ctor_
@@ -34123,6 +34172,22 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RewardBase.Address
   nameWithType: RewardBase.Address
+- uid: Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address,System.Int64)
+  name: AttachHeight(Address, long)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_AttachHeight_Libplanet_Crypto_Address_System_Int64_
+  commentId: M:Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address,System.Int64)
+  name.vb: AttachHeight(Address, Long)
+  fullName: Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address, long)
+  fullName.vb: Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address, Long)
+  nameWithType: RewardBase.AttachHeight(Address, long)
+  nameWithType.vb: RewardBase.AttachHeight(Address, Long)
+- uid: Nekoyume.Delegation.RewardBase.AttachHeight*
+  name: AttachHeight
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_AttachHeight_
+  commentId: Overload:Nekoyume.Delegation.RewardBase.AttachHeight
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.RewardBase.AttachHeight
+  nameWithType: RewardBase.AttachHeight
 - uid: Nekoyume.Delegation.RewardBase.Bencoded
   name: Bencoded
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Bencoded
@@ -34206,19 +34271,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RewardBase.Margin
   nameWithType: RewardBase.Margin
-- uid: Nekoyume.Delegation.RewardBase.MoveAddress(Libplanet.Crypto.Address)
-  name: MoveAddress(Address)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_MoveAddress_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Delegation.RewardBase.MoveAddress(Libplanet.Crypto.Address)
-  fullName: Nekoyume.Delegation.RewardBase.MoveAddress(Libplanet.Crypto.Address)
-  nameWithType: RewardBase.MoveAddress(Address)
-- uid: Nekoyume.Delegation.RewardBase.MoveAddress*
-  name: MoveAddress
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_MoveAddress_
-  commentId: Overload:Nekoyume.Delegation.RewardBase.MoveAddress
-  isSpec: "True"
-  fullName: Nekoyume.Delegation.RewardBase.MoveAddress
-  nameWithType: RewardBase.MoveAddress
 - uid: Nekoyume.Delegation.RewardBase.Multiplier(System.Int32)
   name: Multiplier(int)
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Multiplier_System_Int32_
@@ -34300,15 +34352,12 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RewardBase.TotalShares
   nameWithType: RewardBase.TotalShares
-- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger,System.Int64)
-  name: UpdateTotalShares(BigInteger, long)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_System_Int64_
-  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger,System.Int64)
-  name.vb: UpdateTotalShares(BigInteger, Long)
-  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger, long)
-  fullName.vb: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger, Long)
-  nameWithType: RewardBase.UpdateTotalShares(BigInteger, long)
-  nameWithType.vb: RewardBase.UpdateTotalShares(BigInteger, Long)
+- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  name: UpdateTotalShares(BigInteger)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
+  nameWithType: RewardBase.UpdateTotalShares(BigInteger)
 - uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares*
   name: UpdateTotalShares
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_
