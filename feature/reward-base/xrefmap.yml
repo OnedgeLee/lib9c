@@ -31153,6 +31153,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.ActionContext
   nameWithType: DelegationRepository.ActionContext
+- uid: Nekoyume.Delegation.DelegationRepository.BondAccountAddress
+  name: BondAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_BondAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.BondAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.BondAccountAddress
+  nameWithType: DelegationRepository.BondAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.BondAccountAddress*
+  name: BondAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_BondAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.BondAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.BondAccountAddress
+  nameWithType: DelegationRepository.BondAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.DelegateeAccountAddress
   name: DelegateeAccountAddress
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegateeAccountAddress
@@ -31166,6 +31179,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.DelegateeAccountAddress
   nameWithType: DelegationRepository.DelegateeAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress
+  name: DelegateeMetadataAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegateeMetadataAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress
+  nameWithType: DelegationRepository.DelegateeMetadataAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress*
+  name: DelegateeMetadataAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegateeMetadataAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.DelegateeMetadataAccountAddress
+  nameWithType: DelegationRepository.DelegateeMetadataAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.DelegatorAccountAddress
   name: DelegatorAccountAddress
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegatorAccountAddress
@@ -31179,6 +31205,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.DelegatorAccountAddress
   nameWithType: DelegationRepository.DelegatorAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress
+  name: DelegatorMetadataAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegatorMetadataAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress
+  nameWithType: DelegationRepository.DelegatorMetadataAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress*
+  name: DelegatorMetadataAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_DelegatorMetadataAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.DelegatorMetadataAccountAddress
+  nameWithType: DelegationRepository.DelegatorMetadataAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.GetBalance(Libplanet.Crypto.Address,Libplanet.Types.Assets.Currency)
   name: GetBalance(Address, Currency)
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_GetBalance_Libplanet_Crypto_Address_Libplanet_Types_Assets_Currency_
@@ -31380,6 +31419,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.GetUnlimitedUnbondLockIn
   nameWithType: DelegationRepository.GetUnlimitedUnbondLockIn
+- uid: Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress
+  name: LumpSumRewardsRecordAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_LumpSumRewardsRecordAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress
+  nameWithType: DelegationRepository.LumpSumRewardsRecordAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress*
+  name: LumpSumRewardsRecordAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_LumpSumRewardsRecordAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.LumpSumRewardsRecordAccountAddress
+  nameWithType: DelegationRepository.LumpSumRewardsRecordAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress
+  name: RebondGraceAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_RebondGraceAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress
+  nameWithType: DelegationRepository.RebondGraceAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress*
+  name: RebondGraceAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_RebondGraceAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.RebondGraceAccountAddress
+  nameWithType: DelegationRepository.RebondGraceAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.RemoveLumpSumRewardsRecord(Nekoyume.Delegation.LumpSumRewardsRecord)
   name: RemoveLumpSumRewardsRecord(LumpSumRewardsRecord)
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_RemoveLumpSumRewardsRecord_Nekoyume_Delegation_LumpSumRewardsRecord_
@@ -31393,6 +31458,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.RemoveLumpSumRewardsRecord
   nameWithType: DelegationRepository.RemoveLumpSumRewardsRecord
+- uid: Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress
+  name: RewardBaseAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_RewardBaseAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress
+  nameWithType: DelegationRepository.RewardBaseAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress*
+  name: RewardBaseAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_RewardBaseAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.RewardBaseAccountAddress
+  nameWithType: DelegationRepository.RewardBaseAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.SetBond(Nekoyume.Delegation.Bond)
   name: SetBond(Bond)
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_SetBond_Nekoyume_Delegation_Bond_
@@ -31536,6 +31614,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.DelegationRepository.TransferAsset
   nameWithType: DelegationRepository.TransferAsset
+- uid: Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress
+  name: UnbondLockInAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_UnbondLockInAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress
+  nameWithType: DelegationRepository.UnbondLockInAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress*
+  name: UnbondLockInAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_UnbondLockInAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.UnbondLockInAccountAddress
+  nameWithType: DelegationRepository.UnbondLockInAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress
+  name: UnbondingSetAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_UnbondingSetAccountAddress
+  commentId: P:Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress
+  fullName: Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress
+  nameWithType: DelegationRepository.UnbondingSetAccountAddress
+- uid: Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress*
+  name: UnbondingSetAccountAddress
+  href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_UnbondingSetAccountAddress_
+  commentId: Overload:Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.DelegationRepository.UnbondingSetAccountAddress
+  nameWithType: DelegationRepository.UnbondingSetAccountAddress
 - uid: Nekoyume.Delegation.DelegationRepository.UpdateWorld(Libplanet.Action.State.IWorld)
   name: UpdateWorld(IWorld)
   href: api/Nekoyume.Delegation.DelegationRepository.html#Nekoyume_Delegation_DelegationRepository_UpdateWorld_Libplanet_Action_State_IWorld_
