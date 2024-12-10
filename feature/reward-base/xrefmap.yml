@@ -34365,14 +34365,7 @@ references:
 - uid: Nekoyume.Delegation.RewardBase.Margin
   name: Margin
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Margin
-  commentId: P:Nekoyume.Delegation.RewardBase.Margin
-  fullName: Nekoyume.Delegation.RewardBase.Margin
-  nameWithType: RewardBase.Margin
-- uid: Nekoyume.Delegation.RewardBase.Margin*
-  name: Margin
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Margin_
-  commentId: Overload:Nekoyume.Delegation.RewardBase.Margin
-  isSpec: "True"
+  commentId: F:Nekoyume.Delegation.RewardBase.Margin
   fullName: Nekoyume.Delegation.RewardBase.Margin
   nameWithType: RewardBase.Margin
 - uid: Nekoyume.Delegation.RewardBase.Multiplier(System.Int32)
