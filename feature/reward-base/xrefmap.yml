@@ -30722,6 +30722,24 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).SlashedPoolAddress
   nameWithType: Delegatee<T, TSelf>.SlashedPoolAddress
   nameWithType.vb: Delegatee(Of T, TSelf).SlashedPoolAddress
+- uid: Nekoyume.Delegation.Delegatee`2.StartNewRewardPeriod(System.Int64)
+  name: StartNewRewardPeriod(long)
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_StartNewRewardPeriod_System_Int64_
+  commentId: M:Nekoyume.Delegation.Delegatee`2.StartNewRewardPeriod(System.Int64)
+  name.vb: StartNewRewardPeriod(Long)
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.StartNewRewardPeriod(long)
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).StartNewRewardPeriod(Long)
+  nameWithType: Delegatee<T, TSelf>.StartNewRewardPeriod(long)
+  nameWithType.vb: Delegatee(Of T, TSelf).StartNewRewardPeriod(Long)
+- uid: Nekoyume.Delegation.Delegatee`2.StartNewRewardPeriod*
+  name: StartNewRewardPeriod
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_StartNewRewardPeriod_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`2.StartNewRewardPeriod
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.StartNewRewardPeriod
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).StartNewRewardPeriod
+  nameWithType: Delegatee<T, TSelf>.StartNewRewardPeriod
+  nameWithType.vb: Delegatee(Of T, TSelf).StartNewRewardPeriod
 - uid: Nekoyume.Delegation.Delegatee`2.Tombstone
   name: Tombstone()
   href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_Tombstone
@@ -34069,12 +34087,6 @@ references:
   commentId: M:Nekoyume.Delegation.RewardBase.AddReward(Libplanet.Types.Assets.FungibleAssetValue)
   fullName: Nekoyume.Delegation.RewardBase.AddReward(Libplanet.Types.Assets.FungibleAssetValue)
   nameWithType: RewardBase.AddReward(FungibleAssetValue)
-- uid: Nekoyume.Delegation.RewardBase.AddReward(Nekoyume.Delegation.RewardBase,Libplanet.Types.Assets.FungibleAssetValue)
-  name: AddReward(RewardBase, FungibleAssetValue)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_AddReward_Nekoyume_Delegation_RewardBase_Libplanet_Types_Assets_FungibleAssetValue_
-  commentId: M:Nekoyume.Delegation.RewardBase.AddReward(Nekoyume.Delegation.RewardBase,Libplanet.Types.Assets.FungibleAssetValue)
-  fullName: Nekoyume.Delegation.RewardBase.AddReward(Nekoyume.Delegation.RewardBase, Libplanet.Types.Assets.FungibleAssetValue)
-  nameWithType: RewardBase.AddReward(RewardBase, FungibleAssetValue)
 - uid: Nekoyume.Delegation.RewardBase.AddReward*
   name: AddReward
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_AddReward_
@@ -34207,6 +34219,22 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RewardBase.MoveAddress
   nameWithType: RewardBase.MoveAddress
+- uid: Nekoyume.Delegation.RewardBase.Multiplier(System.Int32)
+  name: Multiplier(int)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Multiplier_System_Int32_
+  commentId: M:Nekoyume.Delegation.RewardBase.Multiplier(System.Int32)
+  name.vb: Multiplier(Integer)
+  fullName: Nekoyume.Delegation.RewardBase.Multiplier(int)
+  fullName.vb: Nekoyume.Delegation.RewardBase.Multiplier(Integer)
+  nameWithType: RewardBase.Multiplier(int)
+  nameWithType.vb: RewardBase.Multiplier(Integer)
+- uid: Nekoyume.Delegation.RewardBase.Multiplier*
+  name: Multiplier
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_Multiplier_
+  commentId: Overload:Nekoyume.Delegation.RewardBase.Multiplier
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.RewardBase.Multiplier
+  nameWithType: RewardBase.Multiplier
 - uid: Nekoyume.Delegation.RewardBase.RecommendedSigFig(System.Numerics.BigInteger)
   name: RecommendedSigFig(BigInteger)
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_RecommendedSigFig_System_Numerics_BigInteger_
@@ -34272,18 +34300,15 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RewardBase.TotalShares
   nameWithType: RewardBase.TotalShares
-- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(Nekoyume.Delegation.RewardBase,System.Numerics.BigInteger)
-  name: UpdateTotalShares(RewardBase, BigInteger)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_Nekoyume_Delegation_RewardBase_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(Nekoyume.Delegation.RewardBase,System.Numerics.BigInteger)
-  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(Nekoyume.Delegation.RewardBase, System.Numerics.BigInteger)
-  nameWithType: RewardBase.UpdateTotalShares(RewardBase, BigInteger)
-- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
-  name: UpdateTotalShares(BigInteger)
-  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
-  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)
-  nameWithType: RewardBase.UpdateTotalShares(BigInteger)
+- uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger,System.Int64)
+  name: UpdateTotalShares(BigInteger, long)
+  href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_System_Int64_
+  commentId: M:Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger,System.Int64)
+  name.vb: UpdateTotalShares(BigInteger, Long)
+  fullName: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger, long)
+  fullName.vb: Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger, Long)
+  nameWithType: RewardBase.UpdateTotalShares(BigInteger, long)
+  nameWithType.vb: RewardBase.UpdateTotalShares(BigInteger, Long)
 - uid: Nekoyume.Delegation.RewardBase.UpdateTotalShares*
   name: UpdateTotalShares
   href: api/Nekoyume.Delegation.RewardBase.html#Nekoyume_Delegation_RewardBase_UpdateTotalShares_
