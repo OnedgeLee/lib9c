@@ -24022,15 +24022,15 @@ references:
   fullName.vb: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.New()
   nameWithType: SetValidatorCommission.SetValidatorCommission()
   nameWithType.vb: SetValidatorCommission.New()
-- uid: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name: SetValidatorCommission(Address, BigInteger)
-  href: api/Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.html#Nekoyume_Action_ValidatorDelegation_SetValidatorCommission__ctor_Libplanet_Crypto_Address_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.#ctor(Libplanet.Crypto.Address,System.Numerics.BigInteger)
-  name.vb: New(Address, BigInteger)
-  fullName: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.SetValidatorCommission(Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  fullName.vb: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.New(Libplanet.Crypto.Address, System.Numerics.BigInteger)
-  nameWithType: SetValidatorCommission.SetValidatorCommission(Address, BigInteger)
-  nameWithType.vb: SetValidatorCommission.New(Address, BigInteger)
+- uid: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.#ctor(System.Numerics.BigInteger)
+  name: SetValidatorCommission(BigInteger)
+  href: api/Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.html#Nekoyume_Action_ValidatorDelegation_SetValidatorCommission__ctor_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.#ctor(System.Numerics.BigInteger)
+  name.vb: New(BigInteger)
+  fullName: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.SetValidatorCommission(System.Numerics.BigInteger)
+  fullName.vb: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.New(System.Numerics.BigInteger)
+  nameWithType: SetValidatorCommission.SetValidatorCommission(BigInteger)
+  nameWithType.vb: SetValidatorCommission.New(BigInteger)
 - uid: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.#ctor*
   name: SetValidatorCommission
   href: api/Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.html#Nekoyume_Action_ValidatorDelegation_SetValidatorCommission__ctor_
@@ -24099,19 +24099,6 @@ references:
   commentId: F:Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.TypeIdentifier
   fullName: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.TypeIdentifier
   nameWithType: SetValidatorCommission.TypeIdentifier
-- uid: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.html#Nekoyume_Action_ValidatorDelegation_SetValidatorCommission_ValidatorDelegatee
-  commentId: P:Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee
-  fullName: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee
-  nameWithType: SetValidatorCommission.ValidatorDelegatee
-- uid: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee*
-  name: ValidatorDelegatee
-  href: api/Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.html#Nekoyume_Action_ValidatorDelegation_SetValidatorCommission_ValidatorDelegatee_
-  commentId: Overload:Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee
-  isSpec: "True"
-  fullName: Nekoyume.Action.ValidatorDelegation.SetValidatorCommission.ValidatorDelegatee
-  nameWithType: SetValidatorCommission.ValidatorDelegatee
 - uid: Nekoyume.Action.ValidatorDelegation.SlashValidator
   name: SlashValidator
   href: api/Nekoyume.Action.ValidatorDelegation.SlashValidator.html
