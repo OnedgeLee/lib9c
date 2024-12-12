@@ -300,7 +300,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Address" data-uid="Nekoyume.Delegation.RewardBase.Address">
   Address
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -331,7 +331,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_Bencoded" data-uid="Nekoyume.Delegation.RewardBase.Bencoded">
   Bencoded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -362,7 +362,7 @@ Also, it holds the significant figure to calculate the reward.</p>
 
   <h3 id="Nekoyume_Delegation_RewardBase_RewardPortion" data-uid="Nekoyume.Delegation.RewardBase.RewardPortion">
   RewardPortion
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L221"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Cumulative reward portion of <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>.
@@ -371,7 +371,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ImmutableSortedDictionary&lt;Currency, FungibleAssetValue&gt; RewardPortion { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ImmutableSortedDictionary&lt;Currency, BigInteger&gt; RewardPortion { get; }</code></pre>
   </div>
 
 
@@ -380,7 +380,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablesorteddictionary-2">ImmutableSortedDictionary</a>&lt;<span class="xref">Currency</span>, <span class="xref">FungibleAssetValue</span>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablesorteddictionary-2">ImmutableSortedDictionary</a>&lt;<span class="xref">Currency</span>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.numerics.biginteger">BigInteger</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -395,7 +395,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_SigFig" data-uid="Nekoyume.Delegation.RewardBase.SigFig">
   SigFig
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L226"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Significant figure of <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>.</p>
@@ -427,7 +427,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_StartHeight" data-uid="Nekoyume.Delegation.RewardBase.StartHeight">
   StartHeight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L231"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start height of <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a> that attached when archived.</p>
@@ -459,7 +459,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_TotalShares" data-uid="Nekoyume.Delegation.RewardBase.TotalShares">
   TotalShares
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p><a class="xref" href="Nekoyume.Delegation.IDelegatee.html#Nekoyume_Delegation_IDelegatee_TotalShares">TotalShares</a> of <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>'s creation height.</p>
@@ -495,7 +495,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_AddReward_Libplanet_Types_Assets_FungibleAssetValue_" data-uid="Nekoyume.Delegation.RewardBase.AddReward(Libplanet.Types.Assets.FungibleAssetValue)">
   AddReward(FungibleAssetValue)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L275"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add reward to the <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>.</p>
@@ -534,7 +534,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_AddRewards_System_Collections_Generic_IEnumerable_Libplanet_Types_Assets_FungibleAssetValue__" data-uid="Nekoyume.Delegation.RewardBase.AddRewards(System.Collections.Generic.IEnumerable{Libplanet.Types.Assets.FungibleAssetValue})">
   AddRewards(IEnumerable&lt;FungibleAssetValue&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L263"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Add rewards to the <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>.</p>
@@ -573,7 +573,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_AttachHeight_Libplanet_Crypto_Address_System_Int64_" data-uid="Nekoyume.Delegation.RewardBase.AttachHeight(Libplanet.Crypto.Address,System.Int64)">
   AttachHeight(Address, long)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L305"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -611,7 +611,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_CumulativeRewardDuringPeriod_System_Numerics_BigInteger_" data-uid="Nekoyume.Delegation.RewardBase.CumulativeRewardDuringPeriod(System.Numerics.BigInteger)">
   CumulativeRewardDuringPeriod(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L324"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculate the cumulative reward during the period.</p>
@@ -650,7 +650,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_CumulativeRewardDuringPeriod_System_Numerics_BigInteger_Libplanet_Types_Assets_Currency_" data-uid="Nekoyume.Delegation.RewardBase.CumulativeRewardDuringPeriod(System.Numerics.BigInteger,Libplanet.Types.Assets.Currency)">
   CumulativeRewardDuringPeriod(BigInteger, Currency)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L343"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Calculate the cumulative reward during the period, for the specific currency.</p>
@@ -698,7 +698,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_Equals_Nekoyume_Delegation_RewardBase_" data-uid="Nekoyume.Delegation.RewardBase.Equals(Nekoyume.Delegation.RewardBase)">
   Equals(RewardBase?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L392"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
@@ -737,7 +737,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_Equals_System_Object_" data-uid="Nekoyume.Delegation.RewardBase.Equals(System.Object)">
   Equals(object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L389"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified object is equal to the current object.</p>
@@ -776,7 +776,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_GetHashCode" data-uid="Nekoyume.Delegation.RewardBase.GetHashCode">
   GetHashCode()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L401"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serves as the default hash function.</p>
@@ -809,7 +809,7 @@ When it's multiplied by the number of shares, it will be the reward for the peri
 
   <h3 id="Nekoyume_Delegation_RewardBase_UpdateTotalShares_System_Numerics_BigInteger_" data-uid="Nekoyume.Delegation.RewardBase.UpdateTotalShares(System.Numerics.BigInteger)">
   UpdateTotalShares(BigInteger)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/OnedgeLee/lib9c/blob/feature/reward-base/Lib9c/Delegation/RewardBase.cs/#L287"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Update the total shares of the <a class="xref" href="Nekoyume.Delegation.RewardBase.html">RewardBase</a>.</p>
