@@ -2681,6 +2681,12 @@ references:
   commentId: F:Lib9c.SerializeKeys.StageMapKey
   fullName: Lib9c.SerializeKeys.StageMapKey
   nameWithType: SerializeKeys.StageMapKey
+- uid: Lib9c.SerializeKeys.StakeAvatarAddressKey
+  name: StakeAvatarAddressKey
+  href: api/Lib9c.SerializeKeys.html#Lib9c_SerializeKeys_StakeAvatarAddressKey
+  commentId: F:Lib9c.SerializeKeys.StakeAvatarAddressKey
+  fullName: Lib9c.SerializeKeys.StakeAvatarAddressKey
+  nameWithType: SerializeKeys.StakeAvatarAddressKey
 - uid: Lib9c.SerializeKeys.StartedBlockIndexKey
   name: StartedBlockIndexKey
   href: api/Lib9c.SerializeKeys.html#Lib9c_SerializeKeys_StartedBlockIndexKey
@@ -6572,6 +6578,19 @@ references:
   fullName.vb: Nekoyume.Action.ClaimStakeReward.New
   nameWithType: ClaimStakeReward.ClaimStakeReward
   nameWithType.vb: ClaimStakeReward.New
+- uid: Nekoyume.Action.ClaimStakeReward.Claim(Libplanet.Action.State.IWorld,Libplanet.Action.IActionContext,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Nekoyume.Model.State.AvatarState,Nekoyume.Model.Stake.StakeState)
+  name: Claim(IWorld, IActionContext, Address, Address, AvatarState, StakeState)
+  href: api/Nekoyume.Action.ClaimStakeReward.html#Nekoyume_Action_ClaimStakeReward_Claim_Libplanet_Action_State_IWorld_Libplanet_Action_IActionContext_Libplanet_Crypto_Address_Libplanet_Crypto_Address_Nekoyume_Model_State_AvatarState_Nekoyume_Model_Stake_StakeState_
+  commentId: M:Nekoyume.Action.ClaimStakeReward.Claim(Libplanet.Action.State.IWorld,Libplanet.Action.IActionContext,Libplanet.Crypto.Address,Libplanet.Crypto.Address,Nekoyume.Model.State.AvatarState,Nekoyume.Model.Stake.StakeState)
+  fullName: Nekoyume.Action.ClaimStakeReward.Claim(Libplanet.Action.State.IWorld, Libplanet.Action.IActionContext, Libplanet.Crypto.Address, Libplanet.Crypto.Address, Nekoyume.Model.State.AvatarState, Nekoyume.Model.Stake.StakeState)
+  nameWithType: ClaimStakeReward.Claim(IWorld, IActionContext, Address, Address, AvatarState, StakeState)
+- uid: Nekoyume.Action.ClaimStakeReward.Claim*
+  name: Claim
+  href: api/Nekoyume.Action.ClaimStakeReward.html#Nekoyume_Action_ClaimStakeReward_Claim_
+  commentId: Overload:Nekoyume.Action.ClaimStakeReward.Claim
+  isSpec: "True"
+  fullName: Nekoyume.Action.ClaimStakeReward.Claim
+  nameWithType: ClaimStakeReward.Claim
 - uid: Nekoyume.Action.ClaimStakeReward.Execute(Libplanet.Action.IActionContext)
   name: Execute(IActionContext)
   href: api/Nekoyume.Action.ClaimStakeReward.html#Nekoyume_Action_ClaimStakeReward_Execute_Libplanet_Action_IActionContext_
@@ -11056,6 +11075,76 @@ references:
   commentId: F:Nekoyume.Action.Guild.ClaimGuildReward.TypeIdentifier
   fullName: Nekoyume.Action.Guild.ClaimGuildReward.TypeIdentifier
   nameWithType: ClaimGuildReward.TypeIdentifier
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded
+  name: ClaimGuildUnbonded
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html
+  commentId: T:Nekoyume.Action.Guild.ClaimGuildUnbonded
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded
+  nameWithType: ClaimGuildUnbonded
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.#ctor
+  name: ClaimGuildUnbonded()
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded__ctor
+  commentId: M:Nekoyume.Action.Guild.ClaimGuildUnbonded.#ctor
+  name.vb: New()
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.ClaimGuildUnbonded()
+  fullName.vb: Nekoyume.Action.Guild.ClaimGuildUnbonded.New()
+  nameWithType: ClaimGuildUnbonded.ClaimGuildUnbonded()
+  nameWithType.vb: ClaimGuildUnbonded.New()
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.#ctor*
+  name: ClaimGuildUnbonded
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded__ctor_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimGuildUnbonded.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.ClaimGuildUnbonded
+  fullName.vb: Nekoyume.Action.Guild.ClaimGuildUnbonded.New
+  nameWithType: ClaimGuildUnbonded.ClaimGuildUnbonded
+  nameWithType.vb: ClaimGuildUnbonded.New
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute(Libplanet.Action.IActionContext)
+  name: Execute(IActionContext)
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_Execute_Libplanet_Action_IActionContext_
+  commentId: M:Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute(Libplanet.Action.IActionContext)
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute(Libplanet.Action.IActionContext)
+  nameWithType: ClaimGuildUnbonded.Execute(IActionContext)
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute*
+  name: Execute
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_Execute_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.Execute
+  nameWithType: ClaimGuildUnbonded.Execute
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  name: LoadPlainValue(IValue)
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_LoadPlainValue_Bencodex_Types_IValue_
+  commentId: M:Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  nameWithType: ClaimGuildUnbonded.LoadPlainValue(IValue)
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue*
+  name: LoadPlainValue
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_LoadPlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.LoadPlainValue
+  nameWithType: ClaimGuildUnbonded.LoadPlainValue
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_PlainValue
+  commentId: P:Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue
+  nameWithType: ClaimGuildUnbonded.PlainValue
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue*
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_PlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.PlainValue
+  nameWithType: ClaimGuildUnbonded.PlainValue
+- uid: Nekoyume.Action.Guild.ClaimGuildUnbonded.TypeIdentifier
+  name: TypeIdentifier
+  href: api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html#Nekoyume_Action_Guild_ClaimGuildUnbonded_TypeIdentifier
+  commentId: F:Nekoyume.Action.Guild.ClaimGuildUnbonded.TypeIdentifier
+  fullName: Nekoyume.Action.Guild.ClaimGuildUnbonded.TypeIdentifier
+  nameWithType: ClaimGuildUnbonded.TypeIdentifier
 - uid: Nekoyume.Action.Guild.ClaimReward
   name: ClaimReward
   href: api/Nekoyume.Action.Guild.ClaimReward.html
@@ -11126,6 +11215,76 @@ references:
   commentId: F:Nekoyume.Action.Guild.ClaimReward.TypeIdentifier
   fullName: Nekoyume.Action.Guild.ClaimReward.TypeIdentifier
   nameWithType: ClaimReward.TypeIdentifier
+- uid: Nekoyume.Action.Guild.ClaimUnbonded
+  name: ClaimUnbonded
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html
+  commentId: T:Nekoyume.Action.Guild.ClaimUnbonded
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded
+  nameWithType: ClaimUnbonded
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.#ctor
+  name: ClaimUnbonded()
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded__ctor
+  commentId: M:Nekoyume.Action.Guild.ClaimUnbonded.#ctor
+  name.vb: New()
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.ClaimUnbonded()
+  fullName.vb: Nekoyume.Action.Guild.ClaimUnbonded.New()
+  nameWithType: ClaimUnbonded.ClaimUnbonded()
+  nameWithType.vb: ClaimUnbonded.New()
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.#ctor*
+  name: ClaimUnbonded
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded__ctor_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimUnbonded.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.ClaimUnbonded
+  fullName.vb: Nekoyume.Action.Guild.ClaimUnbonded.New
+  nameWithType: ClaimUnbonded.ClaimUnbonded
+  nameWithType.vb: ClaimUnbonded.New
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.Execute(Libplanet.Action.IActionContext)
+  name: Execute(IActionContext)
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_Execute_Libplanet_Action_IActionContext_
+  commentId: M:Nekoyume.Action.Guild.ClaimUnbonded.Execute(Libplanet.Action.IActionContext)
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.Execute(Libplanet.Action.IActionContext)
+  nameWithType: ClaimUnbonded.Execute(IActionContext)
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.Execute*
+  name: Execute
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_Execute_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimUnbonded.Execute
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.Execute
+  nameWithType: ClaimUnbonded.Execute
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  name: LoadPlainValue(IValue)
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_LoadPlainValue_Bencodex_Types_IValue_
+  commentId: M:Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  nameWithType: ClaimUnbonded.LoadPlainValue(IValue)
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue*
+  name: LoadPlainValue
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_LoadPlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.LoadPlainValue
+  nameWithType: ClaimUnbonded.LoadPlainValue
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.PlainValue
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_PlainValue
+  commentId: P:Nekoyume.Action.Guild.ClaimUnbonded.PlainValue
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.PlainValue
+  nameWithType: ClaimUnbonded.PlainValue
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.PlainValue*
+  name: PlainValue
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_PlainValue_
+  commentId: Overload:Nekoyume.Action.Guild.ClaimUnbonded.PlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.PlainValue
+  nameWithType: ClaimUnbonded.PlainValue
+- uid: Nekoyume.Action.Guild.ClaimUnbonded.TypeIdentifier
+  name: TypeIdentifier
+  href: api/Nekoyume.Action.Guild.ClaimUnbonded.html#Nekoyume_Action_Guild_ClaimUnbonded_TypeIdentifier
+  commentId: F:Nekoyume.Action.Guild.ClaimUnbonded.TypeIdentifier
+  fullName: Nekoyume.Action.Guild.ClaimUnbonded.TypeIdentifier
+  nameWithType: ClaimUnbonded.TypeIdentifier
 - uid: Nekoyume.Action.Guild.GuildConfig
   name: GuildConfig
   href: api/Nekoyume.Action.Guild.GuildConfig.html
@@ -21834,15 +21993,15 @@ references:
   fullName.vb: Nekoyume.Action.Stake.New()
   nameWithType: Stake.Stake()
   nameWithType.vb: Stake.New()
-- uid: Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger)
-  name: Stake(BigInteger)
-  href: api/Nekoyume.Action.Stake.html#Nekoyume_Action_Stake__ctor_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger)
-  name.vb: New(BigInteger)
-  fullName: Nekoyume.Action.Stake.Stake(System.Numerics.BigInteger)
-  fullName.vb: Nekoyume.Action.Stake.New(System.Numerics.BigInteger)
-  nameWithType: Stake.Stake(BigInteger)
-  nameWithType.vb: Stake.New(BigInteger)
+- uid: Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger,Libplanet.Crypto.Address)
+  name: Stake(BigInteger, Address)
+  href: api/Nekoyume.Action.Stake.html#Nekoyume_Action_Stake__ctor_System_Numerics_BigInteger_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger,Libplanet.Crypto.Address)
+  name.vb: New(BigInteger, Address)
+  fullName: Nekoyume.Action.Stake.Stake(System.Numerics.BigInteger, Libplanet.Crypto.Address)
+  fullName.vb: Nekoyume.Action.Stake.New(System.Numerics.BigInteger, Libplanet.Crypto.Address)
+  nameWithType: Stake.Stake(BigInteger, Address)
+  nameWithType.vb: Stake.New(BigInteger, Address)
 - uid: Nekoyume.Action.Stake.#ctor*
   name: Stake
   href: api/Nekoyume.Action.Stake.html#Nekoyume_Action_Stake__ctor_
@@ -23209,6 +23368,89 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorRewardSelf.ValidatorDelegatee
   nameWithType: ClaimValidatorRewardSelf.ValidatorDelegatee
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded
+  name: ClaimValidatorUnbonded
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html
+  commentId: T:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded
+  nameWithType: ClaimValidatorUnbonded
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.#ctor
+  name: ClaimValidatorUnbonded()
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded__ctor
+  commentId: M:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.#ctor
+  name.vb: New()
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ClaimValidatorUnbonded()
+  fullName.vb: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.New()
+  nameWithType: ClaimValidatorUnbonded.ClaimValidatorUnbonded()
+  nameWithType.vb: ClaimValidatorUnbonded.New()
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.#ctor*
+  name: ClaimValidatorUnbonded
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded__ctor_
+  commentId: Overload:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ClaimValidatorUnbonded
+  fullName.vb: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.New
+  nameWithType: ClaimValidatorUnbonded.ClaimValidatorUnbonded
+  nameWithType.vb: ClaimValidatorUnbonded.New
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute(Libplanet.Action.IActionContext)
+  name: Execute(IActionContext)
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_Execute_Libplanet_Action_IActionContext_
+  commentId: M:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute(Libplanet.Action.IActionContext)
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute(Libplanet.Action.IActionContext)
+  nameWithType: ClaimValidatorUnbonded.Execute(IActionContext)
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute*
+  name: Execute
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_Execute_
+  commentId: Overload:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute
+  isSpec: "True"
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.Execute
+  nameWithType: ClaimValidatorUnbonded.Execute
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  name: LoadPlainValue(IValue)
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_LoadPlainValue_Bencodex_Types_IValue_
+  commentId: M:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue(Bencodex.Types.IValue)
+  nameWithType: ClaimValidatorUnbonded.LoadPlainValue(IValue)
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue*
+  name: LoadPlainValue
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_LoadPlainValue_
+  commentId: Overload:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.LoadPlainValue
+  nameWithType: ClaimValidatorUnbonded.LoadPlainValue
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue
+  name: PlainValue
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_PlainValue
+  commentId: P:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue
+  nameWithType: ClaimValidatorUnbonded.PlainValue
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue*
+  name: PlainValue
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_PlainValue_
+  commentId: Overload:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue
+  isSpec: "True"
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.PlainValue
+  nameWithType: ClaimValidatorUnbonded.PlainValue
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.TypeIdentifier
+  name: TypeIdentifier
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_TypeIdentifier
+  commentId: F:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.TypeIdentifier
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.TypeIdentifier
+  nameWithType: ClaimValidatorUnbonded.TypeIdentifier
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee
+  name: ValidatorDelegatee
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_ValidatorDelegatee
+  commentId: P:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee
+  nameWithType: ClaimValidatorUnbonded.ValidatorDelegatee
+- uid: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee*
+  name: ValidatorDelegatee
+  href: api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html#Nekoyume_Action_ValidatorDelegation_ClaimValidatorUnbonded_ValidatorDelegatee_
+  commentId: Overload:Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee
+  isSpec: "True"
+  fullName: Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.ValidatorDelegatee
+  nameWithType: ClaimValidatorUnbonded.ValidatorDelegatee
 - uid: Nekoyume.Action.ValidatorDelegation.DelegateValidator
   name: DelegateValidator
   href: api/Nekoyume.Action.ValidatorDelegation.DelegateValidator.html
@@ -29913,24 +30155,24 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).BondAddress
   nameWithType: Delegatee<T, TSelf>.BondAddress
   nameWithType.vb: Delegatee(Of T, TSelf).BondAddress
-- uid: Nekoyume.Delegation.Delegatee`2.CalculateReward(System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Nekoyume.Delegation.LumpSumRewardsRecord})
-  name: CalculateReward(BigInteger, IEnumerable<LumpSumRewardsRecord>)
-  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_CalculateReward_System_Numerics_BigInteger_System_Collections_Generic_IEnumerable_Nekoyume_Delegation_LumpSumRewardsRecord__
-  commentId: M:Nekoyume.Delegation.Delegatee`2.CalculateReward(System.Numerics.BigInteger,System.Collections.Generic.IEnumerable{Nekoyume.Delegation.LumpSumRewardsRecord})
-  name.vb: CalculateReward(BigInteger, IEnumerable(Of LumpSumRewardsRecord))
-  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.CalculateReward(System.Numerics.BigInteger, System.Collections.Generic.IEnumerable<Nekoyume.Delegation.LumpSumRewardsRecord>)
-  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).CalculateReward(System.Numerics.BigInteger, System.Collections.Generic.IEnumerable(Of Nekoyume.Delegation.LumpSumRewardsRecord))
-  nameWithType: Delegatee<T, TSelf>.CalculateReward(BigInteger, IEnumerable<LumpSumRewardsRecord>)
-  nameWithType.vb: Delegatee(Of T, TSelf).CalculateReward(BigInteger, IEnumerable(Of LumpSumRewardsRecord))
-- uid: Nekoyume.Delegation.Delegatee`2.CalculateReward*
-  name: CalculateReward
-  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_CalculateReward_
-  commentId: Overload:Nekoyume.Delegation.Delegatee`2.CalculateReward
+- uid: Nekoyume.Delegation.Delegatee`2.CalculateRewards(System.Numerics.BigInteger,Nekoyume.Delegation.RewardBase,Nekoyume.Delegation.RewardBase)
+  name: CalculateRewards(BigInteger, RewardBase, RewardBase?)
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_CalculateRewards_System_Numerics_BigInteger_Nekoyume_Delegation_RewardBase_Nekoyume_Delegation_RewardBase_
+  commentId: M:Nekoyume.Delegation.Delegatee`2.CalculateRewards(System.Numerics.BigInteger,Nekoyume.Delegation.RewardBase,Nekoyume.Delegation.RewardBase)
+  name.vb: CalculateRewards(BigInteger, RewardBase, RewardBase)
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.CalculateRewards(System.Numerics.BigInteger, Nekoyume.Delegation.RewardBase, Nekoyume.Delegation.RewardBase?)
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).CalculateRewards(System.Numerics.BigInteger, Nekoyume.Delegation.RewardBase, Nekoyume.Delegation.RewardBase)
+  nameWithType: Delegatee<T, TSelf>.CalculateRewards(BigInteger, RewardBase, RewardBase?)
+  nameWithType.vb: Delegatee(Of T, TSelf).CalculateRewards(BigInteger, RewardBase, RewardBase)
+- uid: Nekoyume.Delegation.Delegatee`2.CalculateRewards*
+  name: CalculateRewards
+  href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_CalculateRewards_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`2.CalculateRewards
   isSpec: "True"
-  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.CalculateReward
-  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).CalculateReward
-  nameWithType: Delegatee<T, TSelf>.CalculateReward
-  nameWithType.vb: Delegatee(Of T, TSelf).CalculateReward
+  fullName: Nekoyume.Delegation.Delegatee<T, TSelf>.CalculateRewards
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of T, TSelf).CalculateRewards
+  nameWithType: Delegatee<T, TSelf>.CalculateRewards
+  nameWithType.vb: Delegatee(Of T, TSelf).CalculateRewards
 - uid: Nekoyume.Delegation.Delegatee`2.CollectRewards(System.Int64)
   name: CollectRewards(long)
   href: api/Nekoyume.Delegation.Delegatee-2.html#Nekoyume_Delegation_Delegatee_2_CollectRewards_System_Int64_
@@ -33346,15 +33588,15 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.IUnbonding.Release
   nameWithType: IUnbonding.Release
-- uid: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name: Slash(BigInteger, long, long, out FungibleAssetValue?)
-  href: api/Nekoyume.Delegation.IUnbonding.html#Nekoyume_Delegation_IUnbonding_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue___
-  commentId: M:Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name.vb: Slash(BigInteger, Long, Long, FungibleAssetValue?)
-  fullName: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger, long, long, out Libplanet.Types.Assets.FungibleAssetValue?)
-  fullName.vb: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Types.Assets.FungibleAssetValue?)
-  nameWithType: IUnbonding.Slash(BigInteger, long, long, out FungibleAssetValue?)
-  nameWithType.vb: IUnbonding.Slash(BigInteger, Long, Long, FungibleAssetValue?)
+- uid: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name: Slash(BigInteger, long, long, Address)
+  href: api/Nekoyume.Delegation.IUnbonding.html#Nekoyume_Delegation_IUnbonding_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name.vb: Slash(BigInteger, Long, Long, Address)
+  fullName: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger, long, long, Libplanet.Crypto.Address)
+  fullName.vb: Nekoyume.Delegation.IUnbonding.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Crypto.Address)
+  nameWithType: IUnbonding.Slash(BigInteger, long, long, Address)
+  nameWithType.vb: IUnbonding.Slash(BigInteger, Long, Long, Address)
 - uid: Nekoyume.Delegation.IUnbonding.Slash*
   name: Slash
   href: api/Nekoyume.Delegation.IUnbonding.html#Nekoyume_Delegation_IUnbonding_Slash_
@@ -33848,15 +34090,15 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.RebondGrace.Repository
   nameWithType: RebondGrace.Repository
-- uid: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name: Slash(BigInteger, long, long, out FungibleAssetValue?)
-  href: api/Nekoyume.Delegation.RebondGrace.html#Nekoyume_Delegation_RebondGrace_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue___
-  commentId: M:Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name.vb: Slash(BigInteger, Long, Long, FungibleAssetValue?)
-  fullName: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger, long, long, out Libplanet.Types.Assets.FungibleAssetValue?)
-  fullName.vb: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Types.Assets.FungibleAssetValue?)
-  nameWithType: RebondGrace.Slash(BigInteger, long, long, out FungibleAssetValue?)
-  nameWithType.vb: RebondGrace.Slash(BigInteger, Long, Long, FungibleAssetValue?)
+- uid: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name: Slash(BigInteger, long, long, Address)
+  href: api/Nekoyume.Delegation.RebondGrace.html#Nekoyume_Delegation_RebondGrace_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name.vb: Slash(BigInteger, Long, Long, Address)
+  fullName: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger, long, long, Libplanet.Crypto.Address)
+  fullName.vb: Nekoyume.Delegation.RebondGrace.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Crypto.Address)
+  nameWithType: RebondGrace.Slash(BigInteger, long, long, Address)
+  nameWithType.vb: RebondGrace.Slash(BigInteger, Long, Long, Address)
 - uid: Nekoyume.Delegation.RebondGrace.Slash*
   name: Slash
   href: api/Nekoyume.Delegation.RebondGrace.html#Nekoyume_Delegation_RebondGrace_Slash_
@@ -34342,15 +34584,28 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.UnbondLockIn.Release
   nameWithType: UnbondLockIn.Release
-- uid: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name: Slash(BigInteger, long, long, out FungibleAssetValue?)
-  href: api/Nekoyume.Delegation.UnbondLockIn.html#Nekoyume_Delegation_UnbondLockIn_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue___
-  commentId: M:Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}@)
-  name.vb: Slash(BigInteger, Long, Long, FungibleAssetValue?)
-  fullName: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger, long, long, out Libplanet.Types.Assets.FungibleAssetValue?)
-  fullName.vb: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Types.Assets.FungibleAssetValue?)
-  nameWithType: UnbondLockIn.Slash(BigInteger, long, long, out FungibleAssetValue?)
-  nameWithType.vb: UnbondLockIn.Slash(BigInteger, Long, Long, FungibleAssetValue?)
+- uid: Nekoyume.Delegation.UnbondLockIn.Repository
+  name: Repository
+  href: api/Nekoyume.Delegation.UnbondLockIn.html#Nekoyume_Delegation_UnbondLockIn_Repository
+  commentId: P:Nekoyume.Delegation.UnbondLockIn.Repository
+  fullName: Nekoyume.Delegation.UnbondLockIn.Repository
+  nameWithType: UnbondLockIn.Repository
+- uid: Nekoyume.Delegation.UnbondLockIn.Repository*
+  name: Repository
+  href: api/Nekoyume.Delegation.UnbondLockIn.html#Nekoyume_Delegation_UnbondLockIn_Repository_
+  commentId: Overload:Nekoyume.Delegation.UnbondLockIn.Repository
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.UnbondLockIn.Repository
+  nameWithType: UnbondLockIn.Repository
+- uid: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name: Slash(BigInteger, long, long, Address)
+  href: api/Nekoyume.Delegation.UnbondLockIn.html#Nekoyume_Delegation_UnbondLockIn_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger,System.Int64,System.Int64,Libplanet.Crypto.Address)
+  name.vb: Slash(BigInteger, Long, Long, Address)
+  fullName: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger, long, long, Libplanet.Crypto.Address)
+  fullName.vb: Nekoyume.Delegation.UnbondLockIn.Slash(System.Numerics.BigInteger, Long, Long, Libplanet.Crypto.Address)
+  nameWithType: UnbondLockIn.Slash(BigInteger, long, long, Address)
+  nameWithType.vb: UnbondLockIn.Slash(BigInteger, Long, Long, Address)
 - uid: Nekoyume.Delegation.UnbondLockIn.Slash*
   name: Slash
   href: api/Nekoyume.Delegation.UnbondLockIn.html#Nekoyume_Delegation_UnbondLockIn_Slash_
@@ -47724,6 +47979,22 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildDelegator.Equals
   nameWithType: GuildDelegator.Equals
+- uid: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Object,System.ValueTuple{System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}})
+  name: OnUnbondingReleased(object?, (long Height, IUnbonding ReleasedUnbonding, FungibleAssetValue? ReleasedFAV))
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_OnUnbondingReleased_System_Object_System_ValueTuple_System_Int64_Nekoyume_Delegation_IUnbonding_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue___
+  commentId: M:Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Object,System.ValueTuple{System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}})
+  name.vb: OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As IUnbonding, ReleasedFAV As FungibleAssetValue?))
+  fullName: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(object?, (long Height, Nekoyume.Delegation.IUnbonding ReleasedUnbonding, Libplanet.Types.Assets.FungibleAssetValue? ReleasedFAV))
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As Nekoyume.Delegation.IUnbonding, ReleasedFAV As Libplanet.Types.Assets.FungibleAssetValue?))
+  nameWithType: GuildDelegator.OnUnbondingReleased(object?, (long Height, IUnbonding ReleasedUnbonding, FungibleAssetValue? ReleasedFAV))
+  nameWithType.vb: GuildDelegator.OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As IUnbonding, ReleasedFAV As FungibleAssetValue?))
+- uid: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased*
+  name: OnUnbondingReleased
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_OnUnbondingReleased_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased
+  nameWithType: GuildDelegator.OnUnbondingReleased
 - uid: Nekoyume.Model.Guild.GuildParticipant
   name: GuildParticipant
   href: api/Nekoyume.Model.Guild.GuildParticipant.html
