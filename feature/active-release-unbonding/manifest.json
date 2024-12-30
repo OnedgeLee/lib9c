@@ -3782,10 +3782,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Delegation.Delegatee-2.yml",
+      "source_relative_path": "api/Nekoyume.Delegation.Delegatee-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nekoyume.Delegation.Delegatee-2.html"
+          "relative_path": "api/Nekoyume.Delegation.Delegatee-3.html"
         }
       },
       "version": ""
@@ -3812,20 +3812,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Delegation.DelegationRepository.yml",
+      "source_relative_path": "api/Nekoyume.Delegation.DelegationRepository-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nekoyume.Delegation.DelegationRepository.html"
+          "relative_path": "api/Nekoyume.Delegation.DelegationRepository-3.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Delegation.Delegator-2.yml",
+      "source_relative_path": "api/Nekoyume.Delegation.Delegator-3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Nekoyume.Delegation.Delegator-2.html"
+          "relative_path": "api/Nekoyume.Delegation.Delegator-3.html"
         }
       },
       "version": ""
