@@ -1442,16 +1442,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Action.Guild.ClaimGuildUnbonded.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Action.Guild.ClaimGuildUnbonded.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Nekoyume.Action.Guild.ClaimReward.yml",
       "output": {
         ".html": {
@@ -3156,16 +3146,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorRewardSelf.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nekoyume.Action.ValidatorDelegation.ClaimValidatorUnbonded.html"
         }
       },
       "version": ""
