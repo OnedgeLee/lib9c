@@ -30072,14 +30072,6 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).CurrentRewardBaseAddress
   nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.CurrentRewardBaseAddress
   nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).CurrentRewardBaseAddress
-- uid: Nekoyume.Delegation.Delegatee`3.DelegationChanged
-  name: DelegationChanged
-  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_DelegationChanged
-  commentId: E:Nekoyume.Delegation.Delegatee`3.DelegationChanged
-  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.DelegationChanged
-  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).DelegationChanged
-  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.DelegationChanged
-  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).DelegationChanged
 - uid: Nekoyume.Delegation.Delegatee`3.DelegationCurrency
   name: DelegationCurrency
   href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_DelegationCurrency
@@ -30149,14 +30141,6 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).DistributionPoolAddress
   nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.DistributionPoolAddress
   nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).DistributionPoolAddress
-- uid: Nekoyume.Delegation.Delegatee`3.Enjailed
-  name: Enjailed
-  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_Enjailed
-  commentId: E:Nekoyume.Delegation.Delegatee`3.Enjailed
-  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.Enjailed
-  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).Enjailed
-  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.Enjailed
-  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).Enjailed
 - uid: Nekoyume.Delegation.Delegatee`3.FAVFromShare(System.Numerics.BigInteger)
   name: FAVFromShare(BigInteger)
   href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_FAVFromShare_System_Numerics_BigInteger_
@@ -30329,6 +30313,58 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).MetadataBencoded
   nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.MetadataBencoded
   nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).MetadataBencoded
+- uid: Nekoyume.Delegation.Delegatee`3.OnDelegationChanged(System.Int64)
+  name: OnDelegationChanged(long)
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnDelegationChanged_System_Int64_
+  commentId: M:Nekoyume.Delegation.Delegatee`3.OnDelegationChanged(System.Int64)
+  name.vb: OnDelegationChanged(Long)
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnDelegationChanged(long)
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnDelegationChanged(Long)
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnDelegationChanged(long)
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnDelegationChanged(Long)
+- uid: Nekoyume.Delegation.Delegatee`3.OnDelegationChanged*
+  name: OnDelegationChanged
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnDelegationChanged_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`3.OnDelegationChanged
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnDelegationChanged
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnDelegationChanged
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnDelegationChanged
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnDelegationChanged
+- uid: Nekoyume.Delegation.Delegatee`3.OnEnjailed
+  name: OnEnjailed()
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnEnjailed
+  commentId: M:Nekoyume.Delegation.Delegatee`3.OnEnjailed
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnEnjailed()
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnEnjailed()
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnEnjailed()
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnEnjailed()
+- uid: Nekoyume.Delegation.Delegatee`3.OnEnjailed*
+  name: OnEnjailed
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnEnjailed_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`3.OnEnjailed
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnEnjailed
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnEnjailed
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnEnjailed
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnEnjailed
+- uid: Nekoyume.Delegation.Delegatee`3.OnUnjailed
+  name: OnUnjailed()
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnUnjailed
+  commentId: M:Nekoyume.Delegation.Delegatee`3.OnUnjailed
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnUnjailed()
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnUnjailed()
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnUnjailed()
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnUnjailed()
+- uid: Nekoyume.Delegation.Delegatee`3.OnUnjailed*
+  name: OnUnjailed
+  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_OnUnjailed_
+  commentId: Overload:Nekoyume.Delegation.Delegatee`3.OnUnjailed
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.OnUnjailed
+  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).OnUnjailed
+  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.OnUnjailed
+  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).OnUnjailed
 - uid: Nekoyume.Delegation.Delegatee`3.RebondGraceAddress(Libplanet.Crypto.Address)
   name: RebondGraceAddress(Address)
   href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_RebondGraceAddress_Libplanet_Crypto_Address_
@@ -30640,14 +30676,6 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).Unjail
   nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.Unjail
   nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).Unjail
-- uid: Nekoyume.Delegation.Delegatee`3.Unjailed
-  name: Unjailed
-  href: api/Nekoyume.Delegation.Delegatee-3.html#Nekoyume_Delegation_Delegatee_3_Unjailed
-  commentId: E:Nekoyume.Delegation.Delegatee`3.Unjailed
-  fullName: Nekoyume.Delegation.Delegatee<TRepository, TDelegatee, TDelegator>.Unjailed
-  fullName.vb: Nekoyume.Delegation.Delegatee(Of TRepository, TDelegatee, TDelegator).Unjailed
-  nameWithType: Delegatee<TRepository, TDelegatee, TDelegator>.Unjailed
-  nameWithType.vb: Delegatee(Of TRepository, TDelegatee, TDelegator).Unjailed
 - uid: Nekoyume.Delegation.DelegationAddress
   name: DelegationAddress
   href: api/Nekoyume.Delegation.DelegationAddress.html
@@ -32049,6 +32077,24 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegator(Of TRepository, TDelegatee, TDelegator).MetadataBencoded
   nameWithType: Delegator<TRepository, TDelegatee, TDelegator>.MetadataBencoded
   nameWithType.vb: Delegator(Of TRepository, TDelegatee, TDelegator).MetadataBencoded
+- uid: Nekoyume.Delegation.Delegator`3.OnUnbondingReleased(System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue})
+  name: OnUnbondingReleased(long, IUnbonding, FungibleAssetValue?)
+  href: api/Nekoyume.Delegation.Delegator-3.html#Nekoyume_Delegation_Delegator_3_OnUnbondingReleased_System_Int64_Nekoyume_Delegation_IUnbonding_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue__
+  commentId: M:Nekoyume.Delegation.Delegator`3.OnUnbondingReleased(System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue})
+  name.vb: OnUnbondingReleased(Long, IUnbonding, FungibleAssetValue?)
+  fullName: Nekoyume.Delegation.Delegator<TRepository, TDelegatee, TDelegator>.OnUnbondingReleased(long, Nekoyume.Delegation.IUnbonding, Libplanet.Types.Assets.FungibleAssetValue?)
+  fullName.vb: Nekoyume.Delegation.Delegator(Of TRepository, TDelegatee, TDelegator).OnUnbondingReleased(Long, Nekoyume.Delegation.IUnbonding, Libplanet.Types.Assets.FungibleAssetValue?)
+  nameWithType: Delegator<TRepository, TDelegatee, TDelegator>.OnUnbondingReleased(long, IUnbonding, FungibleAssetValue?)
+  nameWithType.vb: Delegator(Of TRepository, TDelegatee, TDelegator).OnUnbondingReleased(Long, IUnbonding, FungibleAssetValue?)
+- uid: Nekoyume.Delegation.Delegator`3.OnUnbondingReleased*
+  name: OnUnbondingReleased
+  href: api/Nekoyume.Delegation.Delegator-3.html#Nekoyume_Delegation_Delegator_3_OnUnbondingReleased_
+  commentId: Overload:Nekoyume.Delegation.Delegator`3.OnUnbondingReleased
+  isSpec: "True"
+  fullName: Nekoyume.Delegation.Delegator<TRepository, TDelegatee, TDelegator>.OnUnbondingReleased
+  fullName.vb: Nekoyume.Delegation.Delegator(Of TRepository, TDelegatee, TDelegator).OnUnbondingReleased
+  nameWithType: Delegator<TRepository, TDelegatee, TDelegator>.OnUnbondingReleased
+  nameWithType.vb: Delegator(Of TRepository, TDelegatee, TDelegator).OnUnbondingReleased
 - uid: Nekoyume.Delegation.Delegator`3.Redelegate(`1,`1,System.Numerics.BigInteger,System.Int64)
   name: Redelegate(TDelegatee, TDelegatee, BigInteger, long)
   href: api/Nekoyume.Delegation.Delegator-3.html#Nekoyume_Delegation_Delegator_3_Redelegate__1__1_System_Numerics_BigInteger_System_Int64_
@@ -32119,14 +32165,6 @@ references:
   fullName.vb: Nekoyume.Delegation.Delegator(Of TRepository, TDelegatee, TDelegator).RewardAddress
   nameWithType: Delegator<TRepository, TDelegatee, TDelegator>.RewardAddress
   nameWithType.vb: Delegator(Of TRepository, TDelegatee, TDelegator).RewardAddress
-- uid: Nekoyume.Delegation.Delegator`3.UnbondingReleased
-  name: UnbondingReleased
-  href: api/Nekoyume.Delegation.Delegator-3.html#Nekoyume_Delegation_Delegator_3_UnbondingReleased
-  commentId: E:Nekoyume.Delegation.Delegator`3.UnbondingReleased
-  fullName: Nekoyume.Delegation.Delegator<TRepository, TDelegatee, TDelegator>.UnbondingReleased
-  fullName.vb: Nekoyume.Delegation.Delegator(Of TRepository, TDelegatee, TDelegator).UnbondingReleased
-  nameWithType: Delegator<TRepository, TDelegatee, TDelegator>.UnbondingReleased
-  nameWithType.vb: Delegator(Of TRepository, TDelegatee, TDelegator).UnbondingReleased
 - uid: Nekoyume.Delegation.Delegator`3.Undelegate(`1,System.Numerics.BigInteger,System.Int64)
   name: Undelegate(TDelegatee, BigInteger, long)
   href: api/Nekoyume.Delegation.Delegator-3.html#Nekoyume_Delegation_Delegator_3_Undelegate__1_System_Numerics_BigInteger_System_Int64_
@@ -32248,12 +32286,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Delegation.IDelegatee.CurrentRewardBaseAddress
   nameWithType: IDelegatee.CurrentRewardBaseAddress
-- uid: Nekoyume.Delegation.IDelegatee.DelegationChanged
-  name: DelegationChanged
-  href: api/Nekoyume.Delegation.IDelegatee.html#Nekoyume_Delegation_IDelegatee_DelegationChanged
-  commentId: E:Nekoyume.Delegation.IDelegatee.DelegationChanged
-  fullName: Nekoyume.Delegation.IDelegatee.DelegationChanged
-  nameWithType: IDelegatee.DelegationChanged
 - uid: Nekoyume.Delegation.IDelegatee.DelegationCurrency
   name: DelegationCurrency
   href: api/Nekoyume.Delegation.IDelegatee.html#Nekoyume_Delegation_IDelegatee_DelegationCurrency
@@ -47981,15 +48013,15 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildDelegator.Equals
   nameWithType: GuildDelegator.Equals
-- uid: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Object,System.ValueTuple{System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}})
-  name: OnUnbondingReleased(object?, (long Height, IUnbonding ReleasedUnbonding, FungibleAssetValue? ReleasedFAV))
-  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_OnUnbondingReleased_System_Object_System_ValueTuple_System_Int64_Nekoyume_Delegation_IUnbonding_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue___
-  commentId: M:Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Object,System.ValueTuple{System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue}})
-  name.vb: OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As IUnbonding, ReleasedFAV As FungibleAssetValue?))
-  fullName: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(object?, (long Height, Nekoyume.Delegation.IUnbonding ReleasedUnbonding, Libplanet.Types.Assets.FungibleAssetValue? ReleasedFAV))
-  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As Nekoyume.Delegation.IUnbonding, ReleasedFAV As Libplanet.Types.Assets.FungibleAssetValue?))
-  nameWithType: GuildDelegator.OnUnbondingReleased(object?, (long Height, IUnbonding ReleasedUnbonding, FungibleAssetValue? ReleasedFAV))
-  nameWithType.vb: GuildDelegator.OnUnbondingReleased(Object, (Height As Long, ReleasedUnbonding As IUnbonding, ReleasedFAV As FungibleAssetValue?))
+- uid: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue})
+  name: OnUnbondingReleased(long, IUnbonding, FungibleAssetValue?)
+  href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_OnUnbondingReleased_System_Int64_Nekoyume_Delegation_IUnbonding_System_Nullable_Libplanet_Types_Assets_FungibleAssetValue__
+  commentId: M:Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(System.Int64,Nekoyume.Delegation.IUnbonding,System.Nullable{Libplanet.Types.Assets.FungibleAssetValue})
+  name.vb: OnUnbondingReleased(Long, IUnbonding, FungibleAssetValue?)
+  fullName: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(long, Nekoyume.Delegation.IUnbonding, Libplanet.Types.Assets.FungibleAssetValue?)
+  fullName.vb: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased(Long, Nekoyume.Delegation.IUnbonding, Libplanet.Types.Assets.FungibleAssetValue?)
+  nameWithType: GuildDelegator.OnUnbondingReleased(long, IUnbonding, FungibleAssetValue?)
+  nameWithType.vb: GuildDelegator.OnUnbondingReleased(Long, IUnbonding, FungibleAssetValue?)
 - uid: Nekoyume.Model.Guild.GuildDelegator.OnUnbondingReleased*
   name: OnUnbondingReleased
   href: api/Nekoyume.Model.Guild.GuildDelegator.html#Nekoyume_Model_Guild_GuildDelegator_OnUnbondingReleased_
@@ -96008,15 +96040,15 @@ references:
   isSpec: "True"
   fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.MinSelfDelegation
   nameWithType: ValidatorDelegatee.MinSelfDelegation
-- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(System.Object,System.Int64)
-  name: OnDelegationChanged(object?, long)
-  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnDelegationChanged_System_Object_System_Int64_
-  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(System.Object,System.Int64)
-  name.vb: OnDelegationChanged(Object, Long)
-  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(object?, long)
-  fullName.vb: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(Object, Long)
-  nameWithType: ValidatorDelegatee.OnDelegationChanged(object?, long)
-  nameWithType.vb: ValidatorDelegatee.OnDelegationChanged(Object, Long)
+- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(System.Int64)
+  name: OnDelegationChanged(long)
+  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnDelegationChanged_System_Int64_
+  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(System.Int64)
+  name.vb: OnDelegationChanged(Long)
+  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(long)
+  fullName.vb: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged(Long)
+  nameWithType: ValidatorDelegatee.OnDelegationChanged(long)
+  nameWithType.vb: ValidatorDelegatee.OnDelegationChanged(Long)
 - uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged*
   name: OnDelegationChanged
   href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnDelegationChanged_
@@ -96024,15 +96056,12 @@ references:
   isSpec: "True"
   fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnDelegationChanged
   nameWithType: ValidatorDelegatee.OnDelegationChanged
-- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed(System.Object,System.EventArgs)
-  name: OnEnjailed(object?, EventArgs)
-  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnEnjailed_System_Object_System_EventArgs_
-  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed(System.Object,System.EventArgs)
-  name.vb: OnEnjailed(Object, EventArgs)
-  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed(object?, System.EventArgs)
-  fullName.vb: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed(Object, System.EventArgs)
-  nameWithType: ValidatorDelegatee.OnEnjailed(object?, EventArgs)
-  nameWithType.vb: ValidatorDelegatee.OnEnjailed(Object, EventArgs)
+- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed
+  name: OnEnjailed()
+  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnEnjailed
+  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed
+  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed()
+  nameWithType: ValidatorDelegatee.OnEnjailed()
 - uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed*
   name: OnEnjailed
   href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnEnjailed_
@@ -96040,15 +96069,12 @@ references:
   isSpec: "True"
   fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnEnjailed
   nameWithType: ValidatorDelegatee.OnEnjailed
-- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed(System.Object,System.EventArgs)
-  name: OnUnjailed(object?, EventArgs)
-  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnUnjailed_System_Object_System_EventArgs_
-  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed(System.Object,System.EventArgs)
-  name.vb: OnUnjailed(Object, EventArgs)
-  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed(object?, System.EventArgs)
-  fullName.vb: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed(Object, System.EventArgs)
-  nameWithType: ValidatorDelegatee.OnUnjailed(object?, EventArgs)
-  nameWithType.vb: ValidatorDelegatee.OnUnjailed(Object, EventArgs)
+- uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed
+  name: OnUnjailed()
+  href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnUnjailed
+  commentId: M:Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed
+  fullName: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed()
+  nameWithType: ValidatorDelegatee.OnUnjailed()
 - uid: Nekoyume.ValidatorDelegation.ValidatorDelegatee.OnUnjailed*
   name: OnUnjailed
   href: api/Nekoyume.ValidatorDelegation.ValidatorDelegatee.html#Nekoyume_ValidatorDelegation_ValidatorDelegatee_OnUnjailed_
