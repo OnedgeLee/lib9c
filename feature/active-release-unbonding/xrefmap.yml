@@ -21993,6 +21993,15 @@ references:
   fullName.vb: Nekoyume.Action.Stake.New()
   nameWithType: Stake.Stake()
   nameWithType.vb: Stake.New()
+- uid: Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger)
+  name: Stake(BigInteger)
+  href: api/Nekoyume.Action.Stake.html#Nekoyume_Action_Stake__ctor_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger)
+  name.vb: New(BigInteger)
+  fullName: Nekoyume.Action.Stake.Stake(System.Numerics.BigInteger)
+  fullName.vb: Nekoyume.Action.Stake.New(System.Numerics.BigInteger)
+  nameWithType: Stake.Stake(BigInteger)
+  nameWithType.vb: Stake.New(BigInteger)
 - uid: Nekoyume.Action.Stake.#ctor(System.Numerics.BigInteger,Libplanet.Crypto.Address)
   name: Stake(BigInteger, Address)
   href: api/Nekoyume.Action.Stake.html#Nekoyume_Action_Stake__ctor_System_Numerics_BigInteger_Libplanet_Crypto_Address_
