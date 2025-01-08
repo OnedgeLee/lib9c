@@ -61396,19 +61396,6 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Stake.Contract.GetHashCode
   nameWithType: Contract.GetHashCode
-- uid: Nekoyume.Model.Stake.Contract.LockupInterval
-  name: LockupInterval
-  href: api/Nekoyume.Model.Stake.Contract.html#Nekoyume_Model_Stake_Contract_LockupInterval
-  commentId: P:Nekoyume.Model.Stake.Contract.LockupInterval
-  fullName: Nekoyume.Model.Stake.Contract.LockupInterval
-  nameWithType: Contract.LockupInterval
-- uid: Nekoyume.Model.Stake.Contract.LockupInterval*
-  name: LockupInterval
-  href: api/Nekoyume.Model.Stake.Contract.html#Nekoyume_Model_Stake_Contract_LockupInterval_
-  commentId: Overload:Nekoyume.Model.Stake.Contract.LockupInterval
-  isSpec: "True"
-  fullName: Nekoyume.Model.Stake.Contract.LockupInterval
-  nameWithType: Contract.LockupInterval
 - uid: Nekoyume.Model.Stake.Contract.RewardInterval
   name: RewardInterval
   href: api/Nekoyume.Model.Stake.Contract.html#Nekoyume_Model_Stake_Contract_RewardInterval
@@ -61485,6 +61472,19 @@ references:
   commentId: F:Nekoyume.Model.Stake.Contract.StateTypeVersion
   fullName: Nekoyume.Model.Stake.Contract.StateTypeVersion
   nameWithType: Contract.StateTypeVersion
+- uid: Nekoyume.Model.Stake.Contract.UnstakingInterval
+  name: UnstakingInterval
+  href: api/Nekoyume.Model.Stake.Contract.html#Nekoyume_Model_Stake_Contract_UnstakingInterval
+  commentId: P:Nekoyume.Model.Stake.Contract.UnstakingInterval
+  fullName: Nekoyume.Model.Stake.Contract.UnstakingInterval
+  nameWithType: Contract.UnstakingInterval
+- uid: Nekoyume.Model.Stake.Contract.UnstakingInterval*
+  name: UnstakingInterval
+  href: api/Nekoyume.Model.Stake.Contract.html#Nekoyume_Model_Stake_Contract_UnstakingInterval_
+  commentId: Overload:Nekoyume.Model.Stake.Contract.UnstakingInterval
+  isSpec: "True"
+  fullName: Nekoyume.Model.Stake.Contract.UnstakingInterval
+  nameWithType: Contract.UnstakingInterval
 - uid: Nekoyume.Model.Stake.StakeState
   name: StakeState
   href: api/Nekoyume.Model.Stake.StakeState.html
@@ -61500,15 +61500,15 @@ references:
   fullName.vb: Nekoyume.Model.Stake.StakeState.New(Bencodex.Types.IValue)
   nameWithType: StakeState.StakeState(IValue)
   nameWithType.vb: StakeState.New(IValue)
-- uid: Nekoyume.Model.Stake.StakeState.#ctor(Nekoyume.Model.Stake.Contract,System.Int64,System.Int64,System.Int32)
-  name: StakeState(Contract, long, long, int)
-  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState__ctor_Nekoyume_Model_Stake_Contract_System_Int64_System_Int64_System_Int32_
-  commentId: M:Nekoyume.Model.Stake.StakeState.#ctor(Nekoyume.Model.Stake.Contract,System.Int64,System.Int64,System.Int32)
-  name.vb: New(Contract, Long, Long, Integer)
-  fullName: Nekoyume.Model.Stake.StakeState.StakeState(Nekoyume.Model.Stake.Contract, long, long, int)
-  fullName.vb: Nekoyume.Model.Stake.StakeState.New(Nekoyume.Model.Stake.Contract, Long, Long, Integer)
-  nameWithType: StakeState.StakeState(Contract, long, long, int)
-  nameWithType.vb: StakeState.New(Contract, Long, Long, Integer)
+- uid: Nekoyume.Model.Stake.StakeState.#ctor(Nekoyume.Model.Stake.Contract,System.Int64,System.Int64,System.Boolean,System.Int32)
+  name: StakeState(Contract, long, long, bool, int)
+  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState__ctor_Nekoyume_Model_Stake_Contract_System_Int64_System_Int64_System_Boolean_System_Int32_
+  commentId: M:Nekoyume.Model.Stake.StakeState.#ctor(Nekoyume.Model.Stake.Contract,System.Int64,System.Int64,System.Boolean,System.Int32)
+  name.vb: New(Contract, Long, Long, Boolean, Integer)
+  fullName: Nekoyume.Model.Stake.StakeState.StakeState(Nekoyume.Model.Stake.Contract, long, long, bool, int)
+  fullName.vb: Nekoyume.Model.Stake.StakeState.New(Nekoyume.Model.Stake.Contract, Long, Long, Boolean, Integer)
+  nameWithType: StakeState.StakeState(Contract, long, long, bool, int)
+  nameWithType.vb: StakeState.New(Contract, Long, Long, Boolean, Integer)
 - uid: Nekoyume.Model.Stake.StakeState.#ctor(Nekoyume.Model.State.LegacyStakeState,Nekoyume.Model.Stake.Contract)
   name: StakeState(LegacyStakeState, Contract)
   href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState__ctor_Nekoyume_Model_State_LegacyStakeState_Nekoyume_Model_Stake_Contract_
@@ -61528,19 +61528,6 @@ references:
   fullName.vb: Nekoyume.Model.Stake.StakeState.New
   nameWithType: StakeState.StakeState
   nameWithType.vb: StakeState.New
-- uid: Nekoyume.Model.Stake.StakeState.CancellableBlockIndex
-  name: CancellableBlockIndex
-  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_CancellableBlockIndex
-  commentId: P:Nekoyume.Model.Stake.StakeState.CancellableBlockIndex
-  fullName: Nekoyume.Model.Stake.StakeState.CancellableBlockIndex
-  nameWithType: StakeState.CancellableBlockIndex
-- uid: Nekoyume.Model.Stake.StakeState.CancellableBlockIndex*
-  name: CancellableBlockIndex
-  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_CancellableBlockIndex_
-  commentId: Overload:Nekoyume.Model.Stake.StakeState.CancellableBlockIndex
-  isSpec: "True"
-  fullName: Nekoyume.Model.Stake.StakeState.CancellableBlockIndex
-  nameWithType: StakeState.CancellableBlockIndex
 - uid: Nekoyume.Model.Stake.StakeState.ClaimableBlockIndex
   name: ClaimableBlockIndex
   href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_ClaimableBlockIndex
@@ -61664,6 +61651,25 @@ references:
   commentId: F:Nekoyume.Model.Stake.StakeState.StateVersion
   fullName: Nekoyume.Model.Stake.StakeState.StateVersion
   nameWithType: StakeState.StateVersion
+- uid: Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex
+  name: UnstakableBlockIndex
+  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_UnstakableBlockIndex
+  commentId: P:Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex
+  fullName: Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex
+  nameWithType: StakeState.UnstakableBlockIndex
+- uid: Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex*
+  name: UnstakableBlockIndex
+  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_UnstakableBlockIndex_
+  commentId: Overload:Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex
+  isSpec: "True"
+  fullName: Nekoyume.Model.Stake.StakeState.UnstakableBlockIndex
+  nameWithType: StakeState.UnstakableBlockIndex
+- uid: Nekoyume.Model.Stake.StakeState.Unstaked
+  name: Unstaked
+  href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_Unstaked
+  commentId: F:Nekoyume.Model.Stake.StakeState.Unstaked
+  fullName: Nekoyume.Model.Stake.StakeState.Unstaked
+  nameWithType: StakeState.Unstaked
 - uid: Nekoyume.Model.Stake.StakeState.op_Equality(Nekoyume.Model.Stake.StakeState,Nekoyume.Model.Stake.StakeState)
   name: operator ==(StakeState, StakeState)
   href: api/Nekoyume.Model.Stake.StakeState.html#Nekoyume_Model_Stake_StakeState_op_Equality_Nekoyume_Model_Stake_StakeState_Nekoyume_Model_Stake_StakeState_
@@ -91370,6 +91376,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.TableData.Stake.StakePolicySheet.StakeRegularRewardSheetValue
   nameWithType: StakePolicySheet.StakeRegularRewardSheetValue
+- uid: Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue
+  name: UnstakingIntervalValue
+  href: api/Nekoyume.TableData.Stake.StakePolicySheet.html#Nekoyume_TableData_Stake_StakePolicySheet_UnstakingIntervalValue
+  commentId: P:Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue
+  fullName: Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue
+  nameWithType: StakePolicySheet.UnstakingIntervalValue
+- uid: Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue*
+  name: UnstakingIntervalValue
+  href: api/Nekoyume.TableData.Stake.StakePolicySheet.html#Nekoyume_TableData_Stake_StakePolicySheet_UnstakingIntervalValue_
+  commentId: Overload:Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue
+  isSpec: "True"
+  fullName: Nekoyume.TableData.Stake.StakePolicySheet.UnstakingIntervalValue
+  nameWithType: StakePolicySheet.UnstakingIntervalValue
 - uid: Nekoyume.TableData.StakeAchievementRewardSheet
   name: StakeAchievementRewardSheet
   href: api/Nekoyume.TableData.StakeAchievementRewardSheet.html
