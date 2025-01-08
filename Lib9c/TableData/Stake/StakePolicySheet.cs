@@ -50,6 +50,7 @@ namespace Nekoyume.TableData.Stake
             "StakeRegularRewardSheet",
             "RewardInterval",
             "LockupInterval",
+            "UnstakingInterval"
         };
 
         public static readonly (string attrName, string value)[] SheetPrefixRules =
@@ -69,6 +70,9 @@ namespace Nekoyume.TableData.Stake
 
         public long LockupIntervalValue =>
             long.Parse(this["LockupInterval"].Value, CultureInfo.InvariantCulture);
+
+        public long UnstakingIntervalValue =>
+            long.Parse(this["UnstakingInterval"].Value, CultureInfo.InvariantCulture);
 
         public StakePolicySheet() : base(nameof(StakePolicySheet))
         {
