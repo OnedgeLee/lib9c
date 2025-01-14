@@ -47947,6 +47947,32 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Model.Guild.GuildDelegatee.Equals
   nameWithType: GuildDelegatee.Equals
+- uid: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries
+  name: GuildMaxRebondGraceEntries
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_GuildMaxRebondGraceEntries
+  commentId: P:Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries
+  nameWithType: GuildDelegatee.GuildMaxRebondGraceEntries
+- uid: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries*
+  name: GuildMaxRebondGraceEntries
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_GuildMaxRebondGraceEntries_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxRebondGraceEntries
+  nameWithType: GuildDelegatee.GuildMaxRebondGraceEntries
+- uid: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries
+  name: GuildMaxUnbondLockInEntries
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_GuildMaxUnbondLockInEntries
+  commentId: P:Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries
+  nameWithType: GuildDelegatee.GuildMaxUnbondLockInEntries
+- uid: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries*
+  name: GuildMaxUnbondLockInEntries
+  href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_GuildMaxUnbondLockInEntries_
+  commentId: Overload:Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries
+  isSpec: "True"
+  fullName: Nekoyume.Model.Guild.GuildDelegatee.GuildMaxUnbondLockInEntries
+  nameWithType: GuildDelegatee.GuildMaxUnbondLockInEntries
 - uid: Nekoyume.Model.Guild.GuildDelegatee.Slash(System.Numerics.BigInteger,System.Int64,System.Int64)
   name: Slash(BigInteger, long, long)
   href: api/Nekoyume.Model.Guild.GuildDelegatee.html#Nekoyume_Model_Guild_GuildDelegatee_Slash_System_Numerics_BigInteger_System_Int64_System_Int64_
