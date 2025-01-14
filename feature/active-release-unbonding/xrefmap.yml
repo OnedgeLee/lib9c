@@ -75825,6 +75825,57 @@ references:
   commentId: T:Nekoyume.Module.Guild.GuildModule
   fullName: Nekoyume.Module.Guild.GuildModule
   nameWithType: GuildModule
+- uid: Nekoyume.Module.Guild.GuildModule.ConvertCurrency(Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
+  name: ConvertCurrency(FungibleAssetValue, Currency)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_ConvertCurrency_Libplanet_Types_Assets_FungibleAssetValue_Libplanet_Types_Assets_Currency_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.ConvertCurrency(Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
+  fullName: Nekoyume.Module.Guild.GuildModule.ConvertCurrency(Libplanet.Types.Assets.FungibleAssetValue, Libplanet.Types.Assets.Currency)
+  nameWithType: GuildModule.ConvertCurrency(FungibleAssetValue, Currency)
+- uid: Nekoyume.Module.Guild.GuildModule.ConvertCurrency*
+  name: ConvertCurrency
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_ConvertCurrency_
+  commentId: Overload:Nekoyume.Module.Guild.GuildModule.ConvertCurrency
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildModule.ConvertCurrency
+  nameWithType: GuildModule.ConvertCurrency
+- uid: Nekoyume.Module.Guild.GuildModule.FAVFromShare(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue)
+  name: FAVFromShare(BigInteger, BigInteger, FungibleAssetValue)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_FAVFromShare_System_Numerics_BigInteger_System_Numerics_BigInteger_Libplanet_Types_Assets_FungibleAssetValue_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.FAVFromShare(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue)
+  fullName: Nekoyume.Module.Guild.GuildModule.FAVFromShare(System.Numerics.BigInteger, System.Numerics.BigInteger, Libplanet.Types.Assets.FungibleAssetValue)
+  nameWithType: GuildModule.FAVFromShare(BigInteger, BigInteger, FungibleAssetValue)
+- uid: Nekoyume.Module.Guild.GuildModule.FAVFromShare*
+  name: FAVFromShare
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_FAVFromShare_
+  commentId: Overload:Nekoyume.Module.Guild.GuildModule.FAVFromShare
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildModule.FAVFromShare
+  nameWithType: GuildModule.FAVFromShare
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  name: GetDelegationInfo(IWorld, Address)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegationInfo_Libplanet_Action_State_IWorld_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorld, Libplanet.Crypto.Address)
+  nameWithType: GuildModule.GetDelegationInfo(IWorld, Address)
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorldState,Libplanet.Crypto.Address)
+  name: GetDelegationInfo(IWorldState, Address)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegationInfo_Libplanet_Action_State_IWorldState_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorldState,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorldState, Libplanet.Crypto.Address)
+  nameWithType: GuildModule.GetDelegationInfo(IWorldState, Address)
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  name: GetDelegationInfo(GuildRepository, Address)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegationInfo_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address)
+  nameWithType: GuildModule.GetDelegationInfo(GuildRepository, Address)
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo*
+  name: GetDelegationInfo
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegationInfo_
+  commentId: Overload:Nekoyume.Module.Guild.GuildModule.GetDelegationInfo
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo
+  nameWithType: GuildModule.GetDelegationInfo
 - uid: Nekoyume.Module.Guild.GuildModule.GetGuildRepository(Libplanet.Action.State.IWorld,Libplanet.Action.IActionContext)
   name: GetGuildRepository(IWorld, IActionContext)
   href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetGuildRepository_Libplanet_Action_State_IWorld_Libplanet_Action_IActionContext_
@@ -75838,6 +75889,25 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Module.Guild.GuildModule.GetGuildRepository
   nameWithType: GuildModule.GetGuildRepository
+- uid: Nekoyume.Module.Guild.GuildModule.GetStaked(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  name: GetStaked(IWorld, Address)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetStaked_Libplanet_Action_State_IWorld_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetStaked(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetStaked(Libplanet.Action.State.IWorld, Libplanet.Crypto.Address)
+  nameWithType: GuildModule.GetStaked(IWorld, Address)
+- uid: Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
+  name: GetStaked(BigInteger, BigInteger, FungibleAssetValue, Currency)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetStaked_System_Numerics_BigInteger_System_Numerics_BigInteger_Libplanet_Types_Assets_FungibleAssetValue_Libplanet_Types_Assets_Currency_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger, System.Numerics.BigInteger, Libplanet.Types.Assets.FungibleAssetValue, Libplanet.Types.Assets.Currency)
+  nameWithType: GuildModule.GetStaked(BigInteger, BigInteger, FungibleAssetValue, Currency)
+- uid: Nekoyume.Module.Guild.GuildModule.GetStaked*
+  name: GetStaked
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetStaked_
+  commentId: Overload:Nekoyume.Module.Guild.GuildModule.GetStaked
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildModule.GetStaked
+  nameWithType: GuildModule.GetStaked
 - uid: Nekoyume.Module.Guild.GuildModule.MakeGuild(Nekoyume.Model.Guild.GuildRepository,Nekoyume.TypedAddress.GuildAddress,Libplanet.Crypto.Address)
   name: MakeGuild(GuildRepository, GuildAddress, Address)
   href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_MakeGuild_Nekoyume_Model_Guild_GuildRepository_Nekoyume_TypedAddress_GuildAddress_Libplanet_Crypto_Address_
