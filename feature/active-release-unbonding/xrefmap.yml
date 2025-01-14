@@ -75877,6 +75877,19 @@ references:
   isSpec: "True"
   fullName: Nekoyume.Module.Guild.GuildModule.FAVFromShare
   nameWithType: GuildModule.FAVFromShare
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegated(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  name: GetDelegated(IWorld, Address)
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegated_Libplanet_Action_State_IWorld_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildModule.GetDelegated(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegated(Libplanet.Action.State.IWorld, Libplanet.Crypto.Address)
+  nameWithType: GuildModule.GetDelegated(IWorld, Address)
+- uid: Nekoyume.Module.Guild.GuildModule.GetDelegated*
+  name: GetDelegated
+  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegated_
+  commentId: Overload:Nekoyume.Module.Guild.GuildModule.GetDelegated
+  isSpec: "True"
+  fullName: Nekoyume.Module.Guild.GuildModule.GetDelegated
+  nameWithType: GuildModule.GetDelegated
 - uid: Nekoyume.Module.Guild.GuildModule.GetDelegationInfo(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
   name: GetDelegationInfo(IWorld, Address)
   href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetDelegationInfo_Libplanet_Action_State_IWorld_Libplanet_Crypto_Address_
@@ -75921,12 +75934,6 @@ references:
   commentId: M:Nekoyume.Module.Guild.GuildModule.GetStaked(Libplanet.Action.State.IWorld,Libplanet.Crypto.Address)
   fullName: Nekoyume.Module.Guild.GuildModule.GetStaked(Libplanet.Action.State.IWorld, Libplanet.Crypto.Address)
   nameWithType: GuildModule.GetStaked(IWorld, Address)
-- uid: Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
-  name: GetStaked(BigInteger, BigInteger, FungibleAssetValue, Currency)
-  href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetStaked_System_Numerics_BigInteger_System_Numerics_BigInteger_Libplanet_Types_Assets_FungibleAssetValue_Libplanet_Types_Assets_Currency_
-  commentId: M:Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger,System.Numerics.BigInteger,Libplanet.Types.Assets.FungibleAssetValue,Libplanet.Types.Assets.Currency)
-  fullName: Nekoyume.Module.Guild.GuildModule.GetStaked(System.Numerics.BigInteger, System.Numerics.BigInteger, Libplanet.Types.Assets.FungibleAssetValue, Libplanet.Types.Assets.Currency)
-  nameWithType: GuildModule.GetStaked(BigInteger, BigInteger, FungibleAssetValue, Currency)
 - uid: Nekoyume.Module.Guild.GuildModule.GetStaked*
   name: GetStaked
   href: api/Nekoyume.Module.Guild.GuildModule.html#Nekoyume_Module_Guild_GuildModule_GetStaked_
