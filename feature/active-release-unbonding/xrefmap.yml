@@ -75771,35 +75771,35 @@ references:
   commentId: T:Nekoyume.Module.Guild.GuildDelegateeModule
   fullName: Nekoyume.Module.Guild.GuildDelegateeModule
   nameWithType: GuildDelegateeModule
-- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
-  name: CreateGuildDelegatee(GuildRepository, Address)
-  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateGuildDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_
-  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
-  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address)
-  nameWithType: GuildDelegateeModule.CreateGuildDelegatee(GuildRepository, Address)
-- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee*
-  name: CreateGuildDelegatee
-  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateGuildDelegatee_
-  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  name: CreateDelegatee(GuildRepository, Address)
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_
+  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address)
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address)
+  nameWithType: GuildDelegateeModule.CreateDelegatee(GuildRepository, Address)
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee*
+  name: CreateDelegatee
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_CreateDelegatee_
+  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee
   isSpec: "True"
-  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateGuildDelegatee
-  nameWithType: GuildDelegateeModule.CreateGuildDelegatee
-- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
-  name: TryGetGuildDelegatee(GuildRepository, Address, out GuildDelegatee?)
-  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetGuildDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildDelegatee__
-  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
-  name.vb: TryGetGuildDelegatee(GuildRepository, Address, GuildDelegatee)
-  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, out Nekoyume.Model.Guild.GuildDelegatee?)
-  fullName.vb: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildDelegatee)
-  nameWithType: GuildDelegateeModule.TryGetGuildDelegatee(GuildRepository, Address, out GuildDelegatee?)
-  nameWithType.vb: GuildDelegateeModule.TryGetGuildDelegatee(GuildRepository, Address, GuildDelegatee)
-- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee*
-  name: TryGetGuildDelegatee
-  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetGuildDelegatee_
-  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.CreateDelegatee
+  nameWithType: GuildDelegateeModule.CreateDelegatee
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
+  name: TryGetDelegatee(GuildRepository, Address, out GuildDelegatee?)
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetDelegatee_Nekoyume_Model_Guild_GuildRepository_Libplanet_Crypto_Address_Nekoyume_Model_Guild_GuildDelegatee__
+  commentId: M:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee(Nekoyume.Model.Guild.GuildRepository,Libplanet.Crypto.Address,Nekoyume.Model.Guild.GuildDelegatee@)
+  name.vb: TryGetDelegatee(GuildRepository, Address, GuildDelegatee)
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, out Nekoyume.Model.Guild.GuildDelegatee?)
+  fullName.vb: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee(Nekoyume.Model.Guild.GuildRepository, Libplanet.Crypto.Address, Nekoyume.Model.Guild.GuildDelegatee)
+  nameWithType: GuildDelegateeModule.TryGetDelegatee(GuildRepository, Address, out GuildDelegatee?)
+  nameWithType.vb: GuildDelegateeModule.TryGetDelegatee(GuildRepository, Address, GuildDelegatee)
+- uid: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee*
+  name: TryGetDelegatee
+  href: api/Nekoyume.Module.Guild.GuildDelegateeModule.html#Nekoyume_Module_Guild_GuildDelegateeModule_TryGetDelegatee_
+  commentId: Overload:Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee
   isSpec: "True"
-  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetGuildDelegatee
-  nameWithType: GuildDelegateeModule.TryGetGuildDelegatee
+  fullName: Nekoyume.Module.Guild.GuildDelegateeModule.TryGetDelegatee
+  nameWithType: GuildDelegateeModule.TryGetDelegatee
 - uid: Nekoyume.Module.Guild.GuildMemberCounterModule
   name: GuildMemberCounterModule
   href: api/Nekoyume.Module.Guild.GuildMemberCounterModule.html
@@ -76981,57 +76981,57 @@ references:
   commentId: T:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule
   fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule
   nameWithType: ValidatorDelegateeModule
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.PublicKey,System.Numerics.BigInteger)
-  name: CreateValidatorDelegatee(ValidatorRepository, PublicKey, BigInteger)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_CreateValidatorDelegatee_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_PublicKey_System_Numerics_BigInteger_
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.PublicKey,System.Numerics.BigInteger)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.PublicKey, System.Numerics.BigInteger)
-  nameWithType: ValidatorDelegateeModule.CreateValidatorDelegatee(ValidatorRepository, PublicKey, BigInteger)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee*
-  name: CreateValidatorDelegatee
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_CreateValidatorDelegatee_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.PublicKey,System.Numerics.BigInteger)
+  name: CreateDelegatee(ValidatorRepository, PublicKey, BigInteger)
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_CreateDelegatee_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_PublicKey_System_Numerics_BigInteger_
+  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.PublicKey,System.Numerics.BigInteger)
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.PublicKey, System.Numerics.BigInteger)
+  nameWithType: ValidatorDelegateeModule.CreateDelegatee(ValidatorRepository, PublicKey, BigInteger)
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee*
+  name: CreateDelegatee
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_CreateDelegatee_
+  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee
   isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateValidatorDelegatee
-  nameWithType: ValidatorDelegateeModule.CreateValidatorDelegatee
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegatee@)
-  name: TryGetValidatorDelegatee(ValidatorRepository, Address, out ValidatorDelegatee?)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_TryGetValidatorDelegatee_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Nekoyume_ValidatorDelegation_ValidatorDelegatee__
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegatee@)
-  name.vb: TryGetValidatorDelegatee(ValidatorRepository, Address, ValidatorDelegatee)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, out Nekoyume.ValidatorDelegation.ValidatorDelegatee?)
-  fullName.vb: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Nekoyume.ValidatorDelegation.ValidatorDelegatee)
-  nameWithType: ValidatorDelegateeModule.TryGetValidatorDelegatee(ValidatorRepository, Address, out ValidatorDelegatee?)
-  nameWithType.vb: ValidatorDelegateeModule.TryGetValidatorDelegatee(ValidatorRepository, Address, ValidatorDelegatee)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee*
-  name: TryGetValidatorDelegatee
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_TryGetValidatorDelegatee_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.CreateDelegatee
+  nameWithType: ValidatorDelegateeModule.CreateDelegatee
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegatee@)
+  name: TryGetDelegatee(ValidatorRepository, Address, out ValidatorDelegatee?)
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_TryGetDelegatee_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Nekoyume_ValidatorDelegation_ValidatorDelegatee__
+  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegatee@)
+  name.vb: TryGetDelegatee(ValidatorRepository, Address, ValidatorDelegatee)
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, out Nekoyume.ValidatorDelegation.ValidatorDelegatee?)
+  fullName.vb: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Nekoyume.ValidatorDelegation.ValidatorDelegatee)
+  nameWithType: ValidatorDelegateeModule.TryGetDelegatee(ValidatorRepository, Address, out ValidatorDelegatee?)
+  nameWithType.vb: ValidatorDelegateeModule.TryGetDelegatee(ValidatorRepository, Address, ValidatorDelegatee)
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee*
+  name: TryGetDelegatee
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegateeModule_TryGetDelegatee_
+  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee
   isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetValidatorDelegatee
-  nameWithType: ValidatorDelegateeModule.TryGetValidatorDelegatee
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegateeModule.TryGetDelegatee
+  nameWithType: ValidatorDelegateeModule.TryGetDelegatee
 - uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule
   name: ValidatorDelegatorModule
   href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html
   commentId: T:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule
   fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule
   nameWithType: ValidatorDelegatorModule
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegator@)
-  name: TryGetValidatorDelegator(ValidatorRepository, Address, out ValidatorDelegator?)
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_TryGetValidatorDelegator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Nekoyume_ValidatorDelegation_ValidatorDelegator__
-  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegator@)
-  name.vb: TryGetValidatorDelegator(ValidatorRepository, Address, ValidatorDelegator)
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, out Nekoyume.ValidatorDelegation.ValidatorDelegator?)
-  fullName.vb: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Nekoyume.ValidatorDelegation.ValidatorDelegator)
-  nameWithType: ValidatorDelegatorModule.TryGetValidatorDelegator(ValidatorRepository, Address, out ValidatorDelegator?)
-  nameWithType.vb: ValidatorDelegatorModule.TryGetValidatorDelegator(ValidatorRepository, Address, ValidatorDelegator)
-- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator*
-  name: TryGetValidatorDelegator
-  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_TryGetValidatorDelegator_
-  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegator@)
+  name: TryGetDelegator(ValidatorRepository, Address, out ValidatorDelegator?)
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_TryGetDelegator_Nekoyume_ValidatorDelegation_ValidatorRepository_Libplanet_Crypto_Address_Nekoyume_ValidatorDelegation_ValidatorDelegator__
+  commentId: M:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository,Libplanet.Crypto.Address,Nekoyume.ValidatorDelegation.ValidatorDelegator@)
+  name.vb: TryGetDelegator(ValidatorRepository, Address, ValidatorDelegator)
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, out Nekoyume.ValidatorDelegation.ValidatorDelegator?)
+  fullName.vb: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator(Nekoyume.ValidatorDelegation.ValidatorRepository, Libplanet.Crypto.Address, Nekoyume.ValidatorDelegation.ValidatorDelegator)
+  nameWithType: ValidatorDelegatorModule.TryGetDelegator(ValidatorRepository, Address, out ValidatorDelegator?)
+  nameWithType.vb: ValidatorDelegatorModule.TryGetDelegator(ValidatorRepository, Address, ValidatorDelegator)
+- uid: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator*
+  name: TryGetDelegator
+  href: api/Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.html#Nekoyume_Module_ValidatorDelegation_ValidatorDelegatorModule_TryGetDelegator_
+  commentId: Overload:Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator
   isSpec: "True"
-  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetValidatorDelegator
-  nameWithType: ValidatorDelegatorModule.TryGetValidatorDelegator
+  fullName: Nekoyume.Module.ValidatorDelegation.ValidatorDelegatorModule.TryGetDelegator
+  nameWithType: ValidatorDelegatorModule.TryGetDelegator
 - uid: Nekoyume.Module.ValidatorDelegation.ValidatorListModule
   name: ValidatorListModule
   href: api/Nekoyume.Module.ValidatorDelegation.ValidatorListModule.html
