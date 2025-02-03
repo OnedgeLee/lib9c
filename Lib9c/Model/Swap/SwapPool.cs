@@ -34,7 +34,7 @@ namespace Nekoyume.Model.Swap
         /// <summary>
         /// Address of the swap pool.
         /// </summary>
-        public static Address Address => Addresses.SwapPool;
+        public Address Address => Addresses.SwapPool;
 
         /// <summary>
         /// Swap the currency from <paramref name="from"/> to <paramref name="to"/>.
@@ -59,7 +59,12 @@ namespace Nekoyume.Model.Swap
         /// </exception>
         public IWorld Swap(IWorld world, IActionContext context, FungibleAssetValue from, Currency to)
         {
-            var swapFAV = ConvertToSwapFAV(from, to, out var remainder);
+            if (from.Currency.Equals(to))
+            {
+                throw new ArgumentException("Cannot swap the same currency.", nameof(to));
+            }
+        
+            var swapFAV = convertToSwapFAV(from, to, out var remainder);
             var newWorld = world
                 .TransferAsset(context, context.Signer, Address, from - remainder)
                 .TransferAsset(context, Address, context.Signer, swapFAV);
@@ -84,7 +89,7 @@ namespace Nekoyume.Model.Swap
         /// <exception cref="SheetRowNotFoundException">
         /// Thrown when the swap rate sheet does not contain the rate for <paramref name="from"/> and <paramref name="to"/>.
         /// </exception>
-        public FungibleAssetValue ConvertToSwapFAV(
+        public FungibleAssetValue convertToSwapFAV(
             FungibleAssetValue from,
             Currency to,
             out FungibleAssetValue remainder)
